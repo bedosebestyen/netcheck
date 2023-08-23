@@ -1,16 +1,31 @@
 import argparse
 
 def read_cli_args():
-    """Handle CLI arguments and options"""
-    parser = argparse.ArgumentParser(
-        prog="netchecker", description="check the availability of Internet uplinks"
-    )
-
+    parser = argparse.ArgumentParser(description="Check internet uplink connection for different protocols.")
     parser.add_argument(
-        "-m",
-        "--mark",
-        metavar="SO_MARK",
+        '--icmp-weight',
         type=int,
-        help="Enter the SO_MARK"
-    )
+        default=1,
+        help="Weight for ICMP test")
+    parser.add_argument(
+        '--tcp-weight',
+        type=int,
+        default=1,
+        help="Weight for TCP test")
+    parser.add_argument(
+        '--dns-weight',
+        type=int,
+        default=1,
+        help="Weight for DNS test")
+    parser.add_argument(
+        '--ntp-weight',
+        type=int,
+        default=1,
+        help="Weight for NTP test")
+    parser.add_argument(
+        '--mark',
+        type=int,
+        default=None,
+        help="SO_MARK value")
+
     return parser.parse_args()
