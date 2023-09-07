@@ -10,6 +10,8 @@ TODO: Test on linux, cli could be deleted, other protocols in chcker, implement 
         when there is an exception script pauses a little need to know why exactly, timeouts needs streamlining
 """
 
+source = "/var/lib/top-1000-domains/hungary"
+
 logging.basicConfig(level=logging.INFO, 
                     format='%(asctime)s - %(levelname)s - %(message)s',
                     handlers=[
@@ -17,14 +19,14 @@ logging.basicConfig(level=logging.INFO,
                         logging.FileHandler("base_log", mode="w")
                     ])
 
-def hosts_from_file(filename):
-    with open(filename, 'r') as file:
+def hosts_from_file(source):
+    with open(source, 'r') as file:
         hosts = [line.strip() for line in file]
     return hosts
 
 notreachable_hosts = set()
 
-hosts = hosts_from_file("source.txt")
+hosts = hosts_from_file(source)
 
 def random_host(notreachable_hosts, hosts):
     # Take out the unreachable hosts from the hosts list, then return a random host from them.
@@ -35,8 +37,8 @@ def random_host(notreachable_hosts, hosts):
 
 
 weights = {
-        check_icmp: 3,
-        check_tcp : 3
+        check_icmp: 1,
+        check_tcp : 1
     }
 
 
@@ -86,6 +88,7 @@ if __name__ == '__main__':
                 asyncio.run(main())
             except Exception as e:
                 logging.error(f"An error occured during __main__: {e}")
+                sys.exit()
     except KeyboardInterrupt:
         #Stop when ctrl + c or ctrl + z is pressed
         logging.info("Exiting the program...")

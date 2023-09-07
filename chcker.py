@@ -21,7 +21,10 @@ async def check_icmp(host, timeout=2):
         delay = await aioping.ping(host, timeout=timeout)
         if delay is not None:
             logging.info(f"{host} is reachable ({delay} ms) ICMP")
+            
             return True
+            
+
         
     except (asyncio.TimeoutError, OSError) as e:
              logging.error(f"Connection to {host} timed out: {e}")
