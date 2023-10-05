@@ -2,15 +2,14 @@ import asyncio
 from chcker import check_tcp, check_icmp
 import logging
 import sys
-import random
-import os
-import time
+from ip_pool import IP_Pool
+from packets import TCP_packet, ICMP_packet, IPManager
+
 """
 TODO: Test on linux, cli could be deleted, other protocols in chcker, implement some success ratio
         make the code more readable/cleaner, implementing SO_MARK, implementing scripts for IP pool,
         when there is an exception script pauses a little need to know why exactly, timeouts needs streamlining
 """
-source = "/run/known-webservers-for-connectivity-test/latest"
 
 logging.basicConfig(level=logging.INFO, 
                     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -19,68 +18,50 @@ logging.basicConfig(level=logging.INFO,
                         logging.FileHandler("base_log", mode="w")
                     ])
 
-def hosts_from_file(source):
-    ip_list = []
-    files = os.listdir(source)
-
-    for file in files:
-        ip_list.append(file)
-    return ip_list
-
-notreachable_hosts = set()
-
-hosts = hosts_from_file(source)
-
-def random_host(notreachable_hosts, hosts):
-    # Take out the unreachable hosts from the hosts list, then return a random host from them.
-    reachable_hosts = [host for host in hosts if host not in notreachable_hosts]
-    #gives back the first element of a 1 long list
-    return random.sample(reachable_hosts, 1)[0]
-
-
-
-weights = {
-        check_icmp: 1,
-        check_tcp : 1
-    }
-
-def weighted_run(weights, task_args):
-    # Iterate through the key value pairs of the dictionary(weight=weight, test = check_icmp...)
-    # Call the function associated with each test, _ placeholder
-    # Return a list with the tasks
-    return [task_args[test]() for test, weight in weights.items() for _ in range(weight)]
-
-
-
-#needs to streamline main() too chaotic as it is
 async def main() -> None:
-    #Pick random host from reachable
-    rnd_host = random_host(notreachable_hosts, hosts)
+    # Define the maximum number of concurrent tasks (maybe useless)
+    max_concurrent_tasks = 10
+    # Reading from the files
+    ip_pool = IP_Pool()
     
-           
-    """
-    Lambda is used here because you want to assign the function object itself
-    not the result of the function call. It creates and returns the tests.
-"""
-    task_args = {
-    check_icmp: lambda: asyncio.create_task(check_icmp(rnd_host)),
-    check_tcp: lambda: asyncio.create_task(check_tcp(rnd_host, 80, 2))
-    }
-    # Create a list of tasks
-    tasks = weighted_run(weights, task_args)
+    ICMP_base, TCP_base = ip_pool.hosts_from_file()
     
-    # with .as_completed as soon as a task is finished we can work with the result
-    for task in asyncio.as_completed(tasks):
+    # This contains the reachable and unreachable list and the logic to add objects to them, and the logic to packet creation
+    ip_manager = IPManager(ICMP_base, TCP_base)
+    
+    tasks = []
+    while len(tasks) < max_concurrent_tasks:
+        # Create a new packet
+        packet = ip_manager.create_packet()
+    
+        if isinstance(packet, ICMP_packet):
+            task = asyncio.create_task(check_icmp(packet.ip, packet.mark, packet.count, packet.timeout, packet.success))
+        elif isinstance(packet, TCP_packet):
+            task = asyncio.create_task(check_tcp(packet.ip, packet.mark, packet.port, packet.timeout))
+
+        # Packet, task tuple added to tasks. Packet makes it easier to identify
+        tasks.append((packet, task))
+
+    # valami nagyon gyász, vissza kell állni oda ami az utolsó commit githubon,
+    # végig kell mennem rajta és megnézni hogy mi pontosan mit és miért csinál, mert most nagyon zavaros
+    # túl lett bonyolítva kegyetlen mód
+    for completed_task in asyncio.as_completed([task for packet, task in tasks]):
+
         try:
-            #wait for a task to finish
-            result = await task
+            result = await completed_task
+            packet, task = next((packet, task) for packet, task in tasks if task == completed_task)
+
             if not result:
-                notreachable_hosts.add(rnd_host)
+                ip_manager.unreachable_ip_manager(packet)
+
+            ip_manager.add_reachable_packet(packet)
         except Exception as e:
             logging.error(f'An exception occurred during the checks: {e}')
-            notreachable_hosts.add(rnd_host)
-    logging.info(notreachable_hosts)
-    
+            ip_manager.unreachable_ip_manager(packet)
+
+    logging.info(f'Unreachable ICMP: {ip_manager.unreachable_ICMP} |||| Unreachable TCP: {ip_manager.unreachable_TCP}')
+    # Remove completed tasks from the task list
+    tasks = [(packet, task) for packet, task in tasks if not task.done()]
 
     
 if __name__ == '__main__':
@@ -89,10 +70,16 @@ if __name__ == '__main__':
             try:
                 asyncio.run(main())
             except Exception as e:
-                logging.error(f"An error occured during __main__: {e}")
+                logging.exception(f"An error occured during __main__: {e}")
                 sys.exit()
     except KeyboardInterrupt:
         #Stop when ctrl + c or ctrl + z is pressed
         logging.info("Exiting the program...")
         
+    
+    except KeyboardInterrupt:
+        #Stop when ctrl + c or ctrl + z is pressed
+        logging.info("Exiting the program...")
+        
+    
     
