@@ -77,9 +77,6 @@ if __name__ == '__main__':
         logging.info("Exiting the program...")
         
     
-    except KeyboardInterrupt:
-        #Stop when ctrl + c or ctrl + z is pressed
-        logging.info("Exiting the program...")
         
     
     
