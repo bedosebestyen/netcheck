@@ -6,9 +6,10 @@ from ip_pool import IP_Pool
 from packets import TCP_packet, ICMP_packet, IPManager
 
 """
-TODO: Test on linux, cli could be deleted, other protocols in chcker, implement some success ratio
-        make the code more readable/cleaner, implementing SO_MARK, implementing scripts for IP pool,
-        when there is an exception script pauses a little need to know why exactly, timeouts needs streamlining
+TODO: I think it would be nice to implement some pattern for the different packets(Factory???)
+Should run the .sh ip_pool generator files before the script
+I think main is still not good enough
+Checkers needs work
 """
 
 logging.basicConfig(level=logging.INFO, 
