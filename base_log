@@ -1,23 +1,112 @@
-2023-10-05 21:10:47,463 - INFO - 34.160.205.245 is reachable on 80 TCP
-2023-10-05 21:10:47,464 - ERROR - An exception occurred during the checks: 
-2023-10-05 21:10:47,465 - INFO - 52.84.106.104 get ping in 127.5022ms
-2023-10-05 21:10:47,567 - INFO - 5.159.57.194 is reachable on 80 TCP
-2023-10-05 21:10:47,568 - ERROR - An exception occurred during the checks: 
-2023-10-05 21:10:47,622 - INFO - 52.84.106.104 get ping in 152.5878ms
-2023-10-05 21:10:47,622 - INFO - 52.84.106.104 is reachable with ICMP.
-2023-10-05 21:10:47,622 - ERROR - An exception occurred during the checks: 
-2023-10-05 21:10:48,398 - INFO - 104.26.7.208 is reachable on 80 TCP
-2023-10-05 21:10:48,399 - INFO - 151.101.129.164 get ping in 1060.3378ms
-2023-10-05 21:10:48,400 - ERROR - An exception occurred during the checks: 
-2023-10-05 21:10:48,501 - INFO - 104.26.13.108 is reachable on 80 TCP
-2023-10-05 21:10:48,502 - ERROR - An exception occurred during the checks: 
-2023-10-05 21:10:49,411 - INFO - 93.185.98.100 is reachable on 80 TCP
-2023-10-05 21:10:49,412 - INFO - 185.52.2.43 is reachable on 80 TCP
-2023-10-05 21:10:49,414 - INFO - 151.101.129.164 get ping in 1013.6852ms
-2023-10-05 21:10:49,414 - INFO - 151.101.129.164 is reachable with ICMP.
-2023-10-05 21:10:49,415 - ERROR - An exception occurred during the checks: 
-2023-10-05 21:10:49,415 - ERROR - An exception occurred during the checks: 
-2023-10-05 21:10:49,416 - ERROR - An exception occurred during the checks: 
-2023-10-05 21:10:50,921 - INFO - 46.107.16.54 is reachable on 80 TCP
-2023-10-05 21:10:50,923 - ERROR - An exception occurred during the checks: 
-2023-10-05 21:10:52,563 - INFO - Exiting the program...
+2023-10-18 11:52:39,547 - INFO - 185.161.204.63 is reachable on 80 TCP
+2023-10-18 11:52:39,548 - INFO - 185.161.204.60 is reachable on 80 TCP
+2023-10-18 11:52:39,556 - INFO - 151.101.129.185 is reachable on 80 TCP
+2023-10-18 11:52:39,556 - INFO - 18.66.26.87 is reachable on 80 TCP
+2023-10-18 11:52:39,557 - INFO - 104.26.2.55 is reachable on 80 TCP
+2023-10-18 11:52:39,558 - INFO - 52.84.106.115 is reachable on 80 TCP
+2023-10-18 11:52:39,559 - INFO - 17.253.144.10 is reachable on 80 TCP
+2023-10-18 11:52:39,603 - INFO - 75.2.11.71 is reachable with ICMP. 
+				 Avg_Succ_Delay: 8.0858 ms 
+				 Succ_Rate: 100.00%
+2023-10-18 11:52:39,604 - INFO - 46.107.16.53 is reachable with ICMP. 
+				 Avg_Succ_Delay: 8.3816 ms 
+				 Succ_Rate: 100.00%
+2023-10-18 11:52:39,604 - INFO - 62.112.193.224 is reachable with ICMP. 
+				 Avg_Succ_Delay: 8.4814 ms 
+				 Succ_Rate: 100.00%
+2023-10-18 11:52:39,604 - INFO - Unreachable ICMP: [] |||| Unreachable TCP: []
+2023-10-18 11:52:39,620 - INFO - 91.83.237.105 is reachable on 80 TCP
+2023-10-18 11:52:39,624 - INFO - 104.21.66.183 is reachable on 80 TCP
+2023-10-18 11:52:39,625 - INFO - 104.26.0.82 is reachable on 80 TCP
+2023-10-18 11:52:39,626 - INFO - 104.26.13.202 is reachable on 80 TCP
+2023-10-18 11:52:39,627 - INFO - 5.159.57.195 is reachable on 80 TCP
+2023-10-18 11:52:39,663 - INFO - 87.229.99.133 is reachable with ICMP. 
+				 Avg_Succ_Delay: 6.7862 ms 
+				 Succ_Rate: 100.00%
+2023-10-18 11:52:39,670 - INFO - 104.26.13.108 is reachable with ICMP. 
+				 Avg_Succ_Delay: 9.5241 ms 
+				 Succ_Rate: 100.00%
+2023-10-18 11:52:39,675 - INFO - 104.26.13.108 is reachable with ICMP. 
+				 Avg_Succ_Delay: 8.7880 ms 
+				 Succ_Rate: 100.00%
+2023-10-18 11:52:49,639 - ERROR - 46.174.146.30 timed out: 5
+2023-10-18 11:52:49,639 - ERROR - 84.206.102.196 timed out: 5
+2023-10-18 11:52:59,652 - ERROR - 46.174.146.30 timed out: 5
+2023-10-18 11:52:59,652 - ERROR - 84.206.102.196 timed out: 5
+2023-10-18 11:53:09,692 - ERROR - 46.174.146.30 timed out: 5
+2023-10-18 11:53:09,692 - ERROR - 84.206.102.196 timed out: 5
+2023-10-18 11:53:19,729 - ERROR - 46.174.146.30 timed out: 5
+2023-10-18 11:53:19,730 - ERROR - 84.206.102.196 timed out: 5
+2023-10-18 11:53:29,776 - ERROR - 46.174.146.30 timed out: 5
+2023-10-18 11:53:29,777 - ERROR - 84.206.102.196 timed out: 5
+2023-10-18 11:53:29,777 - INFO - Unreachable ICMP: [] |||| Unreachable TCP: ['5.159.57.195', '5.159.57.195']
+2023-10-18 11:53:29,781 - INFO - 91.83.237.105 is reachable on 80 TCP
+2023-10-18 11:53:29,781 - INFO - 162.254.190.59 is reachable on 80 TCP
+2023-10-18 11:53:29,782 - INFO - 185.161.204.63 is reachable on 80 TCP
+2023-10-18 11:53:29,782 - INFO - 104.17.32.105 is reachable on 80 TCP
+2023-10-18 11:53:29,841 - INFO - 185.43.205.97 is reachable with ICMP. 
+				 Avg_Succ_Delay: 10.2759 ms 
+				 Succ_Rate: 100.00%
+2023-10-18 11:53:29,843 - INFO - 104.26.6.206 is reachable with ICMP. 
+				 Avg_Succ_Delay: 9.3593 ms 
+				 Succ_Rate: 100.00%
+2023-10-18 11:53:30,010 - INFO - 178.236.7.220 is reachable with ICMP. 
+				 Avg_Succ_Delay: 45.4999 ms 
+				 Succ_Rate: 100.00%
+2023-10-18 11:53:39,794 - ERROR - 185.43.205.97 timed out: 5
+2023-10-18 11:53:39,795 - ERROR - 46.174.146.16 timed out: 5
+2023-10-18 11:53:39,796 - ERROR - 151.101.130.28 timed out: 5
+2023-10-18 11:53:39,825 - INFO - 185.43.205.97 is reachable with ICMP. 
+				 Avg_Succ_Delay: 7.0653 ms 
+				 Succ_Rate: 80.00%
+2023-10-18 11:53:39,868 - INFO - 151.101.130.28 is reachable with ICMP. 
+				 Avg_Succ_Delay: 17.4670 ms 
+				 Succ_Rate: 80.00%
+2023-10-18 11:53:49,823 - ERROR - 46.174.146.16 timed out: 5
+2023-10-18 11:53:59,835 - ERROR - 46.174.146.16 timed out: 5
+2023-10-18 11:54:09,856 - ERROR - 46.174.146.16 timed out: 5
+2023-10-18 11:54:19,877 - ERROR - 46.174.146.16 timed out: 5
+2023-10-18 11:54:19,877 - INFO - Unreachable ICMP: [] |||| Unreachable TCP: ['5.159.57.195', '5.159.57.195', '91.83.237.105']
+2023-10-18 11:54:19,881 - INFO - 151.101.2.28 is reachable on 80 TCP
+2023-10-18 11:54:19,881 - INFO - 213.157.175.213 is reachable on 80 TCP
+2023-10-18 11:54:19,882 - INFO - 151.101.67.5 is reachable on 80 TCP
+2023-10-18 11:54:19,882 - INFO - 75.2.58.105 is reachable on 80 TCP
+2023-10-18 11:54:19,882 - INFO - 104.26.0.82 is reachable on 80 TCP
+2023-10-18 11:54:19,888 - INFO - 87.229.73.157 is reachable on 80 TCP
+2023-10-18 11:54:19,914 - INFO - 46.107.16.53 is reachable with ICMP. 
+				 Avg_Succ_Delay: 6.5007 ms 
+				 Succ_Rate: 100.00%
+2023-10-18 11:54:19,985 - INFO - 151.101.129.171 is reachable with ICMP. 
+				 Avg_Succ_Delay: 20.6631 ms 
+				 Succ_Rate: 100.00%
+2023-10-18 11:54:20,030 - INFO - 138.201.57.231 is reachable with ICMP. 
+				 Avg_Succ_Delay: 29.6756 ms 
+				 Succ_Rate: 100.00%
+2023-10-18 11:54:29,905 - ERROR - 46.174.146.16 timed out: 5
+2023-10-18 11:54:39,920 - ERROR - 46.174.146.16 timed out: 5
+2023-10-18 11:54:49,937 - ERROR - 46.174.146.16 timed out: 5
+2023-10-18 11:54:59,993 - ERROR - 46.174.146.16 timed out: 5
+2023-10-18 11:55:10,018 - ERROR - 46.174.146.16 timed out: 5
+2023-10-18 11:55:10,019 - INFO - Unreachable ICMP: ['46.174.146.16'] |||| Unreachable TCP: ['5.159.57.195', '5.159.57.195', '91.83.237.105']
+2023-10-18 11:55:10,026 - INFO - 104.21.66.183 is reachable on 80 TCP
+2023-10-18 11:55:10,026 - INFO - 151.101.194.114 is reachable on 80 TCP
+2023-10-18 11:55:10,027 - INFO - 46.174.146.26 is reachable on 80 TCP
+2023-10-18 11:55:10,055 - INFO - 52.84.106.93 is reachable with ICMP. 
+				 Avg_Succ_Delay: 6.3249 ms 
+				 Succ_Rate: 100.00%
+2023-10-18 11:55:10,130 - INFO - 151.101.130.167 is reachable with ICMP. 
+				 Avg_Succ_Delay: 20.9916 ms 
+				 Succ_Rate: 100.00%
+2023-10-18 11:55:10,131 - INFO - 151.101.129.171 is reachable with ICMP. 
+				 Avg_Succ_Delay: 20.9766 ms 
+				 Succ_Rate: 100.00%
+2023-10-18 11:55:10,248 - INFO - 46.245.194.4 is reachable with ICMP. 
+				 Avg_Succ_Delay: 44.1484 ms 
+				 Succ_Rate: 100.00%
+2023-10-18 11:55:20,036 - ERROR - 34.201.177.150 timed out: 5
+2023-10-18 11:55:20,036 - ERROR - 75.2.20.139 timed out: 5
+2023-10-18 11:55:20,036 - ERROR - 46.174.146.22 timed out: 5
+2023-10-18 11:55:20,052 - INFO - 75.2.20.139 is reachable with ICMP. 
+				 Avg_Succ_Delay: 3.3991 ms 
+				 Succ_Rate: 80.00%
+2023-10-18 11:55:29,437 - INFO - Exiting the program...

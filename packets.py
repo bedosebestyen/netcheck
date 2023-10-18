@@ -40,12 +40,14 @@ class  IPManager:
     def remove_reachable_ip(self, ip):
         if ip in self.reachable_ICMP:
             self.reachable_ICMP.remove(ip)
-        elif ip in self.reacable_TCP:
+        elif ip in self.reachable_TCP:
             self.reachable_TCP.remove(ip)
 
-    def unreachable_ip_manager(self, packet):
+    def unreachable_ip_add(self, packet):
         if isinstance(packet, ICMP_packet):
             self.unreachable_ICMP.append(packet.ip)
+            #remove ip from reachable
+            self.remove_reachable_ip(packet.ip)
             self.unreachable_ICMP_count += 1
             #Check if the count exceeds the limit
             if self.unreachable_ICMP_count > self.unreachable_limit:
@@ -56,6 +58,8 @@ class  IPManager:
 
         elif isinstance(packet, TCP_packet):
             self.unreachable_TCP.append(packet.ip)
+            #remove ip from reachable
+            self.remove_reachable_ip(packet.ip)
             self.unreachable_TCP_count += 1
             if self.unreachable_TCP_count > self.unreachable_limit:
                 oldest_ip = self.unreachable_TCP.pop(0)
@@ -70,7 +74,8 @@ class  IPManager:
             return TCP_packet(ip,10, 1, 80)
         else:
             ip = random.sample(self.ICMP_base, 1)[0]
-            return ICMP_packet(ip, 7, 5, 2, 0.8)
+            #ip, mark, timeout, count, success
+            return ICMP_packet(ip, 7, 5, 5, 0.5)
         
 
     
