@@ -1,5 +1,7 @@
-
+import asyncio
 import random
+from typing import Any
+
 #base packet
 class Packet:
     def __init__(self, ip, mark, timeout):
@@ -17,9 +19,16 @@ class TCP_packet(Packet):
     def __init__(self, ip, mark, timeout,  port):
         super().__init__(ip, mark, timeout)
         self.port = port
-        
+
+class SingletonMeta(type):
+    instances = {}
+
+    def __call__(cls, *args, **kwargs):
+        if cls not in cls.instances:
+            cls.instances[cls] = super(SingletonMeta, cls).__call__(*args, **kwargs)
+        return cls.instances[cls]
     
-class  IPManager:
+class  Packet_logic(metaclass=SingletonMeta):
     
     def __init__(self, ICMP_base, TCP_base) -> None:
         self.ICMP_base = ICMP_base
@@ -31,23 +40,30 @@ class  IPManager:
         self.unreachable_limit = 10
         self.unreachable_TCP_count = 0
         self.unreachable_ICMP_count = 0
-    def add_reachable_packet(self, packet):
+        self.icmp_lock = asyncio.Lock()
+    async def add_reachable_packet(self, packet):
+        
         if isinstance(packet, ICMP_packet):
-            self.reachable_ICMP.append(packet.ip)
+            async with self.icmp_lock:
+                self.reachable_ICMP.append(packet.ip)
         elif isinstance(packet, TCP_packet):
-            self.reachable_TCP.append(packet.ip)
+            async with self.icmp_lock:
+                self.reachable_TCP.append(packet.ip)
 
-    def remove_reachable_ip(self, ip):
+    async def remove_reachable_ip(self, ip):
         if ip in self.reachable_ICMP:
-            self.reachable_ICMP.remove(ip)
+            async with self.icmp_lock:
+                self.reachable_ICMP.remove(ip)
         elif ip in self.reachable_TCP:
-            self.reachable_TCP.remove(ip)
+            async with self.icmp_lock:
+                self.reachable_TCP.remove(ip)
 
-    def unreachable_ip_add(self, packet):
+    async def unreachable_ip_add(self, packet):
         if isinstance(packet, ICMP_packet):
-            self.unreachable_ICMP.append(packet.ip)
+            async with self.icmp_lock:
+                 self.unreachable_ICMP.append(packet.ip)
             #remove ip from reachable
-            self.remove_reachable_ip(packet.ip)
+            await self.remove_reachable_ip(packet.ip)
             self.unreachable_ICMP_count += 1
             #Check if the count exceeds the limit
             if self.unreachable_ICMP_count > self.unreachable_limit:
@@ -57,9 +73,10 @@ class  IPManager:
                 self.unreachable_ICMP_count = 0
 
         elif isinstance(packet, TCP_packet):
-            self.unreachable_TCP.append(packet.ip)
+            async with self.icmp_lock:
+                 self.unreachable_TCP.append(packet.ip)
             #remove ip from reachable
-            self.remove_reachable_ip(packet.ip)
+            await self.remove_reachable_ip(packet.ip)
             self.unreachable_TCP_count += 1
             if self.unreachable_TCP_count > self.unreachable_limit:
                 oldest_ip = self.unreachable_TCP.pop(0)
@@ -75,8 +92,8 @@ class  IPManager:
         else:
             ip = random.sample(self.ICMP_base, 1)[0]
             #ip, mark, timeout, count, success
-            return ICMP_packet(ip, 7, 5, 5, 0.5)
+            return ICMP_packet(ip, 7, 5, 5, 0.8)
         
-
+    
     
     

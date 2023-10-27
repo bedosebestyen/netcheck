@@ -1,112 +1,278 @@
-2023-10-18 11:52:39,547 - INFO - 185.161.204.63 is reachable on 80 TCP
-2023-10-18 11:52:39,548 - INFO - 185.161.204.60 is reachable on 80 TCP
-2023-10-18 11:52:39,556 - INFO - 151.101.129.185 is reachable on 80 TCP
-2023-10-18 11:52:39,556 - INFO - 18.66.26.87 is reachable on 80 TCP
-2023-10-18 11:52:39,557 - INFO - 104.26.2.55 is reachable on 80 TCP
-2023-10-18 11:52:39,558 - INFO - 52.84.106.115 is reachable on 80 TCP
-2023-10-18 11:52:39,559 - INFO - 17.253.144.10 is reachable on 80 TCP
-2023-10-18 11:52:39,603 - INFO - 75.2.11.71 is reachable with ICMP. 
-				 Avg_Succ_Delay: 8.0858 ms 
-				 Succ_Rate: 100.00%
-2023-10-18 11:52:39,604 - INFO - 46.107.16.53 is reachable with ICMP. 
-				 Avg_Succ_Delay: 8.3816 ms 
-				 Succ_Rate: 100.00%
-2023-10-18 11:52:39,604 - INFO - 62.112.193.224 is reachable with ICMP. 
-				 Avg_Succ_Delay: 8.4814 ms 
-				 Succ_Rate: 100.00%
-2023-10-18 11:52:39,604 - INFO - Unreachable ICMP: [] |||| Unreachable TCP: []
-2023-10-18 11:52:39,620 - INFO - 91.83.237.105 is reachable on 80 TCP
-2023-10-18 11:52:39,624 - INFO - 104.21.66.183 is reachable on 80 TCP
-2023-10-18 11:52:39,625 - INFO - 104.26.0.82 is reachable on 80 TCP
-2023-10-18 11:52:39,626 - INFO - 104.26.13.202 is reachable on 80 TCP
-2023-10-18 11:52:39,627 - INFO - 5.159.57.195 is reachable on 80 TCP
-2023-10-18 11:52:39,663 - INFO - 87.229.99.133 is reachable with ICMP. 
-				 Avg_Succ_Delay: 6.7862 ms 
-				 Succ_Rate: 100.00%
-2023-10-18 11:52:39,670 - INFO - 104.26.13.108 is reachable with ICMP. 
-				 Avg_Succ_Delay: 9.5241 ms 
-				 Succ_Rate: 100.00%
-2023-10-18 11:52:39,675 - INFO - 104.26.13.108 is reachable with ICMP. 
-				 Avg_Succ_Delay: 8.7880 ms 
-				 Succ_Rate: 100.00%
-2023-10-18 11:52:49,639 - ERROR - 46.174.146.30 timed out: 5
-2023-10-18 11:52:49,639 - ERROR - 84.206.102.196 timed out: 5
-2023-10-18 11:52:59,652 - ERROR - 46.174.146.30 timed out: 5
-2023-10-18 11:52:59,652 - ERROR - 84.206.102.196 timed out: 5
-2023-10-18 11:53:09,692 - ERROR - 46.174.146.30 timed out: 5
-2023-10-18 11:53:09,692 - ERROR - 84.206.102.196 timed out: 5
-2023-10-18 11:53:19,729 - ERROR - 46.174.146.30 timed out: 5
-2023-10-18 11:53:19,730 - ERROR - 84.206.102.196 timed out: 5
-2023-10-18 11:53:29,776 - ERROR - 46.174.146.30 timed out: 5
-2023-10-18 11:53:29,777 - ERROR - 84.206.102.196 timed out: 5
-2023-10-18 11:53:29,777 - INFO - Unreachable ICMP: [] |||| Unreachable TCP: ['5.159.57.195', '5.159.57.195']
-2023-10-18 11:53:29,781 - INFO - 91.83.237.105 is reachable on 80 TCP
-2023-10-18 11:53:29,781 - INFO - 162.254.190.59 is reachable on 80 TCP
-2023-10-18 11:53:29,782 - INFO - 185.161.204.63 is reachable on 80 TCP
-2023-10-18 11:53:29,782 - INFO - 104.17.32.105 is reachable on 80 TCP
-2023-10-18 11:53:29,841 - INFO - 185.43.205.97 is reachable with ICMP. 
-				 Avg_Succ_Delay: 10.2759 ms 
-				 Succ_Rate: 100.00%
-2023-10-18 11:53:29,843 - INFO - 104.26.6.206 is reachable with ICMP. 
-				 Avg_Succ_Delay: 9.3593 ms 
-				 Succ_Rate: 100.00%
-2023-10-18 11:53:30,010 - INFO - 178.236.7.220 is reachable with ICMP. 
-				 Avg_Succ_Delay: 45.4999 ms 
-				 Succ_Rate: 100.00%
-2023-10-18 11:53:39,794 - ERROR - 185.43.205.97 timed out: 5
-2023-10-18 11:53:39,795 - ERROR - 46.174.146.16 timed out: 5
-2023-10-18 11:53:39,796 - ERROR - 151.101.130.28 timed out: 5
-2023-10-18 11:53:39,825 - INFO - 185.43.205.97 is reachable with ICMP. 
-				 Avg_Succ_Delay: 7.0653 ms 
+2023-10-27 16:09:30,934 - INFO - 193.225.4.123 is reachable on 80 TCP
+2023-10-27 16:09:30,935 - INFO - 46.107.16.51 is reachable on 80 TCP
+2023-10-27 16:09:30,935 - INFO - 104.26.2.55 is reachable on 80 TCP
+2023-10-27 16:09:30,945 - INFO - 94.199.52.240 is reachable on 80 TCP
+2023-10-27 16:09:30,946 - INFO - 75.2.11.71 is reachable on 80 TCP
+2023-10-27 16:09:30,947 - INFO - 104.26.12.202 is reachable on 80 TCP
+2023-10-27 16:09:40,974 - INFO - 172.67.168.89 host ICMP try SUCCESS || Success_Count: 1
+2023-10-27 16:09:40,974 - ERROR - 172.67.168.89 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:09:40,974 - ERROR - 172.67.168.89 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:09:40,974 - INFO - 172.67.168.89 host ICMP try SUCCESS || Success_Count: 2
+2023-10-27 16:09:40,974 - INFO - 172.67.168.89 host ICMP try SUCCESS || Success_Count: 3
+2023-10-27 16:09:40,974 - INFO - 172.67.168.89 is not reachable with ICMP.
+				 Succ_Rate: 60.00%
+2023-10-27 16:09:40,974 - INFO - Unreachable ICMP: [] |||| Unreachable TCP: []
+				Reachable_ICMP: [] |||| Reachable_TCP: ['193.225.4.123', '46.107.16.51', '104.26.2.55', '94.199.52.240', '75.2.11.71', '104.26.12.202']
+2023-10-27 16:09:40,974 - ERROR - 172.67.168.89 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:09:40,974 - INFO - 172.67.168.89 host ICMP try SUCCESS || Success_Count: 1
+2023-10-27 16:09:40,974 - INFO - 172.67.168.89 host ICMP try SUCCESS || Success_Count: 2
+2023-10-27 16:09:40,974 - INFO - 172.67.168.89 host ICMP try SUCCESS || Success_Count: 3
+2023-10-27 16:09:40,974 - INFO - 172.67.168.89 host ICMP try SUCCESS || Success_Count: 4
+2023-10-27 16:09:40,974 - INFO - 172.67.168.89 is reachable with ICMP. 
+				 Avg_Succ_Delay: 0.0000 ms 
 				 Succ_Rate: 80.00%
-2023-10-18 11:53:39,868 - INFO - 151.101.130.28 is reachable with ICMP. 
-				 Avg_Succ_Delay: 17.4670 ms 
+2023-10-27 16:09:40,974 - ERROR - 46.174.146.16 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:09:40,974 - ERROR - 46.174.146.16 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:09:40,974 - ERROR - 46.174.146.16 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:09:40,974 - ERROR - 46.174.146.16 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:09:40,974 - ERROR - 46.174.146.16 host FAILED ICMP try || Fail_Count: 5
+2023-10-27 16:09:40,975 - INFO - 52.84.106.113 host ICMP try SUCCESS || Success_Count: 1
+2023-10-27 16:09:40,975 - ERROR - 52.84.106.113 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:09:40,975 - ERROR - 52.84.106.113 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:09:40,975 - ERROR - 52.84.106.113 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:09:40,975 - ERROR - 52.84.106.113 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:09:40,976 - INFO - 52.84.106.113 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+2023-10-27 16:09:40,976 - INFO - Unreachable ICMP: [] |||| Unreachable TCP: []
+				Reachable_ICMP: [] |||| Reachable_TCP: ['193.225.4.123', '46.107.16.51', '104.26.2.55', '94.199.52.240', '75.2.11.71', '104.26.12.202']
+2023-10-27 16:09:40,992 - INFO - 185.161.204.60 is reachable on 80 TCP
+2023-10-27 16:09:40,993 - INFO - 52.84.106.122 is reachable on 80 TCP
+2023-10-27 16:09:40,994 - INFO - 52.44.86.253 is reachable on 80 TCP
+2023-10-27 16:09:40,995 - INFO - 142.132.194.189 is reachable on 80 TCP
+2023-10-27 16:09:40,995 - INFO - 76.223.18.1 is reachable on 80 TCP
+2023-10-27 16:09:51,028 - INFO - 52.84.106.104 host ICMP try SUCCESS || Success_Count: 1
+2023-10-27 16:09:51,029 - ERROR - 52.84.106.104 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:09:51,030 - ERROR - 52.84.106.104 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:09:51,030 - ERROR - 52.84.106.104 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:09:51,030 - INFO - 52.84.106.104 host ICMP try SUCCESS || Success_Count: 2
+2023-10-27 16:09:51,030 - INFO - 52.84.106.104 is not reachable with ICMP.
+				 Succ_Rate: 40.00%
+2023-10-27 16:09:51,031 - INFO - Unreachable ICMP: [] |||| Unreachable TCP: []
+				Reachable_ICMP: [] |||| Reachable_TCP: ['193.225.4.123', '46.107.16.51', '104.26.2.55', '94.199.52.240', '75.2.11.71', '104.26.12.202', '185.161.204.60', '52.84.106.122', '52.44.86.253', '142.132.194.189', '76.223.18.1']
+2023-10-27 16:09:51,031 - ERROR - 46.107.16.53 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:09:51,032 - INFO - 46.107.16.53 host ICMP try SUCCESS || Success_Count: 1
+2023-10-27 16:09:51,032 - ERROR - 46.107.16.53 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:09:51,033 - ERROR - 46.107.16.53 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:09:51,033 - ERROR - 46.107.16.53 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:09:51,034 - INFO - 46.107.16.53 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+2023-10-27 16:09:51,036 - INFO - Unreachable ICMP: [] |||| Unreachable TCP: []
+				Reachable_ICMP: [] |||| Reachable_TCP: ['193.225.4.123', '46.107.16.51', '104.26.2.55', '94.199.52.240', '75.2.11.71', '104.26.12.202', '185.161.204.60', '52.84.106.122', '52.44.86.253', '142.132.194.189', '76.223.18.1']
+2023-10-27 16:09:51,036 - ERROR - 104.18.228.43 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:09:51,037 - ERROR - 104.18.228.43 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:09:51,037 - ERROR - 104.18.228.43 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:09:51,037 - ERROR - 104.18.228.43 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:09:51,038 - ERROR - 104.18.228.43 host FAILED ICMP try || Fail_Count: 5
+2023-10-27 16:09:51,038 - ERROR - 46.174.146.31 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:09:51,039 - ERROR - 46.174.146.31 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:09:51,039 - ERROR - 46.174.146.31 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:09:51,039 - ERROR - 46.174.146.31 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:09:51,040 - ERROR - 46.174.146.31 host FAILED ICMP try || Fail_Count: 5
+2023-10-27 16:09:51,040 - ERROR - 46.174.146.30 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:09:51,041 - ERROR - 46.174.146.30 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:09:51,041 - ERROR - 46.174.146.30 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:09:51,041 - ERROR - 46.174.146.30 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:09:51,041 - ERROR - 46.174.146.30 host FAILED ICMP try || Fail_Count: 5
+2023-10-27 16:09:51,052 - INFO - 20.70.246.20 is reachable on 80 TCP
+2023-10-27 16:09:51,053 - INFO - 104.26.12.202 is reachable on 80 TCP
+2023-10-27 16:09:51,054 - INFO - 151.101.194.209 is reachable on 80 TCP
+2023-10-27 16:09:51,055 - INFO - 62.77.211.26 is reachable on 80 TCP
+2023-10-27 16:09:51,057 - INFO - 46.107.16.53 host ICMP try SUCCESS || Success_Count: 1
+2023-10-27 16:09:51,058 - INFO - 46.107.16.53 host ICMP try SUCCESS || Success_Count: 2
+2023-10-27 16:09:51,058 - INFO - 46.107.16.53 host ICMP try SUCCESS || Success_Count: 3
+2023-10-27 16:09:51,058 - INFO - 46.107.16.53 host ICMP try SUCCESS || Success_Count: 4
+2023-10-27 16:09:51,058 - INFO - 46.107.16.53 host ICMP try SUCCESS || Success_Count: 5
+2023-10-27 16:09:51,059 - INFO - 46.107.16.53 is reachable with ICMP. 
+				 Avg_Succ_Delay: 0.0000 ms 
+				 Succ_Rate: 100.00%
+2023-10-27 16:10:01,074 - INFO - 104.26.13.108 host ICMP try SUCCESS || Success_Count: 1
+2023-10-27 16:10:01,074 - ERROR - 104.26.13.108 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:01,075 - ERROR - 104.26.13.108 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:10:01,075 - ERROR - 104.26.13.108 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:10:01,076 - ERROR - 104.26.13.108 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:10:01,076 - INFO - 104.26.13.108 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+2023-10-27 16:10:01,076 - INFO - Unreachable ICMP: [] |||| Unreachable TCP: []
+				Reachable_ICMP: [] |||| Reachable_TCP: ['193.225.4.123', '46.107.16.51', '104.26.2.55', '94.199.52.240', '75.2.11.71', '104.26.12.202', '185.161.204.60', '52.84.106.122', '52.44.86.253', '142.132.194.189', '76.223.18.1', '20.70.246.20', '104.26.12.202', '151.101.194.209', '62.77.211.26']
+2023-10-27 16:10:01,077 - ERROR - 194.36.124.105 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:01,077 - ERROR - 194.36.124.105 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:10:01,078 - ERROR - 194.36.124.105 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:10:01,078 - ERROR - 194.36.124.105 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:10:01,078 - ERROR - 194.36.124.105 host FAILED ICMP try || Fail_Count: 5
+2023-10-27 16:10:01,081 - INFO - 5.159.57.195 host ICMP try SUCCESS || Success_Count: 1
+2023-10-27 16:10:01,082 - ERROR - 5.159.57.195 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:01,082 - ERROR - 5.159.57.195 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:10:01,082 - ERROR - 5.159.57.195 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:10:01,082 - ERROR - 5.159.57.195 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:10:01,083 - INFO - 5.159.57.195 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+2023-10-27 16:10:01,083 - INFO - Unreachable ICMP: [] |||| Unreachable TCP: []
+				Reachable_ICMP: [] |||| Reachable_TCP: ['193.225.4.123', '46.107.16.51', '104.26.2.55', '94.199.52.240', '75.2.11.71', '104.26.12.202', '185.161.204.60', '52.84.106.122', '52.44.86.253', '142.132.194.189', '76.223.18.1', '20.70.246.20', '104.26.12.202', '151.101.194.209', '62.77.211.26']
+2023-10-27 16:10:01,083 - ERROR - 104.96.143.26 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:01,084 - ERROR - 104.96.143.26 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:10:01,084 - ERROR - 104.96.143.26 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:10:01,087 - ERROR - 104.96.143.26 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:10:01,089 - ERROR - 104.96.143.26 host FAILED ICMP try || Fail_Count: 5
+2023-10-27 16:10:01,089 - ERROR - 151.101.194.217 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:01,089 - ERROR - 151.101.194.217 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:10:01,090 - ERROR - 151.101.194.217 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:10:01,090 - ERROR - 151.101.194.217 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:10:01,090 - ERROR - 151.101.194.217 host FAILED ICMP try || Fail_Count: 5
+2023-10-27 16:10:01,117 - INFO - 88.151.102.127 is reachable on 80 TCP
+2023-10-27 16:10:01,118 - INFO - 151.101.193.224 is reachable on 80 TCP
+2023-10-27 16:10:01,119 - INFO - 46.174.146.25 is reachable on 80 TCP
+2023-10-27 16:10:01,120 - INFO - 46.245.194.4 is reachable on 80 TCP
+2023-10-27 16:10:01,120 - INFO - 23.111.171.90 is reachable on 80 TCP
+2023-10-27 16:10:01,122 - INFO - 52.84.106.127 is reachable on 80 TCP
+2023-10-27 16:10:11,137 - INFO - 192.0.66.2 host ICMP try SUCCESS || Success_Count: 1
+2023-10-27 16:10:11,137 - ERROR - 192.0.66.2 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:11,137 - ERROR - 192.0.66.2 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:10:11,137 - ERROR - 192.0.66.2 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:10:11,137 - INFO - 192.0.66.2 host ICMP try SUCCESS || Success_Count: 2
+2023-10-27 16:10:11,137 - INFO - 192.0.66.2 is not reachable with ICMP.
+				 Succ_Rate: 40.00%
+2023-10-27 16:10:11,137 - INFO - Unreachable ICMP: [] |||| Unreachable TCP: []
+				Reachable_ICMP: [] |||| Reachable_TCP: ['193.225.4.123', '46.107.16.51', '104.26.2.55', '94.199.52.240', '75.2.11.71', '104.26.12.202', '185.161.204.60', '52.84.106.122', '52.44.86.253', '142.132.194.189', '76.223.18.1', '20.70.246.20', '104.26.12.202', '151.101.194.209', '62.77.211.26', '88.151.102.127', '151.101.193.224', '46.174.146.25', '46.245.194.4', '23.111.171.90', '52.84.106.127']
+2023-10-27 16:10:11,137 - ERROR - 104.26.4.205 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:11,137 - INFO - 104.26.4.205 host ICMP try SUCCESS || Success_Count: 1
+2023-10-27 16:10:11,137 - ERROR - 104.26.4.205 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:10:11,137 - INFO - 104.26.4.205 host ICMP try SUCCESS || Success_Count: 2
+2023-10-27 16:10:11,137 - INFO - 104.26.4.205 host ICMP try SUCCESS || Success_Count: 3
+2023-10-27 16:10:11,137 - INFO - 104.26.4.205 is not reachable with ICMP.
+				 Succ_Rate: 60.00%
+2023-10-27 16:10:11,137 - INFO - Unreachable ICMP: [] |||| Unreachable TCP: []
+				Reachable_ICMP: [] |||| Reachable_TCP: ['193.225.4.123', '46.107.16.51', '104.26.2.55', '94.199.52.240', '75.2.11.71', '104.26.12.202', '185.161.204.60', '52.84.106.122', '52.44.86.253', '142.132.194.189', '76.223.18.1', '20.70.246.20', '104.26.12.202', '151.101.194.209', '62.77.211.26', '88.151.102.127', '151.101.193.224', '46.174.146.25', '46.245.194.4', '23.111.171.90', '52.84.106.127']
+2023-10-27 16:10:11,137 - ERROR - 87.229.73.157 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:11,137 - ERROR - 87.229.73.157 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:10:11,137 - ERROR - 87.229.73.157 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:10:11,137 - ERROR - 87.229.73.157 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:10:11,137 - ERROR - 87.229.73.157 host FAILED ICMP try || Fail_Count: 5
+2023-10-27 16:10:11,137 - ERROR - 52.84.106.94 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:11,138 - ERROR - 52.84.106.94 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:10:11,138 - ERROR - 52.84.106.94 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:10:11,138 - ERROR - 52.84.106.94 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:10:11,138 - ERROR - 52.84.106.94 host FAILED ICMP try || Fail_Count: 5
+2023-10-27 16:10:11,146 - INFO - 94.199.52.240 is reachable on 80 TCP
+2023-10-27 16:10:11,146 - INFO - 54.69.127.167 is reachable on 80 TCP
+2023-10-27 16:10:11,146 - INFO - 192.0.77.40 is reachable on 80 TCP
+2023-10-27 16:10:11,146 - INFO - 52.84.106.127 is reachable on 80 TCP
+2023-10-27 16:10:11,146 - INFO - 104.21.58.195 is reachable on 80 TCP
+2023-10-27 16:10:11,147 - INFO - 148.251.196.8 is reachable on 80 TCP
+2023-10-27 16:10:21,170 - ERROR - 46.174.146.22 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:21,170 - ERROR - 46.174.146.22 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:10:21,171 - ERROR - 46.174.146.22 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:10:21,171 - ERROR - 46.174.146.22 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:10:21,171 - ERROR - 46.174.146.22 host FAILED ICMP try || Fail_Count: 5
+2023-10-27 16:10:21,171 - ERROR - 185.161.204.65 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:21,171 - INFO - 185.161.204.65 host ICMP try SUCCESS || Success_Count: 1
+2023-10-27 16:10:21,171 - ERROR - 185.161.204.65 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:10:21,171 - ERROR - 185.161.204.65 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:10:21,171 - ERROR - 185.161.204.65 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:10:21,171 - INFO - 185.161.204.65 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+2023-10-27 16:10:21,171 - INFO - Unreachable ICMP: [] |||| Unreachable TCP: []
+				Reachable_ICMP: [] |||| Reachable_TCP: ['193.225.4.123', '46.107.16.51', '104.26.2.55', '94.199.52.240', '75.2.11.71', '104.26.12.202', '185.161.204.60', '52.84.106.122', '52.44.86.253', '142.132.194.189', '76.223.18.1', '20.70.246.20', '104.26.12.202', '151.101.194.209', '62.77.211.26', '88.151.102.127', '151.101.193.224', '46.174.146.25', '46.245.194.4', '23.111.171.90', '52.84.106.127', '94.199.52.240', '54.69.127.167', '192.0.77.40', '52.84.106.127', '104.21.58.195', '148.251.196.8']
+2023-10-27 16:10:21,171 - ERROR - 80.77.123.115 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:21,171 - ERROR - 80.77.123.115 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:10:21,171 - ERROR - 80.77.123.115 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:10:21,171 - ERROR - 80.77.123.115 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:10:21,171 - ERROR - 80.77.123.115 host FAILED ICMP try || Fail_Count: 5
+2023-10-27 16:10:21,171 - ERROR - 52.84.106.120 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:21,171 - ERROR - 52.84.106.120 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:10:21,171 - ERROR - 52.84.106.120 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:10:21,171 - ERROR - 52.84.106.120 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:10:21,171 - ERROR - 52.84.106.120 host FAILED ICMP try || Fail_Count: 5
+2023-10-27 16:10:21,177 - INFO - 23.111.171.90 is reachable on 80 TCP
+2023-10-27 16:10:21,177 - INFO - 20.70.246.20 is reachable on 80 TCP
+2023-10-27 16:10:21,178 - INFO - 104.26.5.205 is reachable on 80 TCP
+2023-10-27 16:10:21,179 - INFO - 151.101.64.200 is reachable on 80 TCP
+2023-10-27 16:10:21,179 - INFO - 151.101.64.200 is reachable on 80 TCP
+2023-10-27 16:10:21,180 - INFO - 46.174.146.23 is reachable on 80 TCP
+2023-10-27 16:10:21,181 - INFO - 52.84.106.124 is reachable on 80 TCP
+2023-10-27 16:10:21,181 - INFO - 138.201.57.231 is reachable on 80 TCP
+2023-10-27 16:10:31,190 - INFO - 46.107.16.55 host ICMP try SUCCESS || Success_Count: 1
+2023-10-27 16:10:31,190 - ERROR - 46.107.16.55 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:31,190 - INFO - 46.107.16.55 host ICMP try SUCCESS || Success_Count: 2
+2023-10-27 16:10:31,190 - INFO - 46.107.16.55 host ICMP try SUCCESS || Success_Count: 3
+2023-10-27 16:10:31,190 - INFO - 46.107.16.55 host ICMP try SUCCESS || Success_Count: 4
+2023-10-27 16:10:31,191 - INFO - 46.107.16.55 is reachable with ICMP. 
+				 Avg_Succ_Delay: 0.0000 ms 
 				 Succ_Rate: 80.00%
-2023-10-18 11:53:49,823 - ERROR - 46.174.146.16 timed out: 5
-2023-10-18 11:53:59,835 - ERROR - 46.174.146.16 timed out: 5
-2023-10-18 11:54:09,856 - ERROR - 46.174.146.16 timed out: 5
-2023-10-18 11:54:19,877 - ERROR - 46.174.146.16 timed out: 5
-2023-10-18 11:54:19,877 - INFO - Unreachable ICMP: [] |||| Unreachable TCP: ['5.159.57.195', '5.159.57.195', '91.83.237.105']
-2023-10-18 11:54:19,881 - INFO - 151.101.2.28 is reachable on 80 TCP
-2023-10-18 11:54:19,881 - INFO - 213.157.175.213 is reachable on 80 TCP
-2023-10-18 11:54:19,882 - INFO - 151.101.67.5 is reachable on 80 TCP
-2023-10-18 11:54:19,882 - INFO - 75.2.58.105 is reachable on 80 TCP
-2023-10-18 11:54:19,882 - INFO - 104.26.0.82 is reachable on 80 TCP
-2023-10-18 11:54:19,888 - INFO - 87.229.73.157 is reachable on 80 TCP
-2023-10-18 11:54:19,914 - INFO - 46.107.16.53 is reachable with ICMP. 
-				 Avg_Succ_Delay: 6.5007 ms 
-				 Succ_Rate: 100.00%
-2023-10-18 11:54:19,985 - INFO - 151.101.129.171 is reachable with ICMP. 
-				 Avg_Succ_Delay: 20.6631 ms 
-				 Succ_Rate: 100.00%
-2023-10-18 11:54:20,030 - INFO - 138.201.57.231 is reachable with ICMP. 
-				 Avg_Succ_Delay: 29.6756 ms 
-				 Succ_Rate: 100.00%
-2023-10-18 11:54:29,905 - ERROR - 46.174.146.16 timed out: 5
-2023-10-18 11:54:39,920 - ERROR - 46.174.146.16 timed out: 5
-2023-10-18 11:54:49,937 - ERROR - 46.174.146.16 timed out: 5
-2023-10-18 11:54:59,993 - ERROR - 46.174.146.16 timed out: 5
-2023-10-18 11:55:10,018 - ERROR - 46.174.146.16 timed out: 5
-2023-10-18 11:55:10,019 - INFO - Unreachable ICMP: ['46.174.146.16'] |||| Unreachable TCP: ['5.159.57.195', '5.159.57.195', '91.83.237.105']
-2023-10-18 11:55:10,026 - INFO - 104.21.66.183 is reachable on 80 TCP
-2023-10-18 11:55:10,026 - INFO - 151.101.194.114 is reachable on 80 TCP
-2023-10-18 11:55:10,027 - INFO - 46.174.146.26 is reachable on 80 TCP
-2023-10-18 11:55:10,055 - INFO - 52.84.106.93 is reachable with ICMP. 
-				 Avg_Succ_Delay: 6.3249 ms 
-				 Succ_Rate: 100.00%
-2023-10-18 11:55:10,130 - INFO - 151.101.130.167 is reachable with ICMP. 
-				 Avg_Succ_Delay: 20.9916 ms 
-				 Succ_Rate: 100.00%
-2023-10-18 11:55:10,131 - INFO - 151.101.129.171 is reachable with ICMP. 
-				 Avg_Succ_Delay: 20.9766 ms 
-				 Succ_Rate: 100.00%
-2023-10-18 11:55:10,248 - INFO - 46.245.194.4 is reachable with ICMP. 
-				 Avg_Succ_Delay: 44.1484 ms 
-				 Succ_Rate: 100.00%
-2023-10-18 11:55:20,036 - ERROR - 34.201.177.150 timed out: 5
-2023-10-18 11:55:20,036 - ERROR - 75.2.20.139 timed out: 5
-2023-10-18 11:55:20,036 - ERROR - 46.174.146.22 timed out: 5
-2023-10-18 11:55:20,052 - INFO - 75.2.20.139 is reachable with ICMP. 
-				 Avg_Succ_Delay: 3.3991 ms 
+2023-10-27 16:10:31,191 - ERROR - 185.52.2.43 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:31,191 - ERROR - 185.52.2.43 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:10:31,191 - ERROR - 185.52.2.43 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:10:31,191 - ERROR - 185.52.2.43 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:10:31,191 - ERROR - 185.52.2.43 host FAILED ICMP try || Fail_Count: 5
+2023-10-27 16:10:31,204 - INFO - 151.101.193.111 is reachable on 80 TCP
+2023-10-27 16:10:31,205 - INFO - 79.120.178.33 is reachable on 80 TCP
+2023-10-27 16:10:31,206 - INFO - 52.84.106.124 is reachable on 80 TCP
+2023-10-27 16:10:31,207 - INFO - 52.84.106.107 is reachable on 80 TCP
+2023-10-27 16:10:31,207 - INFO - 151.101.64.200 is reachable on 80 TCP
+2023-10-27 16:10:31,208 - INFO - 52.84.106.124 is reachable on 80 TCP
+2023-10-27 16:10:41,217 - INFO - 178.236.7.220 host ICMP try SUCCESS || Success_Count: 1
+2023-10-27 16:10:41,218 - ERROR - 178.236.7.220 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:41,219 - INFO - 178.236.7.220 host ICMP try SUCCESS || Success_Count: 2
+2023-10-27 16:10:41,219 - INFO - 178.236.7.220 host ICMP try SUCCESS || Success_Count: 3
+2023-10-27 16:10:41,219 - INFO - 178.236.7.220 host ICMP try SUCCESS || Success_Count: 4
+2023-10-27 16:10:41,220 - INFO - 178.236.7.220 is reachable with ICMP. 
+				 Avg_Succ_Delay: 0.0000 ms 
 				 Succ_Rate: 80.00%
-2023-10-18 11:55:29,437 - INFO - Exiting the program...
+2023-10-27 16:10:41,221 - ERROR - 162.159.130.67 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:41,224 - ERROR - 162.159.130.67 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:10:41,226 - ERROR - 162.159.130.67 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:10:41,227 - ERROR - 162.159.130.67 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:10:41,228 - ERROR - 162.159.130.67 host FAILED ICMP try || Fail_Count: 5
+2023-10-27 16:10:41,228 - ERROR - 185.161.204.65 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:41,229 - INFO - 185.161.204.65 host ICMP try SUCCESS || Success_Count: 1
+2023-10-27 16:10:41,229 - INFO - 185.161.204.65 host ICMP try SUCCESS || Success_Count: 2
+2023-10-27 16:10:41,230 - INFO - 185.161.204.65 host ICMP try SUCCESS || Success_Count: 3
+2023-10-27 16:10:41,230 - ERROR - 185.161.204.65 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:10:41,230 - INFO - 185.161.204.65 is not reachable with ICMP.
+				 Succ_Rate: 60.00%
+2023-10-27 16:10:41,230 - INFO - Unreachable ICMP: [] |||| Unreachable TCP: []
+				Reachable_ICMP: [] |||| Reachable_TCP: ['193.225.4.123', '46.107.16.51', '104.26.2.55', '94.199.52.240', '75.2.11.71', '104.26.12.202', '185.161.204.60', '52.84.106.122', '52.44.86.253', '142.132.194.189', '76.223.18.1', '20.70.246.20', '104.26.12.202', '151.101.194.209', '62.77.211.26', '88.151.102.127', '151.101.193.224', '46.174.146.25', '46.245.194.4', '23.111.171.90', '52.84.106.127', '94.199.52.240', '54.69.127.167', '192.0.77.40', '52.84.106.127', '104.21.58.195', '148.251.196.8', '23.111.171.90', '20.70.246.20', '104.26.5.205', '151.101.64.200', '151.101.64.200', '46.174.146.23', '52.84.106.124', '138.201.57.231', '151.101.193.111', '79.120.178.33', '52.84.106.124', '52.84.106.107', '151.101.64.200', '52.84.106.124']
+2023-10-27 16:10:41,231 - ERROR - 52.84.106.100 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:41,231 - ERROR - 52.84.106.100 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:10:41,231 - ERROR - 52.84.106.100 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:10:41,231 - ERROR - 52.84.106.100 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:10:41,231 - ERROR - 52.84.106.100 host FAILED ICMP try || Fail_Count: 5
+2023-10-27 16:10:41,241 - INFO - 151.101.194.110 is reachable on 80 TCP
+2023-10-27 16:10:41,241 - INFO - 104.21.72.173 is reachable on 80 TCP
+2023-10-27 16:10:41,242 - INFO - 151.101.194.114 is reachable on 80 TCP
+2023-10-27 16:10:41,243 - INFO - 76.223.18.1 is reachable on 80 TCP
+2023-10-27 16:10:41,243 - INFO - 104.21.76.140 is reachable on 80 TCP
+2023-10-27 16:10:41,243 - INFO - 104.17.50.120 is reachable on 80 TCP
+2023-10-27 16:10:51,250 - INFO - 172.67.168.89 host ICMP try SUCCESS || Success_Count: 1
+2023-10-27 16:10:51,250 - ERROR - 172.67.168.89 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:51,250 - ERROR - 172.67.168.89 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:10:51,250 - ERROR - 172.67.168.89 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:10:51,250 - ERROR - 172.67.168.89 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:10:51,250 - INFO - 172.67.168.89 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+2023-10-27 16:10:51,250 - INFO - Unreachable ICMP: [] |||| Unreachable TCP: []
+				Reachable_ICMP: [] |||| Reachable_TCP: ['193.225.4.123', '46.107.16.51', '104.26.2.55', '94.199.52.240', '75.2.11.71', '104.26.12.202', '185.161.204.60', '52.84.106.122', '52.44.86.253', '142.132.194.189', '76.223.18.1', '20.70.246.20', '104.26.12.202', '151.101.194.209', '62.77.211.26', '88.151.102.127', '151.101.193.224', '46.174.146.25', '46.245.194.4', '23.111.171.90', '52.84.106.127', '94.199.52.240', '54.69.127.167', '192.0.77.40', '52.84.106.127', '104.21.58.195', '148.251.196.8', '23.111.171.90', '20.70.246.20', '104.26.5.205', '151.101.64.200', '151.101.64.200', '46.174.146.23', '52.84.106.124', '138.201.57.231', '151.101.193.111', '79.120.178.33', '52.84.106.124', '52.84.106.107', '151.101.64.200', '52.84.106.124', '151.101.194.110', '104.21.72.173', '151.101.194.114', '76.223.18.1', '104.21.76.140', '104.17.50.120']
+2023-10-27 16:10:51,250 - ERROR - 52.84.106.120 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:51,250 - INFO - 52.84.106.120 host ICMP try SUCCESS || Success_Count: 1
+2023-10-27 16:10:51,250 - ERROR - 52.84.106.120 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:10:51,250 - ERROR - 52.84.106.120 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:10:51,250 - ERROR - 52.84.106.120 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:10:51,251 - INFO - 52.84.106.120 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+2023-10-27 16:10:51,251 - INFO - Unreachable ICMP: [] |||| Unreachable TCP: []
+				Reachable_ICMP: [] |||| Reachable_TCP: ['193.225.4.123', '46.107.16.51', '104.26.2.55', '94.199.52.240', '75.2.11.71', '104.26.12.202', '185.161.204.60', '52.84.106.122', '52.44.86.253', '142.132.194.189', '76.223.18.1', '20.70.246.20', '104.26.12.202', '151.101.194.209', '62.77.211.26', '88.151.102.127', '151.101.193.224', '46.174.146.25', '46.245.194.4', '23.111.171.90', '52.84.106.127', '94.199.52.240', '54.69.127.167', '192.0.77.40', '52.84.106.127', '104.21.58.195', '148.251.196.8', '23.111.171.90', '20.70.246.20', '104.26.5.205', '151.101.64.200', '151.101.64.200', '46.174.146.23', '52.84.106.124', '138.201.57.231', '151.101.193.111', '79.120.178.33', '52.84.106.124', '52.84.106.107', '151.101.64.200', '52.84.106.124', '151.101.194.110', '104.21.72.173', '151.101.194.114', '76.223.18.1', '104.21.76.140', '104.17.50.120']
+2023-10-27 16:10:51,251 - ERROR - 130.211.9.172 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:51,251 - ERROR - 130.211.9.172 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:10:51,251 - ERROR - 130.211.9.172 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:10:51,251 - ERROR - 130.211.9.172 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:10:51,251 - ERROR - 130.211.9.172 host FAILED ICMP try || Fail_Count: 5
+2023-10-27 16:10:51,251 - ERROR - 185.51.66.98 host FAILED ICMP try || Fail_Count: 1
+2023-10-27 16:10:51,251 - ERROR - 185.51.66.98 host FAILED ICMP try || Fail_Count: 2
+2023-10-27 16:10:51,251 - ERROR - 185.51.66.98 host FAILED ICMP try || Fail_Count: 3
+2023-10-27 16:10:51,252 - ERROR - 185.51.66.98 host FAILED ICMP try || Fail_Count: 4
+2023-10-27 16:10:51,252 - ERROR - 185.51.66.98 host FAILED ICMP try || Fail_Count: 5
+2023-10-27 16:10:51,261 - INFO - 52.208.36.153 is reachable on 80 TCP
+2023-10-27 16:10:51,262 - INFO - 104.21.66.183 is reachable on 80 TCP
+2023-10-27 16:10:51,263 - INFO - 151.101.130.187 is reachable on 80 TCP
+2023-10-27 16:10:51,265 - INFO - 94.199.52.240 is reachable on 80 TCP
+2023-10-27 16:10:51,272 - INFO - 193.225.4.123 is reachable on 80 TCP
+2023-10-27 16:10:54,258 - INFO - Exiting the program...

@@ -5,10 +5,32 @@ import struct
 import time
 from random import randrange
 from aioping_SO_MARK import aioping
-#ip, mark, port, timeout
+from packets import ICMP_packet, TCP_packet
+
+
+        
+
+
+def task_creator(ip_manager, max_concurrent_tasks):
+            
+            # Reading from the files
+        
+            tasks = []
+            for _ in range(max_concurrent_tasks):
+                # Create a new packet
+                packet = ip_manager.create_packet()
+
+                if isinstance(packet, ICMP_packet):
+                    task = asyncio.create_task(check_icmp(packet, ip_manager))
+                elif isinstance(packet, TCP_packet):
+                    task = asyncio.create_task(check_tcp(packet, ip_manager))
+
+                # Tasks added to tasks[]
+                tasks.append(task)
+            return tasks
 
 #packetet adok meg hogy utólag lehessen ellenőrizni hogy melyik unreachable-be kell rakni
-async def check_tcp(packet):
+async def check_tcp(packet, ip_manager):
     #Get the current event loop
     loop = asyncio.get_running_loop()
     #Create a TCP socket object
@@ -20,42 +42,49 @@ async def check_tcp(packet):
     #Try to connect
 
     try:
-          await loop.sock_connect(sock, (packet.ip, packet.port))
+          await asyncio.wait_for(loop.sock_connect(sock, (packet.ip, packet.port)), timeout=5)
           logging.info(f"{packet.ip} is reachable on {packet.port} TCP")
+          await ip_manager.add_reachable_packet(packet)
           return True
     except Exception as e:
           logging.error(f"Connection failed to {packet.ip}:{packet.port} TCP: {e}")
-          return packet
+          await ip_manager.unreachable_ip_add(packet)
+          logging.info(f'Unreachable ICMP: {ip_manager.unreachable_ICMP} |||| Unreachable TCP: {ip_manager.unreachable_TCP}\n\t\t\t\tReachable_ICMP: {ip_manager.reachable_ICMP} |||| Reachable_TCP: {ip_manager.reachable_TCP}') 
+          return False
     finally:
           sock.close()
 
-#itt jobban járnék ha a verbose pinget alakítanám át, még a timeoutokkal játszani kell az aiopingben       
 
-async def check_icmp(packet):
+async def check_icmp(packet, ip_manager):
+      fail_counter = 0
       success_counter = 0
       successful_delays = 0
       delay = 0
-      for _ in range(packet.count):
-            try:
-                delay = await aioping.ping(packet.ip, packet.mark)
-            except TimeoutError as e:
-                  logging.error(f"{packet.ip} timed out: {packet.timeout}")
-            except Exception as e:
-                 logging.error(f'Reaching {packet.ip} failed: {str(e)}')
-                 return packet
-
-            if delay != 0:
+      tasks = []
+      for _ in range(packet.count): 
+            tasks.append(aioping.ping(packet.ip, packet.mark))
+      results = await asyncio.gather(*tasks, return_exceptions=True)
+      for result in results:
+            if isinstance(result, Exception):
+                  fail_counter += 1
+                  logging.error(f"{packet.ip} host FAILED ICMP try || Fail_Count: {fail_counter}")
+            else:
+                  delay != 0
                   delay *= 1000
                   successful_delays += delay
                   success_counter += 1
-#lehet ide kell átrakni majd a hiuba kiírást is
+                  logging.info(f"{packet.ip} host ICMP try SUCCESS || Success_Count: {success_counter}")
+      
       avg_delay = successful_delays / success_counter
       success_rate = success_counter / packet.count
       if packet.count * packet.success <= success_counter:
-                 logging.info(f'{packet.ip} is reachable with ICMP. \n\t\t\t\t Avg_Succ_Delay: {avg_delay:.4f} ms \n\t\t\t\t Succ_Rate: {success_rate:.2%}')
-                 return True
+            logging.info(f'{packet.ip} is reachable with ICMP. \n\t\t\t\t Avg_Succ_Delay: {avg_delay:.4f} ms \n\t\t\t\t Succ_Rate: {success_rate:.2%}')
+            await ip_manager.add_reachable_packet(packet.ip)
+            return True
       else:
-        logging.info(f'{packet.ip} is not reachable with ICMP.\n'
-                     f'Succ_Rate: {success_rate:.2%}')
-        return False
+            logging.info(f'{packet.ip} is not reachable with ICMP.\n\t\t\t\t Succ_Rate: {success_rate:.2%}')
+            await ip_manager.unreachable_ip_add(packet.ip)
+            logging.info(f'Unreachable ICMP: {ip_manager.unreachable_ICMP} |||| Unreachable TCP: {ip_manager.unreachable_TCP}\n\t\t\t\tReachable_ICMP: {ip_manager.reachable_ICMP} |||| Reachable_TCP: {ip_manager.reachable_TCP}') 
+            return False
+      
                         
