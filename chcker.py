@@ -85,14 +85,18 @@ async def check_icmp(packet, ip_manager):
       avg_delay = successful_delays / success_counter
       success_rate = success_counter / packet.count
       min_succ_rate = packet.count * packet.success
-      if min_succ_rate <= success_counter:
-            logging.info(f'{packet.ip} is reachable with ICMP. \n\t\t\t\t Avg_Succ_Delay: {avg_delay:.4f} ms \n\t\t\t\t Succ_Rate: {success_rate:.2%}')
-            ip_manager.add_reachable_packet(packet)
-            return True
-      elif min_succ_rate == 0 or min_succ_rate > success_counter:
+      logging.info(f"PC:{packet.count}, MSR:{min_succ_rate}, SC:{success_counter}, FC:{fail_counter}")
+      if fail_counter == packet.count:
+            logging.info("#######################################################################################")
+      if int(min_succ_rate) > success_counter:
             logging.info(f'{packet.ip} is not reachable with ICMP.\n\t\t\t\t Succ_Rate: {success_rate:.2%}')
             ip_manager.unreachable_ip_add(packet)
             logging.info(f'Unreachable ICMP: {ip_manager.unreachable_ICMP} |||| Unreachable TCP: {ip_manager.unreachable_TCP}\n\t\t\t\tReachable_ICMP: {ip_manager.reachable_ICMP} |||| Reachable_TCP: {ip_manager.reachable_TCP}') 
-            return False
+            
+      else:
+            logging.info(f'{packet.ip} is reachable with ICMP. \n\t\t\t\t Avg_Succ_Delay: {avg_delay:.4f} ms \n\t\t\t\t Succ_Rate: {success_rate:.2%}')
+            ip_manager.add_reachable_packet(packet)
+            
+      
       
                         
