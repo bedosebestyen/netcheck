@@ -1,5 +1,5 @@
 import asyncio
-from chcker import check_tcp, check_icmp, task_creator
+from chcker import task_creator
 import logging
 import sys
 from packets import Packet_logic, TCP_packet, ICMP_packet
@@ -21,7 +21,7 @@ logging.basicConfig(level=logging.INFO,
 
 async def main(ip_manager) -> None:
     
-
+    #Packet_logic class instance, max concurrent tasks
     tasks = task_creator(ip_manager, 10)
 
     await asyncio.gather(*tasks, return_exceptions=True)

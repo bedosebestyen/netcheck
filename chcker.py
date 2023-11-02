@@ -44,17 +44,17 @@ async def check_tcp(packet, ip_manager):
     try:
           await asyncio.wait_for(loop.sock_connect(sock, (packet.ip, packet.port)), timeout=5)
           logging.info(f"{packet.ip} is reachable on {packet.port} TCP")
-          await ip_manager.add_reachable_packet(packet)
+          ip_manager.add_reachable_packet(packet)
           return True
     except Exception as e:
           logging.error(f"Connection failed to {packet.ip}:{packet.port} TCP: {e}")
-          await ip_manager.unreachable_ip_add(packet)
+          ip_manager.unreachable_ip_add(packet)
           logging.info(f'Unreachable ICMP: {ip_manager.unreachable_ICMP} |||| Unreachable TCP: {ip_manager.unreachable_TCP}\n\t\t\t\tReachable_ICMP: {ip_manager.reachable_ICMP} |||| Reachable_TCP: {ip_manager.reachable_TCP}') 
           return False
     finally:
           sock.close()
 
-
+#kell még egy timeout mert e za mostani csak válaszra várást határozza meg, de kell egy olyan ami a packetek elküldése közötti időért felel
 async def check_icmp(packet, ip_manager):
       fail_counter = 0
       success_counter = 0
@@ -62,28 +62,36 @@ async def check_icmp(packet, ip_manager):
       delay = 0
       tasks = []
       for _ in range(packet.count): 
-            tasks.append(aioping.ping(packet.ip, packet.mark))
+            tasks.append(aioping.ping(packet.ip, packet.mark, packet.timeout))
+            #wait before sending the next ping
+            await asyncio.sleep(packet.timeout_between)
       results = await asyncio.gather(*tasks, return_exceptions=True)
+      #át kéne emelni a végső kiértékelést más funcionbe és utána közvetlenebbül meghívni mert így szerintem az asyncio miatt szétcsúszik kicsit
+      #singletont át kell nézni mert nem vagyok biztos benne hogy most jól szuperál
+      #ki kell tezstelni hogy az okozza bajt ha 100 concurrent task van, vagy ha sok ping megy egy hostra
+      #TCP mindig reachable ez kicsit zavar, mert túl jól működik
+      #kéne egy pending amiben az éppen teszteltek vannak, hogy ne válasszsa ki 2szer ugyanazt
+      
       for result in results:
             if isinstance(result, Exception):
                   fail_counter += 1
                   logging.error(f"{packet.ip} host FAILED ICMP try || Fail_Count: {fail_counter}")
             else:
-                  delay != 0
-                  delay *= 1000
-                  successful_delays += delay
+                  result *= 1000
+                  successful_delays += result
                   success_counter += 1
                   logging.info(f"{packet.ip} host ICMP try SUCCESS || Success_Count: {success_counter}")
       
       avg_delay = successful_delays / success_counter
       success_rate = success_counter / packet.count
-      if packet.count * packet.success <= success_counter:
+      min_succ_rate = packet.count * packet.success
+      if min_succ_rate <= success_counter:
             logging.info(f'{packet.ip} is reachable with ICMP. \n\t\t\t\t Avg_Succ_Delay: {avg_delay:.4f} ms \n\t\t\t\t Succ_Rate: {success_rate:.2%}')
-            await ip_manager.add_reachable_packet(packet.ip)
+            ip_manager.add_reachable_packet(packet)
             return True
-      else:
+      elif min_succ_rate == 0 or min_succ_rate > success_counter:
             logging.info(f'{packet.ip} is not reachable with ICMP.\n\t\t\t\t Succ_Rate: {success_rate:.2%}')
-            await ip_manager.unreachable_ip_add(packet.ip)
+            ip_manager.unreachable_ip_add(packet)
             logging.info(f'Unreachable ICMP: {ip_manager.unreachable_ICMP} |||| Unreachable TCP: {ip_manager.unreachable_TCP}\n\t\t\t\tReachable_ICMP: {ip_manager.reachable_ICMP} |||| Reachable_TCP: {ip_manager.reachable_TCP}') 
             return False
       
