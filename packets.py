@@ -55,7 +55,7 @@ class  Packet_logic(metaclass=SingletonMeta):
                 self.reachable_ICMP.remove(ip)
         elif ip in self.reachable_TCP:
                 self.reachable_TCP.remove(ip)
-
+ ##########################need to change list for collection.deque
     def unreachable_ip_add(self, packet):
         if isinstance(packet, ICMP_packet):
             self.unreachable_ICMP.append(packet.ip)
@@ -63,12 +63,13 @@ class  Packet_logic(metaclass=SingletonMeta):
             self.remove_reachable_ip(packet.ip)
             self.unreachable_ICMP_count += 1
             #Check if the count exceeds the limit
-            if self.unreachable_ICMP_count > self.unreachable_limit:
+            if self.unreachable_ICMP_count > (self.unreachable_limit - 1):
                 #remove the oldes IP and add it to the ip pool, need to test it!!!!!!
-                oldest_ip = self.unreachable_ICMP.pop(0)
+                #vmiért az utoljára berakottat szedi ki, meg ne mreagál egyből arra, ha eléri a 10et
+                oldest_ip = self.unreachable_ICMP.pop(9)
                 self.ICMP_base.append(oldest_ip)
-                self.unreachable_ICMP_count = 0
-                logging.info('ICMP unreachable acket reached max capacity first element will be but back to reachable')
+                self.unreachable_ICMP_count -= 1
+                logging.info(f'ICMP unreachable reached max capacity first element will be put back into reachable, ip: {packet.ip}')
 
         elif isinstance(packet, TCP_packet):
             self.unreachable_TCP.append(packet.ip)
@@ -77,10 +78,10 @@ class  Packet_logic(metaclass=SingletonMeta):
             self.unreachable_TCP_count += 1
             #remove the oldes IP and add it to the ip pool, need to test it!!!!!!
             if self.unreachable_TCP_count > self.unreachable_limit:
-                oldest_ip = self.unreachable_TCP.pop(0)
+                oldest_ip = self.unreachable_TCP.pop(9)
                 self.TCP_base.append(oldest_ip)
-                self.unreachable_TCP_count = 0
-                logging.info('TCP unreachable acket reached max capacity first element will be but back to reachable')
+                self.unreachable_TCP_count -= 1
+                logging.info('TCP unreachable reached max capacity first element will be but back into reachable, ip: {packet.ip}')
 
     def create_packet(self, tcp_chance=50, icmp_chance=50):
         chance = random.randint(1, 100)

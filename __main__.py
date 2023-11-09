@@ -2,7 +2,7 @@ import asyncio
 from chcker import task_creator
 import logging
 import sys
-from packets import Packet_logic, TCP_packet, ICMP_packet
+from packets import Packet_logic
 from ip_pool import IP_Pool
 
 """

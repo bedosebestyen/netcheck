@@ -60,17 +60,13 @@ async def check_icmp(packet, ip_manager):
             #wait before sending the next ping
             await asyncio.sleep(packet.timeout_between)
       results = await asyncio.gather(*tasks, return_exceptions=True)
-      #át kéne emelni a végső kiértékelést más funcionbe és utána közvetlenebbül meghívni mert így szerintem az asyncio miatt szétcsúszik kicsit
-      #singletont át kell nézni mert nem vagyok biztos benne hogy most jól szuperál
-      #ki kell tezstelni hogy az okozza bajt ha 100 concurrent task van, vagy ha sok ping megy egy hostra
-      #TCP mindig reachable ez kicsit zavar, mert túl jól működik
-      #kéne egy pending amiben az éppen teszteltek vannak, hogy ne válasszsa ki 2szer ugyanazt
       
       for result in results:
             if isinstance(result, Exception):
                   fail_counter += 1
                   logging.error(f"{packet.ip} host FAILED ICMP try || Fail_Count: {fail_counter}")
                   if fail_counter == 5:
+                        #ide kéne az a locked talán, mert ha egyszerre sokat bedob, akkor lehet hogy többen próbálnak egyszerre hozzáférni
                         ip_manager.unreachable_ip_add(packet)
                         logging.info(f'{packet.ip} is not reachable with ICMP.\n\t\t\t\t Succ_Rate: 0%')
                         logging.info(f'Unreachable ICMP: {ip_manager.unreachable_ICMP} |||| Unreachable TCP: {ip_manager.unreachable_TCP}\n\t\t\t\tReachable_ICMP: {ip_manager.reachable_ICMP} |||| Reachable_TCP: {ip_manager.reachable_TCP}')
