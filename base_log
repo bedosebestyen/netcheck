@@ -1,581 +1,821 @@
-2023-11-09 17:20:03,185 - INFO - 104.21.76.140 is reachable on 80 TCP
-2023-11-09 17:20:03,186 - INFO - 104.26.13.202 is reachable on 80 TCP
-2023-11-09 17:20:03,187 - INFO - 77.111.91.168 is reachable on 80 TCP
-2023-11-09 17:20:03,191 - INFO - 104.26.13.202 is reachable on 80 TCP
-2023-11-09 17:20:03,194 - INFO - 193.225.4.123 is reachable on 80 TCP
-2023-11-09 17:20:03,197 - INFO - 84.206.102.196 is reachable on 80 TCP
-2023-11-09 17:20:06,688 - ERROR - 147.67.34.45 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:06,688 - ERROR - 147.67.34.45 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:06,688 - ERROR - 147.67.34.45 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:06,689 - ERROR - 147.67.34.45 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:06,689 - ERROR - 147.67.34.45 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:06,689 - INFO - 147.67.34.45 is not reachable with ICMP.
+2023-11-14 14:06:02,410 - INFO - 185.161.204.65 is reachable on 80 TCP
+2023-11-14 14:06:02,411 - INFO - 18.66.26.65 is reachable on 80 TCP
+2023-11-14 14:06:02,413 - INFO - 18.66.26.65 is reachable on 80 TCP
+2023-11-14 14:06:02,415 - INFO - 151.101.130.187 is reachable on 80 TCP
+2023-11-14 14:06:04,935 - INFO - 104.21.72.173 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:04,937 - INFO - 104.21.72.173 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:04,937 - INFO - 104.21.72.173 host ICMP try SUCCESS || Success_Count: 3
+2023-11-14 14:06:04,938 - INFO - 104.21.72.173 host ICMP try SUCCESS || Success_Count: 4
+2023-11-14 14:06:04,938 - INFO - 104.21.72.173 host ICMP try SUCCESS || Success_Count: 5
+2023-11-14 14:06:04,938 - INFO - 104.21.72.173 is reachable with ICMP. 
+				 Avg_Succ_Delay: 8.9781 ms 
+				 Succ_Rate: 100.00%
+2023-11-14 14:06:05,932 - ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:05,932 - ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:05,932 - ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:05,932 - ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:05,932 - ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:05,932 - INFO - 46.174.146.17 is not reachable with ICMP.
 				 Succ_Rate: 0%
-2023-11-09 17:20:06,689 - INFO - Unreachable ICMP: ['147.67.34.45'] |||| Unreachable TCP: []
-				Reachable_ICMP: [] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196']
-2023-11-09 17:20:06,690 - ERROR - 75.2.58.105 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:06,690 - INFO - 75.2.58.105 host ICMP try SUCCESS || Success_Count: 1
-2023-11-09 17:20:06,690 - ERROR - 75.2.58.105 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:06,690 - ERROR - 75.2.58.105 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:06,691 - ERROR - 75.2.58.105 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:06,691 - INFO - 75.2.58.105 is not reachable with ICMP.
+2023-11-14 14:06:05,932 - INFO - Unreachable ICMP: ['46.174.146.17'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187']
+2023-11-14 14:06:05,932 - ERROR - 88.151.100.226 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:05,932 - ERROR - 88.151.100.226 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:05,932 - ERROR - 88.151.100.226 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:05,932 - ERROR - 88.151.100.226 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:05,932 - ERROR - 88.151.100.226 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:05,932 - INFO - 88.151.100.226 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:05,932 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187']
+2023-11-14 14:06:05,932 - ERROR - 18.66.26.70 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:05,932 - ERROR - 18.66.26.70 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:05,932 - ERROR - 18.66.26.70 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:05,932 - ERROR - 18.66.26.70 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:05,932 - ERROR - 18.66.26.70 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:05,932 - INFO - 18.66.26.70 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:05,932 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187']
+2023-11-14 14:06:05,933 - ERROR - 18.66.26.68 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:05,933 - ERROR - 18.66.26.68 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:05,933 - ERROR - 18.66.26.68 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:05,933 - ERROR - 18.66.26.68 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:05,933 - ERROR - 18.66.26.68 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:05,937 - INFO - 18.66.26.68 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:05,937 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187']
+2023-11-14 14:06:05,937 - INFO - 185.43.205.97 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:05,937 - ERROR - 185.43.205.97 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:05,937 - ERROR - 185.43.205.97 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:05,937 - ERROR - 185.43.205.97 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:05,937 - ERROR - 185.43.205.97 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:05,937 - INFO - 185.43.205.97 is not reachable with ICMP.
 				 Succ_Rate: 20.00%
-2023-11-09 17:20:06,691 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105'] |||| Unreachable TCP: []
-				Reachable_ICMP: [] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196']
-2023-11-09 17:20:06,691 - ERROR - 66.211.162.136 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:06,692 - ERROR - 66.211.162.136 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:06,692 - ERROR - 66.211.162.136 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:06,692 - ERROR - 66.211.162.136 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:06,692 - ERROR - 66.211.162.136 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:06,692 - INFO - 66.211.162.136 is not reachable with ICMP.
+2023-11-14 14:06:05,937 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187']
+2023-11-14 14:06:05,945 - INFO - 151.101.64.200 is reachable on 80 TCP
+2023-11-14 14:06:05,946 - INFO - 77.111.91.168 is reachable on 80 TCP
+2023-11-14 14:06:05,946 - INFO - 185.51.66.98 is reachable on 80 TCP
+2023-11-14 14:06:05,946 - INFO - 213.239.227.38 is reachable on 80 TCP
+2023-11-14 14:06:05,946 - INFO - 151.101.129.188 is reachable on 80 TCP
+2023-11-14 14:06:09,462 - INFO - 18.66.26.61 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:09,463 - ERROR - 18.66.26.61 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:09,463 - ERROR - 18.66.26.61 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:09,463 - INFO - 18.66.26.61 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:09,463 - ERROR - 18.66.26.61 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:09,463 - INFO - 18.66.26.61 is not reachable with ICMP.
+				 Succ_Rate: 40.00%
+2023-11-14 14:06:09,463 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188']
+2023-11-14 14:06:09,463 - INFO - 104.21.84.251 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:09,463 - ERROR - 104.21.84.251 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:09,463 - ERROR - 104.21.84.251 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:09,463 - ERROR - 104.21.84.251 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:09,463 - ERROR - 104.21.84.251 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:09,463 - INFO - 104.21.84.251 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+2023-11-14 14:06:09,463 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188']
+2023-11-14 14:06:09,463 - ERROR - 130.211.9.172 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:09,463 - ERROR - 130.211.9.172 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:09,463 - ERROR - 130.211.9.172 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:09,463 - ERROR - 130.211.9.172 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:09,463 - ERROR - 130.211.9.172 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:09,463 - INFO - 130.211.9.172 is not reachable with ICMP.
 				 Succ_Rate: 0%
-2023-11-09 17:20:06,692 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136'] |||| Unreachable TCP: []
-				Reachable_ICMP: [] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196']
-2023-11-09 17:20:06,693 - ERROR - 104.18.228.43 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:06,693 - ERROR - 104.18.228.43 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:06,693 - ERROR - 104.18.228.43 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:06,693 - ERROR - 104.18.228.43 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:06,693 - ERROR - 104.18.228.43 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:06,693 - INFO - 104.18.228.43 is not reachable with ICMP.
+2023-11-14 14:06:09,463 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188']
+2023-11-14 14:06:09,463 - ERROR - 193.201.190.87 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:09,463 - ERROR - 193.201.190.87 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:09,463 - ERROR - 193.201.190.87 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:09,464 - ERROR - 193.201.190.87 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:09,464 - ERROR - 193.201.190.87 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:09,464 - INFO - 193.201.190.87 is not reachable with ICMP.
 				 Succ_Rate: 0%
-2023-11-09 17:20:06,694 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43'] |||| Unreachable TCP: []
-				Reachable_ICMP: [] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196']
-2023-11-09 17:20:06,703 - INFO - 18.66.26.89 is reachable on 80 TCP
-2023-11-09 17:20:06,704 - INFO - 87.229.73.157 is reachable on 80 TCP
-2023-11-09 17:20:06,705 - INFO - 87.229.73.154 is reachable on 80 TCP
-2023-11-09 17:20:06,705 - INFO - 93.185.98.100 is reachable on 80 TCP
-2023-11-09 17:20:06,706 - INFO - 75.2.11.71 is reachable on 80 TCP
-2023-11-09 17:20:10,221 - INFO - 104.21.58.195 host ICMP try SUCCESS || Success_Count: 1
-2023-11-09 17:20:10,221 - ERROR - 104.21.58.195 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:10,221 - INFO - 104.21.58.195 host ICMP try SUCCESS || Success_Count: 2
-2023-11-09 17:20:10,222 - INFO - 104.21.58.195 host ICMP try SUCCESS || Success_Count: 3
-2023-11-09 17:20:10,222 - INFO - 104.21.58.195 host ICMP try SUCCESS || Success_Count: 4
-2023-11-09 17:20:10,222 - INFO - 104.21.58.195 is reachable with ICMP. 
-				 Avg_Succ_Delay: 11.8138 ms 
+2023-11-14 14:06:09,464 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188']
+2023-11-14 14:06:09,464 - ERROR - 146.110.3.100 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:09,464 - ERROR - 146.110.3.100 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:09,464 - ERROR - 146.110.3.100 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:09,464 - ERROR - 146.110.3.100 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:09,464 - ERROR - 146.110.3.100 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:09,464 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 146.110.3.100
+2023-11-14 14:06:09,464 - INFO - 146.110.3.100 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:09,464 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188']
+2023-11-14 14:06:09,467 - INFO - 185.92.118.12 is reachable on 80 TCP
+2023-11-14 14:06:09,467 - INFO - 20.70.246.20 is reachable on 80 TCP
+2023-11-14 14:06:09,467 - INFO - 185.51.66.98 is reachable on 80 TCP
+2023-11-14 14:06:09,468 - INFO - 46.174.146.22 is reachable on 80 TCP
+2023-11-14 14:06:11,987 - INFO - 18.66.26.68 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:11,988 - INFO - 18.66.26.68 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:11,989 - INFO - 18.66.26.68 host ICMP try SUCCESS || Success_Count: 3
+2023-11-14 14:06:11,989 - INFO - 18.66.26.68 host ICMP try SUCCESS || Success_Count: 4
+2023-11-14 14:06:11,989 - INFO - 18.66.26.68 host ICMP try SUCCESS || Success_Count: 5
+2023-11-14 14:06:11,989 - INFO - 18.66.26.68 is reachable with ICMP. 
+				 Avg_Succ_Delay: 11.6276 ms 
+				 Succ_Rate: 100.00%
+2023-11-14 14:06:12,989 - ERROR - 185.161.204.63 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:12,990 - INFO - 185.161.204.63 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:12,991 - ERROR - 185.161.204.63 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:12,991 - ERROR - 185.161.204.63 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:12,992 - ERROR - 185.161.204.63 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:12,992 - INFO - 185.161.204.63 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+2023-11-14 14:06:12,993 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 185.161.204.63
+2023-11-14 14:06:12,994 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22']
+2023-11-14 14:06:12,995 - ERROR - 104.26.12.202 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:12,996 - ERROR - 104.26.12.202 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:12,997 - ERROR - 104.26.12.202 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:12,997 - ERROR - 104.26.12.202 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:12,997 - ERROR - 104.26.12.202 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:12,998 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 104.26.12.202
+2023-11-14 14:06:12,998 - INFO - 104.26.12.202 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:13,010 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22']
+2023-11-14 14:06:13,011 - ERROR - 104.21.82.139 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:13,025 - ERROR - 104.21.82.139 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:13,026 - ERROR - 104.21.82.139 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:13,026 - ERROR - 104.21.82.139 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:13,026 - ERROR - 104.21.82.139 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:13,027 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 104.21.82.139
+2023-11-14 14:06:13,027 - INFO - 104.21.82.139 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:13,027 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22']
+2023-11-14 14:06:13,027 - ERROR - 172.66.43.151 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:13,028 - ERROR - 172.66.43.151 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:13,028 - ERROR - 172.66.43.151 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:13,028 - ERROR - 172.66.43.151 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:13,028 - ERROR - 172.66.43.151 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:13,028 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 172.66.43.151
+2023-11-14 14:06:13,028 - INFO - 172.66.43.151 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:13,029 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22']
+2023-11-14 14:06:13,030 - ERROR - 104.26.2.55 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:13,030 - ERROR - 104.26.2.55 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:13,030 - ERROR - 104.26.2.55 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:13,030 - ERROR - 104.26.2.55 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:13,031 - ERROR - 104.26.2.55 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:13,031 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 104.26.2.55
+2023-11-14 14:06:13,031 - INFO - 104.26.2.55 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:13,032 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22']
+2023-11-14 14:06:13,035 - INFO - 151.101.66.209 is reachable on 80 TCP
+2023-11-14 14:06:13,041 - INFO - 151.101.1.29 is reachable on 80 TCP
+2023-11-14 14:06:13,043 - INFO - 94.199.52.240 is reachable on 80 TCP
+2023-11-14 14:06:13,063 - INFO - 13.215.216.142 is reachable on 80 TCP
+2023-11-14 14:06:16,547 - ERROR - 46.174.146.27 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:16,549 - ERROR - 46.174.146.27 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:16,549 - ERROR - 46.174.146.27 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:16,549 - ERROR - 46.174.146.27 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:16,549 - ERROR - 46.174.146.27 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:16,550 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 46.174.146.27
+2023-11-14 14:06:16,550 - INFO - 46.174.146.27 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:16,550 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142']
+2023-11-14 14:06:16,550 - ERROR - 3.161.119.100 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:16,550 - ERROR - 3.161.119.100 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:16,550 - ERROR - 3.161.119.100 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:16,551 - ERROR - 3.161.119.100 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:16,551 - ERROR - 3.161.119.100 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:16,551 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 3.161.119.100
+2023-11-14 14:06:16,551 - INFO - 3.161.119.100 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:16,551 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142']
+2023-11-14 14:06:16,552 - ERROR - 130.211.9.172 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:16,552 - ERROR - 130.211.9.172 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:16,552 - ERROR - 130.211.9.172 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:16,552 - ERROR - 130.211.9.172 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:16,552 - ERROR - 130.211.9.172 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:16,553 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 130.211.9.172
+2023-11-14 14:06:16,553 - INFO - 130.211.9.172 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:16,553 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142']
+2023-11-14 14:06:16,553 - ERROR - 104.21.82.139 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:16,553 - ERROR - 104.21.82.139 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:16,553 - ERROR - 104.21.82.139 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:16,553 - ERROR - 104.21.82.139 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:16,554 - ERROR - 104.21.82.139 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:16,554 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 104.21.82.139
+2023-11-14 14:06:16,554 - INFO - 104.21.82.139 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:16,554 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142']
+2023-11-14 14:06:16,554 - ERROR - 178.236.7.220 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:16,554 - ERROR - 178.236.7.220 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:16,554 - ERROR - 178.236.7.220 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:16,554 - ERROR - 178.236.7.220 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:16,555 - ERROR - 178.236.7.220 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:16,555 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 178.236.7.220
+2023-11-14 14:06:16,555 - INFO - 178.236.7.220 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:16,555 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142']
+2023-11-14 14:06:16,555 - ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:16,555 - ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:16,555 - ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:16,555 - ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:16,556 - ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:16,556 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 46.174.146.17
+2023-11-14 14:06:16,556 - INFO - 46.174.146.17 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:16,556 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142']
+2023-11-14 14:06:16,575 - INFO - 18.66.26.77 is reachable on 80 TCP
+2023-11-14 14:06:16,576 - INFO - 77.111.91.168 is reachable on 80 TCP
+2023-11-14 14:06:16,576 - INFO - 162.159.130.67 is reachable on 80 TCP
+2023-11-14 14:06:16,581 - INFO - 104.21.80.146 is reachable on 80 TCP
+2023-11-14 14:06:16,592 - INFO - 20.70.246.20 is reachable on 80 TCP
+2023-11-14 14:06:16,592 - INFO - 62.112.193.224 is reachable on 80 TCP
+2023-11-14 14:06:16,593 - INFO - 18.66.26.69 is reachable on 80 TCP
+2023-11-14 14:06:19,084 - INFO - 130.211.9.172 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:19,087 - INFO - 130.211.9.172 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:19,087 - INFO - 130.211.9.172 host ICMP try SUCCESS || Success_Count: 3
+2023-11-14 14:06:19,088 - INFO - 130.211.9.172 host ICMP try SUCCESS || Success_Count: 4
+2023-11-14 14:06:19,088 - INFO - 130.211.9.172 host ICMP try SUCCESS || Success_Count: 5
+2023-11-14 14:06:19,088 - INFO - 130.211.9.172 is reachable with ICMP. 
+				 Avg_Succ_Delay: 3.9801 ms 
+				 Succ_Rate: 100.00%
+2023-11-14 14:06:20,086 - ERROR - 104.21.70.155 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:20,087 - INFO - 104.21.70.155 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:20,087 - INFO - 104.21.70.155 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:20,088 - ERROR - 104.21.70.155 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:20,088 - ERROR - 104.21.70.155 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:20,088 - INFO - 104.21.70.155 is not reachable with ICMP.
+				 Succ_Rate: 40.00%
+2023-11-14 14:06:20,088 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 104.21.70.155
+2023-11-14 14:06:20,088 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69']
+2023-11-14 14:06:20,088 - ERROR - 46.107.16.52 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:20,088 - ERROR - 46.107.16.52 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:20,089 - ERROR - 46.107.16.52 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:20,089 - ERROR - 46.107.16.52 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:20,089 - ERROR - 46.107.16.52 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:20,089 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 46.107.16.52
+2023-11-14 14:06:20,089 - INFO - 46.107.16.52 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:20,089 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69']
+2023-11-14 14:06:20,092 - INFO - 138.201.57.234 is reachable on 80 TCP
+2023-11-14 14:06:20,092 - INFO - 54.194.135.101 is reachable on 80 TCP
+2023-11-14 14:06:20,094 - INFO - 34.201.177.150 is reachable on 80 TCP
+2023-11-14 14:06:20,094 - INFO - 104.18.228.43 is reachable on 80 TCP
+2023-11-14 14:06:22,608 - INFO - 104.21.72.173 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:22,609 - INFO - 104.21.72.173 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:22,611 - INFO - 104.21.72.173 host ICMP try SUCCESS || Success_Count: 3
+2023-11-14 14:06:22,611 - INFO - 104.21.72.173 host ICMP try SUCCESS || Success_Count: 4
+2023-11-14 14:06:22,612 - INFO - 104.21.72.173 host ICMP try SUCCESS || Success_Count: 5
+2023-11-14 14:06:22,612 - INFO - 104.21.72.173 is reachable with ICMP. 
+				 Avg_Succ_Delay: 7.2102 ms 
+				 Succ_Rate: 100.00%
+2023-11-14 14:06:23,606 - ERROR - 46.174.146.29 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:23,606 - ERROR - 46.174.146.29 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:23,606 - ERROR - 46.174.146.29 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:23,606 - ERROR - 46.174.146.29 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:23,606 - ERROR - 46.174.146.29 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:23,606 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 46.174.146.29
+2023-11-14 14:06:23,606 - INFO - 46.174.146.29 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:23,606 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43']
+2023-11-14 14:06:23,606 - ERROR - 88.151.102.127 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:23,607 - ERROR - 88.151.102.127 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:23,607 - ERROR - 88.151.102.127 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:23,607 - ERROR - 88.151.102.127 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:23,607 - ERROR - 88.151.102.127 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:23,607 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 88.151.102.127
+2023-11-14 14:06:23,607 - INFO - 88.151.102.127 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:23,607 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43']
+2023-11-14 14:06:23,607 - ERROR - 34.160.205.245 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:23,607 - ERROR - 34.160.205.245 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:23,607 - ERROR - 34.160.205.245 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:23,607 - ERROR - 34.160.205.245 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:23,607 - ERROR - 34.160.205.245 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:23,607 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 34.160.205.245
+2023-11-14 14:06:23,607 - INFO - 34.160.205.245 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:23,607 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43']
+2023-11-14 14:06:23,607 - ERROR - 104.21.70.175 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:23,607 - ERROR - 104.21.70.175 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:23,607 - ERROR - 104.21.70.175 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:23,607 - ERROR - 104.21.70.175 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:23,607 - ERROR - 104.21.70.175 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:23,607 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 104.21.70.175
+2023-11-14 14:06:23,607 - INFO - 104.21.70.175 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:23,607 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43']
+2023-11-14 14:06:23,607 - ERROR - 185.161.204.64 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:23,607 - ERROR - 185.161.204.64 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:23,607 - ERROR - 185.161.204.64 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:23,607 - ERROR - 185.161.204.64 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:23,607 - ERROR - 185.161.204.64 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:23,607 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 185.161.204.64
+2023-11-14 14:06:23,608 - INFO - 185.161.204.64 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:23,608 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43']
+2023-11-14 14:06:23,611 - INFO - 51.178.194.156 is reachable on 80 TCP
+2023-11-14 14:06:23,611 - INFO - 104.21.76.140 is reachable on 80 TCP
+2023-11-14 14:06:23,611 - INFO - 46.174.146.28 is reachable on 80 TCP
+2023-11-14 14:06:23,611 - INFO - 147.67.34.45 is reachable on 80 TCP
+2023-11-14 14:06:23,611 - INFO - 87.229.73.154 is reachable on 80 TCP
+2023-11-14 14:06:26,152 - INFO - 18.66.26.61 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:26,154 - INFO - 18.66.26.61 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:26,155 - INFO - 18.66.26.61 host ICMP try SUCCESS || Success_Count: 3
+2023-11-14 14:06:26,155 - INFO - 18.66.26.61 host ICMP try SUCCESS || Success_Count: 4
+2023-11-14 14:06:26,155 - INFO - 18.66.26.61 host ICMP try SUCCESS || Success_Count: 5
+2023-11-14 14:06:26,155 - INFO - 18.66.26.61 is reachable with ICMP. 
+				 Avg_Succ_Delay: 31.7259 ms 
+				 Succ_Rate: 100.00%
+2023-11-14 14:06:27,125 - INFO - 93.185.98.100 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:27,125 - ERROR - 93.185.98.100 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:27,126 - INFO - 93.185.98.100 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:27,126 - INFO - 93.185.98.100 host ICMP try SUCCESS || Success_Count: 3
+2023-11-14 14:06:27,126 - INFO - 93.185.98.100 host ICMP try SUCCESS || Success_Count: 4
+2023-11-14 14:06:27,126 - INFO - 93.185.98.100 is reachable with ICMP. 
+				 Avg_Succ_Delay: 31.6055 ms 
 				 Succ_Rate: 80.00%
-2023-11-09 17:20:10,222 - ERROR - 18.66.26.69 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:10,222 - ERROR - 18.66.26.69 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:10,223 - ERROR - 18.66.26.69 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:10,223 - ERROR - 18.66.26.69 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:10,223 - ERROR - 18.66.26.69 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:10,223 - INFO - 18.66.26.69 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:10,223 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71']
-2023-11-09 17:20:10,223 - ERROR - 34.201.177.150 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:10,223 - ERROR - 34.201.177.150 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:10,224 - ERROR - 34.201.177.150 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:10,224 - ERROR - 34.201.177.150 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:10,224 - ERROR - 34.201.177.150 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:10,224 - INFO - 34.201.177.150 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:10,224 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71']
-2023-11-09 17:20:10,224 - ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:10,224 - ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:10,224 - ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:10,225 - ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:10,225 - ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:10,225 - INFO - 46.174.146.17 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:10,225 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71']
-2023-11-09 17:20:10,225 - ERROR - 54.72.185.175 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:10,225 - ERROR - 54.72.185.175 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:10,225 - ERROR - 54.72.185.175 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:10,225 - ERROR - 54.72.185.175 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:10,226 - ERROR - 54.72.185.175 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:10,226 - INFO - 54.72.185.175 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:10,226 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71']
-2023-11-09 17:20:10,235 - INFO - 3.232.244.122 is reachable on 80 TCP
-2023-11-09 17:20:10,235 - INFO - 76.223.18.1 is reachable on 80 TCP
-2023-11-09 17:20:10,236 - INFO - 193.224.147.1 is reachable on 80 TCP
-2023-11-09 17:20:10,237 - INFO - 148.251.196.8 is reachable on 80 TCP
-2023-11-09 17:20:10,237 - INFO - 88.151.100.226 is reachable on 80 TCP
-2023-11-09 17:20:10,238 - INFO - 18.66.26.68 is reachable on 80 TCP
-2023-11-09 17:20:10,238 - INFO - 185.51.66.98 is reachable on 80 TCP
-2023-11-09 17:20:13,747 - ERROR - 20.70.246.20 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:13,747 - ERROR - 20.70.246.20 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:13,747 - ERROR - 20.70.246.20 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:13,747 - ERROR - 20.70.246.20 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:13,747 - ERROR - 20.70.246.20 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:13,747 - INFO - 20.70.246.20 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:13,747 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98']
-2023-11-09 17:20:13,747 - ERROR - 151.101.129.181 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:13,747 - INFO - 151.101.129.181 host ICMP try SUCCESS || Success_Count: 1
-2023-11-09 17:20:13,748 - ERROR - 151.101.129.181 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:13,748 - ERROR - 151.101.129.181 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:13,748 - ERROR - 151.101.129.181 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:13,748 - INFO - 151.101.129.181 is not reachable with ICMP.
+2023-11-14 14:06:27,126 - ERROR - 18.66.26.49 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:27,126 - INFO - 18.66.26.49 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:27,126 - ERROR - 18.66.26.49 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:27,127 - ERROR - 18.66.26.49 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:27,127 - ERROR - 18.66.26.49 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:27,127 - INFO - 18.66.26.49 is not reachable with ICMP.
 				 Succ_Rate: 20.00%
-2023-11-09 17:20:13,748 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 151.101.129.181
-2023-11-09 17:20:13,748 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98']
-2023-11-09 17:20:13,748 - ERROR - 152.66.115.203 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:13,748 - ERROR - 152.66.115.203 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:13,748 - ERROR - 152.66.115.203 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:13,748 - ERROR - 152.66.115.203 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:13,748 - ERROR - 152.66.115.203 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:13,748 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 152.66.115.203
-2023-11-09 17:20:13,748 - INFO - 152.66.115.203 is not reachable with ICMP.
+2023-11-14 14:06:27,127 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 18.66.26.49
+2023-11-14 14:06:27,127 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154']
+2023-11-14 14:06:27,127 - ERROR - 3.161.119.104 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:27,127 - ERROR - 3.161.119.104 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:27,127 - ERROR - 3.161.119.104 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:27,127 - ERROR - 3.161.119.104 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:27,127 - ERROR - 3.161.119.104 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:27,127 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 3.161.119.104
+2023-11-14 14:06:27,127 - INFO - 3.161.119.104 is not reachable with ICMP.
 				 Succ_Rate: 0%
-2023-11-09 17:20:13,748 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98']
-2023-11-09 17:20:13,752 - INFO - 18.66.26.68 is reachable on 80 TCP
-2023-11-09 17:20:13,752 - INFO - 87.229.73.157 is reachable on 80 TCP
-2023-11-09 17:20:13,753 - INFO - 95.217.36.248 is reachable on 80 TCP
-2023-11-09 17:20:17,265 - ERROR - 46.174.146.16 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:17,265 - ERROR - 46.174.146.16 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:17,265 - ERROR - 46.174.146.16 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:17,265 - ERROR - 46.174.146.16 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:17,265 - ERROR - 46.174.146.16 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:17,265 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 46.174.146.16
-2023-11-09 17:20:17,265 - INFO - 46.174.146.16 is not reachable with ICMP.
+2023-11-14 14:06:27,127 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154']
+2023-11-14 14:06:27,128 - ERROR - 52.20.122.31 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:27,128 - ERROR - 52.20.122.31 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:27,128 - ERROR - 52.20.122.31 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:27,128 - ERROR - 52.20.122.31 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:27,128 - ERROR - 52.20.122.31 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:27,128 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 52.20.122.31
+2023-11-14 14:06:27,128 - INFO - 52.20.122.31 is not reachable with ICMP.
 				 Succ_Rate: 0%
-2023-11-09 17:20:17,265 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248']
-2023-11-09 17:20:17,266 - ERROR - 185.92.118.15 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:17,266 - ERROR - 185.92.118.15 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:17,266 - ERROR - 185.92.118.15 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:17,266 - ERROR - 185.92.118.15 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:17,266 - ERROR - 185.92.118.15 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:17,266 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 185.92.118.15
-2023-11-09 17:20:17,266 - INFO - 185.92.118.15 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:17,266 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248']
-2023-11-09 17:20:17,266 - ERROR - 18.66.26.87 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:17,266 - ERROR - 18.66.26.87 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:17,266 - ERROR - 18.66.26.87 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:17,266 - ERROR - 18.66.26.87 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:17,266 - ERROR - 18.66.26.87 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:17,266 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 18.66.26.87
-2023-11-09 17:20:17,266 - INFO - 18.66.26.87 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:17,266 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248']
-2023-11-09 17:20:17,266 - ERROR - 5.56.38.50 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:17,266 - ERROR - 5.56.38.50 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:17,267 - ERROR - 5.56.38.50 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:17,267 - ERROR - 5.56.38.50 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:17,267 - ERROR - 5.56.38.50 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:17,267 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 5.56.38.50
-2023-11-09 17:20:17,267 - INFO - 5.56.38.50 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:17,267 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248']
-2023-11-09 17:20:17,269 - ERROR - 104.26.15.101 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:17,269 - ERROR - 104.26.15.101 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:17,270 - ERROR - 104.26.15.101 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:17,270 - ERROR - 104.26.15.101 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:17,270 - ERROR - 104.26.15.101 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:17,270 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 104.26.15.101
-2023-11-09 17:20:17,270 - INFO - 104.26.15.101 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:17,270 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248']
-2023-11-09 17:20:17,270 - ERROR - 23.111.171.90 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:17,270 - ERROR - 23.111.171.90 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:17,270 - ERROR - 23.111.171.90 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:17,270 - ERROR - 23.111.171.90 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:17,270 - ERROR - 23.111.171.90 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:17,271 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 23.111.171.90
-2023-11-09 17:20:17,271 - INFO - 23.111.171.90 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:17,271 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248']
-2023-11-09 17:20:17,271 - ERROR - 185.80.51.25 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:17,271 - ERROR - 185.80.51.25 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:17,271 - ERROR - 185.80.51.25 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:17,271 - ERROR - 185.80.51.25 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:17,271 - ERROR - 185.80.51.25 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:17,271 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 185.80.51.25
-2023-11-09 17:20:17,272 - INFO - 185.80.51.25 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:17,272 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248']
-2023-11-09 17:20:17,278 - INFO - 104.18.229.43 is reachable on 80 TCP
-2023-11-09 17:20:17,278 - INFO - 87.229.73.154 is reachable on 80 TCP
-2023-11-09 17:20:17,280 - INFO - 104.26.6.206 is reachable on 80 TCP
-2023-11-09 17:20:17,280 - INFO - 193.224.129.143 is reachable on 80 TCP
-2023-11-09 17:20:19,796 - INFO - 104.21.72.173 host ICMP try SUCCESS || Success_Count: 1
-2023-11-09 17:20:19,797 - INFO - 104.21.72.173 host ICMP try SUCCESS || Success_Count: 2
-2023-11-09 17:20:19,797 - INFO - 104.21.72.173 host ICMP try SUCCESS || Success_Count: 3
-2023-11-09 17:20:19,797 - INFO - 104.21.72.173 host ICMP try SUCCESS || Success_Count: 4
-2023-11-09 17:20:19,797 - INFO - 104.21.72.173 host ICMP try SUCCESS || Success_Count: 5
-2023-11-09 17:20:19,797 - INFO - 104.21.72.173 is reachable with ICMP. 
-				 Avg_Succ_Delay: 9.9291 ms 
-				 Succ_Rate: 100.00%
-2023-11-09 17:20:20,797 - ERROR - 185.161.204.64 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:20,797 - INFO - 185.161.204.64 host ICMP try SUCCESS || Success_Count: 1
-2023-11-09 17:20:20,797 - ERROR - 185.161.204.64 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:20,798 - ERROR - 185.161.204.64 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:20,798 - ERROR - 185.161.204.64 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:20,798 - INFO - 185.161.204.64 is not reachable with ICMP.
-				 Succ_Rate: 20.00%
-2023-11-09 17:20:20,798 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 185.161.204.64
-2023-11-09 17:20:20,798 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143']
-2023-11-09 17:20:20,798 - ERROR - 34.201.177.150 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:20,798 - ERROR - 34.201.177.150 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:20,798 - ERROR - 34.201.177.150 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:20,798 - ERROR - 34.201.177.150 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:20,798 - ERROR - 34.201.177.150 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:20,798 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 34.201.177.150
-2023-11-09 17:20:20,799 - INFO - 34.201.177.150 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:20,799 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143']
-2023-11-09 17:20:20,799 - ERROR - 104.21.84.251 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:20,799 - INFO - 104.21.84.251 host ICMP try SUCCESS || Success_Count: 1
-2023-11-09 17:20:20,799 - ERROR - 104.21.84.251 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:20,799 - ERROR - 104.21.84.251 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:20,799 - ERROR - 104.21.84.251 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:20,800 - INFO - 104.21.84.251 is not reachable with ICMP.
-				 Succ_Rate: 20.00%
-2023-11-09 17:20:20,800 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 104.21.84.251
-2023-11-09 17:20:20,800 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143']
-2023-11-09 17:20:20,800 - ERROR - 94.199.52.160 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:20,800 - ERROR - 94.199.52.160 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:20,800 - ERROR - 94.199.52.160 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:20,800 - ERROR - 94.199.52.160 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:20,800 - ERROR - 94.199.52.160 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:20,800 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 94.199.52.160
-2023-11-09 17:20:20,800 - INFO - 94.199.52.160 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:20,801 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143']
-2023-11-09 17:20:20,801 - ERROR - 87.229.99.133 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:20,801 - ERROR - 87.229.99.133 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:20,801 - ERROR - 87.229.99.133 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:20,801 - ERROR - 87.229.99.133 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:20,801 - ERROR - 87.229.99.133 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:20,801 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 87.229.99.133
-2023-11-09 17:20:20,801 - INFO - 87.229.99.133 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:20,801 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143']
-2023-11-09 17:20:20,806 - INFO - 18.66.26.48 is reachable on 80 TCP
-2023-11-09 17:20:20,807 - INFO - 193.225.4.123 is reachable on 80 TCP
-2023-11-09 17:20:20,807 - INFO - 3.161.119.104 is reachable on 80 TCP
-2023-11-09 17:20:20,809 - INFO - 3.232.244.122 is reachable on 80 TCP
-2023-11-09 17:20:23,326 - INFO - 185.161.204.64 host ICMP try SUCCESS || Success_Count: 1
-2023-11-09 17:20:23,327 - INFO - 185.161.204.64 host ICMP try SUCCESS || Success_Count: 2
-2023-11-09 17:20:23,327 - INFO - 185.161.204.64 host ICMP try SUCCESS || Success_Count: 3
-2023-11-09 17:20:23,327 - INFO - 185.161.204.64 host ICMP try SUCCESS || Success_Count: 4
-2023-11-09 17:20:23,328 - INFO - 185.161.204.64 host ICMP try SUCCESS || Success_Count: 5
-2023-11-09 17:20:23,328 - INFO - 185.161.204.64 is reachable with ICMP. 
-				 Avg_Succ_Delay: 7.8529 ms 
-				 Succ_Rate: 100.00%
-2023-11-09 17:20:24,321 - INFO - 104.96.143.26 host ICMP try SUCCESS || Success_Count: 1
-2023-11-09 17:20:24,322 - ERROR - 104.96.143.26 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:24,322 - INFO - 104.96.143.26 host ICMP try SUCCESS || Success_Count: 2
-2023-11-09 17:20:24,322 - INFO - 104.96.143.26 host ICMP try SUCCESS || Success_Count: 3
-2023-11-09 17:20:24,323 - INFO - 104.96.143.26 host ICMP try SUCCESS || Success_Count: 4
-2023-11-09 17:20:24,323 - INFO - 104.96.143.26 is reachable with ICMP. 
-				 Avg_Succ_Delay: 11.3551 ms 
+2023-11-14 14:06:27,128 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154']
+2023-11-14 14:06:27,133 - INFO - 46.174.146.20 is reachable on 80 TCP
+2023-11-14 14:06:27,134 - INFO - 80.77.123.115 is reachable on 80 TCP
+2023-11-14 14:06:27,134 - INFO - 46.174.146.25 is reachable on 80 TCP
+2023-11-14 14:06:27,135 - INFO - 104.26.14.101 is reachable on 80 TCP
+2023-11-14 14:06:27,136 - INFO - 151.101.193.111 is reachable on 80 TCP
+2023-11-14 14:06:27,136 - INFO - 104.26.6.208 is reachable on 80 TCP
+2023-11-14 14:06:30,642 - INFO - 75.2.20.139 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:30,643 - ERROR - 75.2.20.139 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:30,644 - INFO - 75.2.20.139 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:30,644 - INFO - 75.2.20.139 host ICMP try SUCCESS || Success_Count: 3
+2023-11-14 14:06:30,644 - INFO - 75.2.20.139 host ICMP try SUCCESS || Success_Count: 4
+2023-11-14 14:06:30,645 - INFO - 75.2.20.139 is reachable with ICMP. 
+				 Avg_Succ_Delay: 8.4489 ms 
 				 Succ_Rate: 80.00%
-2023-11-09 17:20:24,323 - ERROR - 107.22.61.215 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:24,323 - ERROR - 107.22.61.215 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:24,324 - ERROR - 107.22.61.215 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:24,324 - ERROR - 107.22.61.215 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:24,324 - ERROR - 107.22.61.215 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:24,324 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 107.22.61.215
-2023-11-09 17:20:24,324 - INFO - 107.22.61.215 is not reachable with ICMP.
+2023-11-14 14:06:30,646 - ERROR - 151.101.67.5 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:30,646 - INFO - 151.101.67.5 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:30,646 - INFO - 151.101.67.5 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:30,647 - ERROR - 151.101.67.5 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:30,647 - ERROR - 151.101.67.5 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:30,648 - INFO - 151.101.67.5 is not reachable with ICMP.
+				 Succ_Rate: 40.00%
+2023-11-14 14:06:30,649 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 151.101.67.5
+2023-11-14 14:06:30,649 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208']
+2023-11-14 14:06:30,650 - ERROR - 193.201.190.87 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:30,651 - ERROR - 193.201.190.87 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:30,651 - ERROR - 193.201.190.87 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:30,651 - ERROR - 193.201.190.87 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:30,652 - ERROR - 193.201.190.87 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:30,652 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 193.201.190.87
+2023-11-14 14:06:30,653 - INFO - 193.201.190.87 is not reachable with ICMP.
 				 Succ_Rate: 0%
-2023-11-09 17:20:24,325 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122']
-2023-11-09 17:20:24,325 - ERROR - 23.111.171.90 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:24,325 - ERROR - 23.111.171.90 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:24,326 - ERROR - 23.111.171.90 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:24,326 - ERROR - 23.111.171.90 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:24,326 - ERROR - 23.111.171.90 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:24,326 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 23.111.171.90
-2023-11-09 17:20:24,327 - INFO - 23.111.171.90 is not reachable with ICMP.
+2023-11-14 14:06:30,654 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208']
+2023-11-14 14:06:30,654 - ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:30,655 - ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:30,655 - ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:30,655 - ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:30,656 - ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:30,658 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 46.174.146.17
+2023-11-14 14:06:30,658 - INFO - 46.174.146.17 is not reachable with ICMP.
 				 Succ_Rate: 0%
-2023-11-09 17:20:24,327 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122']
-2023-11-09 17:20:24,328 - ERROR - 192.0.77.40 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:24,328 - ERROR - 192.0.77.40 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:24,328 - ERROR - 192.0.77.40 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:24,328 - ERROR - 192.0.77.40 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:24,329 - ERROR - 192.0.77.40 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:24,329 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 192.0.77.40
-2023-11-09 17:20:24,329 - INFO - 192.0.77.40 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:24,330 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122']
-2023-11-09 17:20:24,331 - ERROR - 104.26.15.101 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:24,331 - ERROR - 104.26.15.101 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:24,331 - ERROR - 104.26.15.101 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:24,331 - ERROR - 104.26.15.101 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:24,332 - ERROR - 104.26.15.101 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:24,332 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 104.26.15.101
-2023-11-09 17:20:24,332 - INFO - 104.26.15.101 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:24,333 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122']
-2023-11-09 17:20:24,338 - INFO - 54.69.127.167 is reachable on 80 TCP
-2023-11-09 17:20:24,338 - INFO - 18.66.26.68 is reachable on 80 TCP
-2023-11-09 17:20:24,339 - INFO - 18.66.26.65 is reachable on 80 TCP
-2023-11-09 17:20:24,339 - INFO - 46.107.16.54 is reachable on 80 TCP
-2023-11-09 17:20:24,341 - INFO - 85.25.177.9 is reachable on 80 TCP
-2023-11-09 17:20:24,342 - INFO - 46.245.194.4 is reachable on 80 TCP
-2023-11-09 17:20:26,875 - INFO - 104.21.58.195 host ICMP try SUCCESS || Success_Count: 1
-2023-11-09 17:20:26,875 - INFO - 104.21.58.195 host ICMP try SUCCESS || Success_Count: 2
-2023-11-09 17:20:26,875 - INFO - 104.21.58.195 host ICMP try SUCCESS || Success_Count: 3
-2023-11-09 17:20:26,875 - INFO - 104.21.58.195 host ICMP try SUCCESS || Success_Count: 4
-2023-11-09 17:20:26,875 - INFO - 104.21.58.195 host ICMP try SUCCESS || Success_Count: 5
-2023-11-09 17:20:26,876 - INFO - 104.21.58.195 is reachable with ICMP. 
-				 Avg_Succ_Delay: 27.9053 ms 
+2023-11-14 14:06:30,658 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208']
+2023-11-14 14:06:30,662 - INFO - 151.101.193.224 is reachable on 80 TCP
+2023-11-14 14:06:30,663 - INFO - 195.228.86.37 is reachable on 80 TCP
+2023-11-14 14:06:30,663 - INFO - 62.112.193.224 is reachable on 80 TCP
+2023-11-14 14:06:30,664 - INFO - 104.17.33.105 is reachable on 80 TCP
+2023-11-14 14:06:30,664 - INFO - 46.174.146.19 is reachable on 80 TCP
+2023-11-14 14:06:30,664 - INFO - 104.26.6.208 is reachable on 80 TCP
+2023-11-14 14:06:30,664 - INFO - 185.129.138.202 is reachable on 80 TCP
+2023-11-14 14:06:33,174 - INFO - 192.0.78.9 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:33,175 - INFO - 192.0.78.9 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:33,175 - INFO - 192.0.78.9 host ICMP try SUCCESS || Success_Count: 3
+2023-11-14 14:06:33,175 - INFO - 192.0.78.9 host ICMP try SUCCESS || Success_Count: 4
+2023-11-14 14:06:33,176 - INFO - 192.0.78.9 host ICMP try SUCCESS || Success_Count: 5
+2023-11-14 14:06:33,176 - INFO - 192.0.78.9 is reachable with ICMP. 
+				 Avg_Succ_Delay: 6.7163 ms 
 				 Succ_Rate: 100.00%
-2023-11-09 17:20:27,851 - INFO - 23.111.171.90 host ICMP try SUCCESS || Success_Count: 1
-2023-11-09 17:20:27,852 - ERROR - 23.111.171.90 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:27,852 - ERROR - 23.111.171.90 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:27,852 - ERROR - 23.111.171.90 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:27,853 - ERROR - 23.111.171.90 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:27,853 - INFO - 23.111.171.90 is not reachable with ICMP.
-				 Succ_Rate: 20.00%
-2023-11-09 17:20:27,853 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 23.111.171.90
-2023-11-09 17:20:27,854 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26', '104.21.58.195'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122', '54.69.127.167', '18.66.26.68', '18.66.26.65', '46.107.16.54', '85.25.177.9', '46.245.194.4']
-2023-11-09 17:20:27,854 - ERROR - 34.160.205.245 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:27,854 - INFO - 34.160.205.245 host ICMP try SUCCESS || Success_Count: 1
-2023-11-09 17:20:27,854 - ERROR - 34.160.205.245 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:27,854 - ERROR - 34.160.205.245 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:27,854 - ERROR - 34.160.205.245 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:27,855 - INFO - 34.160.205.245 is not reachable with ICMP.
-				 Succ_Rate: 20.00%
-2023-11-09 17:20:27,855 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 34.160.205.245
-2023-11-09 17:20:27,855 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26', '104.21.58.195'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122', '54.69.127.167', '18.66.26.68', '18.66.26.65', '46.107.16.54', '85.25.177.9', '46.245.194.4']
-2023-11-09 17:20:27,855 - ERROR - 104.26.12.202 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:27,855 - ERROR - 104.26.12.202 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:27,855 - ERROR - 104.26.12.202 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:27,856 - ERROR - 104.26.12.202 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:27,856 - ERROR - 104.26.12.202 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:27,856 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 104.26.12.202
-2023-11-09 17:20:27,856 - INFO - 104.26.12.202 is not reachable with ICMP.
+2023-11-14 14:06:34,171 - ERROR - 185.80.51.25 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:34,171 - ERROR - 185.80.51.25 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:34,171 - ERROR - 185.80.51.25 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:34,171 - ERROR - 185.80.51.25 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:34,172 - ERROR - 185.80.51.25 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:34,172 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 185.80.51.25
+2023-11-14 14:06:34,172 - INFO - 185.80.51.25 is not reachable with ICMP.
 				 Succ_Rate: 0%
-2023-11-09 17:20:27,857 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26', '104.21.58.195'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122', '54.69.127.167', '18.66.26.68', '18.66.26.65', '46.107.16.54', '85.25.177.9', '46.245.194.4']
-2023-11-09 17:20:27,863 - INFO - 54.69.127.167 is reachable on 80 TCP
-2023-11-09 17:20:27,864 - INFO - 151.101.194.217 is reachable on 80 TCP
-2023-11-09 17:20:27,864 - INFO - 192.0.66.2 is reachable on 80 TCP
-2023-11-09 17:20:27,865 - INFO - 146.75.122.62 is reachable on 80 TCP
-2023-11-09 17:20:27,865 - INFO - 104.26.5.12 is reachable on 80 TCP
-2023-11-09 17:20:27,865 - INFO - 104.21.82.139 is reachable on 80 TCP
-2023-11-09 17:20:30,390 - INFO - 151.101.129.164 host ICMP try SUCCESS || Success_Count: 1
-2023-11-09 17:20:30,391 - INFO - 151.101.129.164 host ICMP try SUCCESS || Success_Count: 2
-2023-11-09 17:20:30,392 - INFO - 151.101.129.164 host ICMP try SUCCESS || Success_Count: 3
-2023-11-09 17:20:30,392 - INFO - 151.101.129.164 host ICMP try SUCCESS || Success_Count: 4
-2023-11-09 17:20:30,392 - INFO - 151.101.129.164 host ICMP try SUCCESS || Success_Count: 5
-2023-11-09 17:20:30,393 - INFO - 151.101.129.164 is reachable with ICMP. 
-				 Avg_Succ_Delay: 20.1480 ms 
+2023-11-14 14:06:34,172 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202']
+2023-11-14 14:06:34,172 - ERROR - 104.26.5.205 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:34,172 - ERROR - 104.26.5.205 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:34,172 - ERROR - 104.26.5.205 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:34,172 - ERROR - 104.26.5.205 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:34,172 - ERROR - 104.26.5.205 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:34,172 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 104.26.5.205
+2023-11-14 14:06:34,173 - INFO - 104.26.5.205 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:34,173 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202']
+2023-11-14 14:06:34,175 - INFO - 185.43.204.196 is reachable on 80 TCP
+2023-11-14 14:06:34,176 - INFO - 84.206.102.196 is reachable on 80 TCP
+2023-11-14 14:06:36,716 - INFO - 18.66.26.68 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:36,717 - INFO - 18.66.26.68 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:36,717 - INFO - 18.66.26.68 host ICMP try SUCCESS || Success_Count: 3
+2023-11-14 14:06:36,717 - INFO - 18.66.26.68 host ICMP try SUCCESS || Success_Count: 4
+2023-11-14 14:06:36,717 - INFO - 18.66.26.68 host ICMP try SUCCESS || Success_Count: 5
+2023-11-14 14:06:36,717 - INFO - 18.66.26.68 is reachable with ICMP. 
+				 Avg_Succ_Delay: 27.1598 ms 
 				 Succ_Rate: 100.00%
-2023-11-09 17:20:31,377 - ERROR - 185.52.2.43 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:31,378 - INFO - 185.52.2.43 host ICMP try SUCCESS || Success_Count: 1
-2023-11-09 17:20:31,378 - ERROR - 185.52.2.43 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:31,378 - ERROR - 185.52.2.43 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:31,378 - ERROR - 185.52.2.43 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:31,380 - INFO - 185.52.2.43 is not reachable with ICMP.
+2023-11-14 14:06:37,692 - INFO - 2.22.89.7 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:37,693 - ERROR - 2.22.89.7 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:37,693 - ERROR - 2.22.89.7 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:37,694 - INFO - 2.22.89.7 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:37,694 - INFO - 2.22.89.7 host ICMP try SUCCESS || Success_Count: 3
+2023-11-14 14:06:37,694 - INFO - 2.22.89.7 is not reachable with ICMP.
+				 Succ_Rate: 60.00%
+2023-11-14 14:06:37,696 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 2.22.89.7
+2023-11-14 14:06:37,696 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196']
+2023-11-14 14:06:37,697 - ERROR - 151.101.130.167 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:37,697 - INFO - 151.101.130.167 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:37,701 - ERROR - 151.101.130.167 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:37,701 - ERROR - 151.101.130.167 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:37,702 - ERROR - 151.101.130.167 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:37,702 - INFO - 151.101.130.167 is not reachable with ICMP.
 				 Succ_Rate: 20.00%
-2023-11-09 17:20:31,381 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 185.52.2.43
-2023-11-09 17:20:31,381 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26', '104.21.58.195', '151.101.129.164'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122', '54.69.127.167', '18.66.26.68', '18.66.26.65', '46.107.16.54', '85.25.177.9', '46.245.194.4', '54.69.127.167', '151.101.194.217', '192.0.66.2', '146.75.122.62', '104.26.5.12', '104.21.82.139']
-2023-11-09 17:20:31,381 - ERROR - 18.66.26.70 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:31,382 - ERROR - 18.66.26.70 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:31,382 - ERROR - 18.66.26.70 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:31,383 - ERROR - 18.66.26.70 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:31,384 - ERROR - 18.66.26.70 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:31,384 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 18.66.26.70
-2023-11-09 17:20:31,384 - INFO - 18.66.26.70 is not reachable with ICMP.
+2023-11-14 14:06:37,702 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 151.101.130.167
+2023-11-14 14:06:37,702 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196']
+2023-11-14 14:06:37,702 - ERROR - 104.21.70.175 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:37,702 - ERROR - 104.21.70.175 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:37,702 - ERROR - 104.21.70.175 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:37,702 - ERROR - 104.21.70.175 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:37,703 - ERROR - 104.21.70.175 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:37,703 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 104.21.70.175
+2023-11-14 14:06:37,703 - INFO - 104.21.70.175 is not reachable with ICMP.
 				 Succ_Rate: 0%
-2023-11-09 17:20:31,384 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26', '104.21.58.195', '151.101.129.164'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122', '54.69.127.167', '18.66.26.68', '18.66.26.65', '46.107.16.54', '85.25.177.9', '46.245.194.4', '54.69.127.167', '151.101.194.217', '192.0.66.2', '146.75.122.62', '104.26.5.12', '104.21.82.139']
-2023-11-09 17:20:31,384 - ERROR - 80.77.123.240 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:31,384 - ERROR - 80.77.123.240 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:31,384 - ERROR - 80.77.123.240 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:31,384 - ERROR - 80.77.123.240 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:31,384 - ERROR - 80.77.123.240 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:31,384 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 80.77.123.240
-2023-11-09 17:20:31,384 - INFO - 80.77.123.240 is not reachable with ICMP.
+2023-11-14 14:06:37,703 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196']
+2023-11-14 14:06:37,703 - ERROR - 104.17.50.120 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:37,703 - ERROR - 104.17.50.120 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:37,704 - ERROR - 104.17.50.120 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:37,704 - ERROR - 104.17.50.120 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:37,704 - ERROR - 104.17.50.120 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:37,704 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 104.17.50.120
+2023-11-14 14:06:37,704 - INFO - 104.17.50.120 is not reachable with ICMP.
 				 Succ_Rate: 0%
-2023-11-09 17:20:31,384 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26', '104.21.58.195', '151.101.129.164'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122', '54.69.127.167', '18.66.26.68', '18.66.26.65', '46.107.16.54', '85.25.177.9', '46.245.194.4', '54.69.127.167', '151.101.194.217', '192.0.66.2', '146.75.122.62', '104.26.5.12', '104.21.82.139']
-2023-11-09 17:20:31,396 - INFO - 104.26.4.205 is reachable on 80 TCP
-2023-11-09 17:20:31,396 - INFO - 151.101.130.167 is reachable on 80 TCP
-2023-11-09 17:20:31,397 - INFO - 95.217.36.248 is reachable on 80 TCP
-2023-11-09 17:20:33,906 - INFO - 34.160.205.245 host ICMP try SUCCESS || Success_Count: 1
-2023-11-09 17:20:33,907 - INFO - 34.160.205.245 host ICMP try SUCCESS || Success_Count: 2
-2023-11-09 17:20:33,907 - INFO - 34.160.205.245 host ICMP try SUCCESS || Success_Count: 3
-2023-11-09 17:20:33,907 - INFO - 34.160.205.245 host ICMP try SUCCESS || Success_Count: 4
-2023-11-09 17:20:33,907 - INFO - 34.160.205.245 host ICMP try SUCCESS || Success_Count: 5
-2023-11-09 17:20:33,907 - INFO - 34.160.205.245 is reachable with ICMP. 
-				 Avg_Succ_Delay: 7.7703 ms 
+2023-11-14 14:06:37,704 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196']
+2023-11-14 14:06:37,704 - ERROR - 104.26.12.108 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:37,704 - ERROR - 104.26.12.108 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:37,705 - ERROR - 104.26.12.108 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:37,705 - ERROR - 104.26.12.108 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:37,705 - ERROR - 104.26.12.108 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:37,705 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 104.26.12.108
+2023-11-14 14:06:37,705 - INFO - 104.26.12.108 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:37,705 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196']
+2023-11-14 14:06:37,705 - ERROR - 87.229.73.157 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:37,705 - ERROR - 87.229.73.157 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:37,705 - ERROR - 87.229.73.157 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:37,705 - ERROR - 87.229.73.157 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:37,706 - ERROR - 87.229.73.157 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:37,706 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 87.229.73.157
+2023-11-14 14:06:37,706 - INFO - 87.229.73.157 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:37,706 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196']
+2023-11-14 14:06:37,706 - ERROR - 18.66.26.55 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:37,706 - ERROR - 18.66.26.55 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:37,706 - ERROR - 18.66.26.55 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:37,706 - ERROR - 18.66.26.55 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:37,706 - ERROR - 18.66.26.55 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:37,706 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 18.66.26.55
+2023-11-14 14:06:37,706 - INFO - 18.66.26.55 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:37,707 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196']
+2023-11-14 14:06:37,711 - INFO - 87.229.73.154 is reachable on 80 TCP
+2023-11-14 14:06:37,711 - INFO - 104.26.0.82 is reachable on 80 TCP
+2023-11-14 14:06:37,711 - INFO - 152.66.115.203 is reachable on 80 TCP
+2023-11-14 14:06:37,711 - INFO - 104.26.14.101 is reachable on 80 TCP
+2023-11-14 14:06:37,711 - INFO - 151.101.130.187 is reachable on 80 TCP
+2023-11-14 14:06:37,711 - INFO - 151.101.194.209 is reachable on 80 TCP
+2023-11-14 14:06:37,711 - INFO - 162.254.190.59 is reachable on 80 TCP
+2023-11-14 14:06:40,227 - INFO - 172.66.43.151 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:40,227 - INFO - 172.66.43.151 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:40,228 - INFO - 172.66.43.151 host ICMP try SUCCESS || Success_Count: 3
+2023-11-14 14:06:40,229 - INFO - 172.66.43.151 host ICMP try SUCCESS || Success_Count: 4
+2023-11-14 14:06:40,229 - INFO - 172.66.43.151 host ICMP try SUCCESS || Success_Count: 5
+2023-11-14 14:06:40,229 - INFO - 172.66.43.151 is reachable with ICMP. 
+				 Avg_Succ_Delay: 7.2429 ms 
 				 Succ_Rate: 100.00%
-2023-11-09 17:20:34,904 - ERROR - 80.77.123.240 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:34,904 - ERROR - 80.77.123.240 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:34,904 - ERROR - 80.77.123.240 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:34,905 - ERROR - 80.77.123.240 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:34,905 - ERROR - 80.77.123.240 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:34,905 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 80.77.123.240
-2023-11-09 17:20:34,905 - INFO - 80.77.123.240 is not reachable with ICMP.
+2023-11-14 14:06:41,224 - ERROR - 104.26.13.202 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:41,225 - ERROR - 104.26.13.202 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:41,225 - ERROR - 104.26.13.202 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:41,225 - ERROR - 104.26.13.202 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:41,225 - ERROR - 104.26.13.202 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:41,225 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 104.26.13.202
+2023-11-14 14:06:41,225 - INFO - 104.26.13.202 is not reachable with ICMP.
 				 Succ_Rate: 0%
-2023-11-09 17:20:34,905 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26', '104.21.58.195', '151.101.129.164', '34.160.205.245'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122', '54.69.127.167', '18.66.26.68', '18.66.26.65', '46.107.16.54', '85.25.177.9', '46.245.194.4', '54.69.127.167', '151.101.194.217', '192.0.66.2', '146.75.122.62', '104.26.5.12', '104.21.82.139', '104.26.4.205', '151.101.130.167', '95.217.36.248']
-2023-11-09 17:20:34,905 - ERROR - 185.80.51.25 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:34,905 - ERROR - 185.80.51.25 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:34,905 - ERROR - 185.80.51.25 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:34,905 - ERROR - 185.80.51.25 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:34,905 - ERROR - 185.80.51.25 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:34,905 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 185.80.51.25
-2023-11-09 17:20:34,905 - INFO - 185.80.51.25 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:34,905 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26', '104.21.58.195', '151.101.129.164', '34.160.205.245'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122', '54.69.127.167', '18.66.26.68', '18.66.26.65', '46.107.16.54', '85.25.177.9', '46.245.194.4', '54.69.127.167', '151.101.194.217', '192.0.66.2', '146.75.122.62', '104.26.5.12', '104.21.82.139', '104.26.4.205', '151.101.130.167', '95.217.36.248']
-2023-11-09 17:20:34,905 - ERROR - 104.21.84.251 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:34,905 - ERROR - 104.21.84.251 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:34,905 - ERROR - 104.21.84.251 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:34,905 - ERROR - 104.21.84.251 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:34,906 - ERROR - 104.21.84.251 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:34,906 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 104.21.84.251
-2023-11-09 17:20:34,906 - INFO - 104.21.84.251 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:34,906 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26', '104.21.58.195', '151.101.129.164', '34.160.205.245'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122', '54.69.127.167', '18.66.26.68', '18.66.26.65', '46.107.16.54', '85.25.177.9', '46.245.194.4', '54.69.127.167', '151.101.194.217', '192.0.66.2', '146.75.122.62', '104.26.5.12', '104.21.82.139', '104.26.4.205', '151.101.130.167', '95.217.36.248']
-2023-11-09 17:20:34,908 - ERROR - 77.75.77.16 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:34,908 - ERROR - 77.75.77.16 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:34,908 - ERROR - 77.75.77.16 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:34,909 - ERROR - 77.75.77.16 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:34,909 - ERROR - 77.75.77.16 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:34,909 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 77.75.77.16
-2023-11-09 17:20:34,909 - INFO - 77.75.77.16 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:34,910 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26', '104.21.58.195', '151.101.129.164', '34.160.205.245'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122', '54.69.127.167', '18.66.26.68', '18.66.26.65', '46.107.16.54', '85.25.177.9', '46.245.194.4', '54.69.127.167', '151.101.194.217', '192.0.66.2', '146.75.122.62', '104.26.5.12', '104.21.82.139', '104.26.4.205', '151.101.130.167', '95.217.36.248']
-2023-11-09 17:20:34,911 - ERROR - 46.174.146.29 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:34,912 - ERROR - 46.174.146.29 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:34,912 - ERROR - 46.174.146.29 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:34,912 - ERROR - 46.174.146.29 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:34,912 - ERROR - 46.174.146.29 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:34,912 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 46.174.146.29
-2023-11-09 17:20:34,913 - INFO - 46.174.146.29 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:34,913 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26', '104.21.58.195', '151.101.129.164', '34.160.205.245'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122', '54.69.127.167', '18.66.26.68', '18.66.26.65', '46.107.16.54', '85.25.177.9', '46.245.194.4', '54.69.127.167', '151.101.194.217', '192.0.66.2', '146.75.122.62', '104.26.5.12', '104.21.82.139', '104.26.4.205', '151.101.130.167', '95.217.36.248']
-2023-11-09 17:20:34,914 - ERROR - 46.174.146.29 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:34,914 - ERROR - 46.174.146.29 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:34,915 - ERROR - 46.174.146.29 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:34,915 - ERROR - 46.174.146.29 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:34,916 - ERROR - 46.174.146.29 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:34,916 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 46.174.146.29
-2023-11-09 17:20:34,917 - INFO - 46.174.146.29 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:34,917 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26', '104.21.58.195', '151.101.129.164', '34.160.205.245'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122', '54.69.127.167', '18.66.26.68', '18.66.26.65', '46.107.16.54', '85.25.177.9', '46.245.194.4', '54.69.127.167', '151.101.194.217', '192.0.66.2', '146.75.122.62', '104.26.5.12', '104.21.82.139', '104.26.4.205', '151.101.130.167', '95.217.36.248']
-2023-11-09 17:20:34,923 - INFO - 51.178.194.156 is reachable on 80 TCP
-2023-11-09 17:20:37,461 - INFO - 151.101.129.181 host ICMP try SUCCESS || Success_Count: 1
-2023-11-09 17:20:37,462 - INFO - 151.101.129.181 host ICMP try SUCCESS || Success_Count: 2
-2023-11-09 17:20:37,462 - INFO - 151.101.129.181 host ICMP try SUCCESS || Success_Count: 3
-2023-11-09 17:20:37,462 - INFO - 151.101.129.181 host ICMP try SUCCESS || Success_Count: 4
-2023-11-09 17:20:37,462 - INFO - 151.101.129.181 host ICMP try SUCCESS || Success_Count: 5
-2023-11-09 17:20:37,462 - INFO - 151.101.129.181 is reachable with ICMP. 
-				 Avg_Succ_Delay: 21.3131 ms 
-				 Succ_Rate: 100.00%
-2023-11-09 17:20:38,444 - INFO - 18.66.26.87 host ICMP try SUCCESS || Success_Count: 1
-2023-11-09 17:20:38,444 - ERROR - 18.66.26.87 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:38,445 - ERROR - 18.66.26.87 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:38,445 - ERROR - 18.66.26.87 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:38,446 - ERROR - 18.66.26.87 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:38,446 - INFO - 18.66.26.87 is not reachable with ICMP.
+2023-11-14 14:06:41,225 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68', '172.66.43.151'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196', '87.229.73.154', '104.26.0.82', '152.66.115.203', '104.26.14.101', '151.101.130.187', '151.101.194.209', '162.254.190.59']
+2023-11-14 14:06:41,225 - INFO - 104.26.4.205 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:41,225 - ERROR - 104.26.4.205 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:41,225 - ERROR - 104.26.4.205 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:41,225 - ERROR - 104.26.4.205 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:41,225 - ERROR - 104.26.4.205 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:41,225 - INFO - 104.26.4.205 is not reachable with ICMP.
 				 Succ_Rate: 20.00%
-2023-11-09 17:20:38,446 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 18.66.26.87
-2023-11-09 17:20:38,446 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26', '104.21.58.195', '151.101.129.164', '34.160.205.245', '151.101.129.181'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122', '54.69.127.167', '18.66.26.68', '18.66.26.65', '46.107.16.54', '85.25.177.9', '46.245.194.4', '54.69.127.167', '151.101.194.217', '192.0.66.2', '146.75.122.62', '104.26.5.12', '104.21.82.139', '104.26.4.205', '151.101.130.167', '95.217.36.248', '51.178.194.156']
-2023-11-09 17:20:38,447 - ERROR - 130.211.9.172 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:38,447 - ERROR - 130.211.9.172 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:38,448 - INFO - 130.211.9.172 host ICMP try SUCCESS || Success_Count: 1
-2023-11-09 17:20:38,448 - ERROR - 130.211.9.172 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:38,448 - ERROR - 130.211.9.172 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:38,449 - INFO - 130.211.9.172 is not reachable with ICMP.
-				 Succ_Rate: 20.00%
-2023-11-09 17:20:38,450 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 130.211.9.172
-2023-11-09 17:20:38,450 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26', '104.21.58.195', '151.101.129.164', '34.160.205.245', '151.101.129.181'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122', '54.69.127.167', '18.66.26.68', '18.66.26.65', '46.107.16.54', '85.25.177.9', '46.245.194.4', '54.69.127.167', '151.101.194.217', '192.0.66.2', '146.75.122.62', '104.26.5.12', '104.21.82.139', '104.26.4.205', '151.101.130.167', '95.217.36.248', '51.178.194.156']
-2023-11-09 17:20:38,451 - ERROR - 212.52.166.110 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:38,451 - ERROR - 212.52.166.110 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:38,451 - ERROR - 212.52.166.110 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:38,451 - ERROR - 212.52.166.110 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:38,452 - ERROR - 212.52.166.110 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:38,452 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 212.52.166.110
-2023-11-09 17:20:38,452 - INFO - 212.52.166.110 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:38,453 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26', '104.21.58.195', '151.101.129.164', '34.160.205.245', '151.101.129.181'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122', '54.69.127.167', '18.66.26.68', '18.66.26.65', '46.107.16.54', '85.25.177.9', '46.245.194.4', '54.69.127.167', '151.101.194.217', '192.0.66.2', '146.75.122.62', '104.26.5.12', '104.21.82.139', '104.26.4.205', '151.101.130.167', '95.217.36.248', '51.178.194.156']
-2023-11-09 17:20:38,455 - ERROR - 52.222.169.34 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:38,456 - ERROR - 52.222.169.34 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:38,456 - ERROR - 52.222.169.34 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:38,456 - ERROR - 52.222.169.34 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:38,456 - ERROR - 52.222.169.34 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:38,456 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 52.222.169.34
-2023-11-09 17:20:38,456 - INFO - 52.222.169.34 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:38,456 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26', '104.21.58.195', '151.101.129.164', '34.160.205.245', '151.101.129.181'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122', '54.69.127.167', '18.66.26.68', '18.66.26.65', '46.107.16.54', '85.25.177.9', '46.245.194.4', '54.69.127.167', '151.101.194.217', '192.0.66.2', '146.75.122.62', '104.26.5.12', '104.21.82.139', '104.26.4.205', '151.101.130.167', '95.217.36.248', '51.178.194.156']
-2023-11-09 17:20:38,456 - ERROR - 46.174.146.29 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:38,456 - ERROR - 46.174.146.29 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:38,456 - ERROR - 46.174.146.29 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:38,456 - ERROR - 46.174.146.29 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:38,456 - ERROR - 46.174.146.29 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:38,456 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 46.174.146.29
-2023-11-09 17:20:38,456 - INFO - 46.174.146.29 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:38,456 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26', '104.21.58.195', '151.101.129.164', '34.160.205.245', '151.101.129.181'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122', '54.69.127.167', '18.66.26.68', '18.66.26.65', '46.107.16.54', '85.25.177.9', '46.245.194.4', '54.69.127.167', '151.101.194.217', '192.0.66.2', '146.75.122.62', '104.26.5.12', '104.21.82.139', '104.26.4.205', '151.101.130.167', '95.217.36.248', '51.178.194.156']
-2023-11-09 17:20:38,456 - ERROR - 87.229.99.133 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:38,456 - ERROR - 87.229.99.133 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:38,456 - ERROR - 87.229.99.133 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:38,456 - ERROR - 87.229.99.133 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:38,456 - ERROR - 87.229.99.133 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:38,456 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 87.229.99.133
-2023-11-09 17:20:38,457 - INFO - 87.229.99.133 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:38,457 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26', '104.21.58.195', '151.101.129.164', '34.160.205.245', '151.101.129.181'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122', '54.69.127.167', '18.66.26.68', '18.66.26.65', '46.107.16.54', '85.25.177.9', '46.245.194.4', '54.69.127.167', '151.101.194.217', '192.0.66.2', '146.75.122.62', '104.26.5.12', '104.21.82.139', '104.26.4.205', '151.101.130.167', '95.217.36.248', '51.178.194.156']
-2023-11-09 17:20:38,457 - ERROR - 5.159.57.194 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:38,457 - ERROR - 5.159.57.194 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:38,457 - ERROR - 5.159.57.194 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:38,457 - ERROR - 5.159.57.194 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:38,457 - ERROR - 5.159.57.194 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:38,457 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 5.159.57.194
-2023-11-09 17:20:38,457 - INFO - 5.159.57.194 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:38,457 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26', '104.21.58.195', '151.101.129.164', '34.160.205.245', '151.101.129.181'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122', '54.69.127.167', '18.66.26.68', '18.66.26.65', '46.107.16.54', '85.25.177.9', '46.245.194.4', '54.69.127.167', '151.101.194.217', '192.0.66.2', '146.75.122.62', '104.26.5.12', '104.21.82.139', '104.26.4.205', '151.101.130.167', '95.217.36.248', '51.178.194.156']
-2023-11-09 17:20:38,457 - ERROR - 151.101.129.185 host FAILED ICMP try || Fail_Count: 1
-2023-11-09 17:20:38,457 - ERROR - 151.101.129.185 host FAILED ICMP try || Fail_Count: 2
-2023-11-09 17:20:38,457 - ERROR - 151.101.129.185 host FAILED ICMP try || Fail_Count: 3
-2023-11-09 17:20:38,457 - ERROR - 151.101.129.185 host FAILED ICMP try || Fail_Count: 4
-2023-11-09 17:20:38,457 - ERROR - 151.101.129.185 host FAILED ICMP try || Fail_Count: 5
-2023-11-09 17:20:38,457 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 151.101.129.185
-2023-11-09 17:20:38,457 - INFO - 151.101.129.185 is not reachable with ICMP.
-				 Succ_Rate: 0%
-2023-11-09 17:20:38,457 - INFO - Unreachable ICMP: ['147.67.34.45', '75.2.58.105', '66.211.162.136', '104.18.228.43', '18.66.26.69', '34.201.177.150', '46.174.146.17', '54.72.185.175', '20.70.246.20'] |||| Unreachable TCP: []
-				Reachable_ICMP: ['104.21.58.195', '104.21.72.173', '185.161.204.64', '104.96.143.26', '104.21.58.195', '151.101.129.164', '34.160.205.245', '151.101.129.181'] |||| Reachable_TCP: ['104.21.76.140', '104.26.13.202', '77.111.91.168', '104.26.13.202', '193.225.4.123', '84.206.102.196', '18.66.26.89', '87.229.73.157', '87.229.73.154', '93.185.98.100', '75.2.11.71', '3.232.244.122', '76.223.18.1', '193.224.147.1', '148.251.196.8', '88.151.100.226', '18.66.26.68', '185.51.66.98', '18.66.26.68', '87.229.73.157', '95.217.36.248', '104.18.229.43', '87.229.73.154', '104.26.6.206', '193.224.129.143', '18.66.26.48', '193.225.4.123', '3.161.119.104', '3.232.244.122', '54.69.127.167', '18.66.26.68', '18.66.26.65', '46.107.16.54', '85.25.177.9', '46.245.194.4', '54.69.127.167', '151.101.194.217', '192.0.66.2', '146.75.122.62', '104.26.5.12', '104.21.82.139', '104.26.4.205', '151.101.130.167', '95.217.36.248', '51.178.194.156']
-2023-11-09 17:20:38,460 - INFO - 178.236.7.220 is reachable on 80 TCP
-2023-11-09 17:20:38,460 - INFO - 85.25.177.9 is reachable on 80 TCP
-2023-11-09 17:20:41,099 - INFO - 23.111.171.90 host ICMP try SUCCESS || Success_Count: 1
-2023-11-09 17:20:41,100 - INFO - 23.111.171.90 host ICMP try SUCCESS || Success_Count: 2
-2023-11-09 17:20:41,100 - INFO - 23.111.171.90 host ICMP try SUCCESS || Success_Count: 3
-2023-11-09 17:20:41,100 - INFO - 23.111.171.90 host ICMP try SUCCESS || Success_Count: 4
-2023-11-09 17:20:41,101 - INFO - 23.111.171.90 host ICMP try SUCCESS || Success_Count: 5
-2023-11-09 17:20:41,101 - INFO - 23.111.171.90 is reachable with ICMP. 
-				 Avg_Succ_Delay: 127.9298 ms 
+2023-11-14 14:06:41,225 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 104.26.4.205
+2023-11-14 14:06:41,225 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68', '172.66.43.151'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196', '87.229.73.154', '104.26.0.82', '152.66.115.203', '104.26.14.101', '151.101.130.187', '151.101.194.209', '162.254.190.59']
+2023-11-14 14:06:41,228 - INFO - 156.40.212.210 is reachable on 80 TCP
+2023-11-14 14:06:41,228 - INFO - 46.174.146.26 is reachable on 80 TCP
+2023-11-14 14:06:41,228 - INFO - 2.20.73.241 is reachable on 80 TCP
+2023-11-14 14:06:41,228 - INFO - 185.43.204.197 is reachable on 80 TCP
+2023-11-14 14:06:43,744 - INFO - 172.66.43.151 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:43,745 - INFO - 172.66.43.151 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:43,746 - INFO - 172.66.43.151 host ICMP try SUCCESS || Success_Count: 3
+2023-11-14 14:06:43,746 - INFO - 172.66.43.151 host ICMP try SUCCESS || Success_Count: 4
+2023-11-14 14:06:43,746 - INFO - 172.66.43.151 host ICMP try SUCCESS || Success_Count: 5
+2023-11-14 14:06:43,746 - INFO - 172.66.43.151 is reachable with ICMP. 
+				 Avg_Succ_Delay: 9.2197 ms 
 				 Succ_Rate: 100.00%
-2023-11-09 17:20:41,299 - INFO - Exiting the program...
+2023-11-14 14:06:44,741 - INFO - 88.151.102.127 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:44,741 - ERROR - 88.151.102.127 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:44,742 - ERROR - 88.151.102.127 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:44,742 - ERROR - 88.151.102.127 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:44,742 - ERROR - 88.151.102.127 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:44,742 - INFO - 88.151.102.127 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+2023-11-14 14:06:44,742 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 88.151.102.127
+2023-11-14 14:06:44,742 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68', '172.66.43.151', '172.66.43.151'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196', '87.229.73.154', '104.26.0.82', '152.66.115.203', '104.26.14.101', '151.101.130.187', '151.101.194.209', '162.254.190.59', '156.40.212.210', '46.174.146.26', '2.20.73.241', '185.43.204.197']
+2023-11-14 14:06:44,742 - ERROR - 104.21.62.159 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:44,742 - INFO - 104.21.62.159 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:44,742 - ERROR - 104.21.62.159 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:44,742 - ERROR - 104.21.62.159 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:44,742 - ERROR - 104.21.62.159 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:44,742 - INFO - 104.21.62.159 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+2023-11-14 14:06:44,742 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 104.21.62.159
+2023-11-14 14:06:44,742 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68', '172.66.43.151', '172.66.43.151'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196', '87.229.73.154', '104.26.0.82', '152.66.115.203', '104.26.14.101', '151.101.130.187', '151.101.194.209', '162.254.190.59', '156.40.212.210', '46.174.146.26', '2.20.73.241', '185.43.204.197']
+2023-11-14 14:06:44,742 - ERROR - 3.161.119.107 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:44,742 - ERROR - 3.161.119.107 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:44,742 - ERROR - 3.161.119.107 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:44,742 - ERROR - 3.161.119.107 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:44,743 - ERROR - 3.161.119.107 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:44,743 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 3.161.119.107
+2023-11-14 14:06:44,743 - INFO - 3.161.119.107 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:44,743 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68', '172.66.43.151', '172.66.43.151'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196', '87.229.73.154', '104.26.0.82', '152.66.115.203', '104.26.14.101', '151.101.130.187', '151.101.194.209', '162.254.190.59', '156.40.212.210', '46.174.146.26', '2.20.73.241', '185.43.204.197']
+2023-11-14 14:06:44,743 - ERROR - 46.107.16.51 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:44,743 - ERROR - 46.107.16.51 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:44,743 - ERROR - 46.107.16.51 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:44,743 - ERROR - 46.107.16.51 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:44,743 - ERROR - 46.107.16.51 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:44,743 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 46.107.16.51
+2023-11-14 14:06:44,744 - INFO - 46.107.16.51 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:44,744 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68', '172.66.43.151', '172.66.43.151'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196', '87.229.73.154', '104.26.0.82', '152.66.115.203', '104.26.14.101', '151.101.130.187', '151.101.194.209', '162.254.190.59', '156.40.212.210', '46.174.146.26', '2.20.73.241', '185.43.204.197']
+2023-11-14 14:06:44,744 - ERROR - 3.161.119.100 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:44,744 - ERROR - 3.161.119.100 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:44,744 - ERROR - 3.161.119.100 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:44,744 - ERROR - 3.161.119.100 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:44,744 - ERROR - 3.161.119.100 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:44,744 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 3.161.119.100
+2023-11-14 14:06:44,745 - INFO - 3.161.119.100 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:44,745 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68', '172.66.43.151', '172.66.43.151'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196', '87.229.73.154', '104.26.0.82', '152.66.115.203', '104.26.14.101', '151.101.130.187', '151.101.194.209', '162.254.190.59', '156.40.212.210', '46.174.146.26', '2.20.73.241', '185.43.204.197']
+2023-11-14 14:06:44,749 - INFO - 46.174.146.18 is reachable on 80 TCP
+2023-11-14 14:06:44,749 - INFO - 151.101.129.164 is reachable on 80 TCP
+2023-11-14 14:06:44,750 - INFO - 104.18.229.43 is reachable on 80 TCP
+2023-11-14 14:06:44,750 - INFO - 66.211.162.136 is reachable on 80 TCP
+2023-11-14 14:06:44,751 - INFO - 151.101.194.114 is reachable on 80 TCP
+2023-11-14 14:06:44,751 - INFO - 46.174.146.26 is reachable on 80 TCP
+2023-11-14 14:06:47,283 - INFO - 151.101.129.197 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:47,284 - INFO - 151.101.129.197 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:47,284 - INFO - 151.101.129.197 host ICMP try SUCCESS || Success_Count: 3
+2023-11-14 14:06:47,285 - INFO - 151.101.129.197 host ICMP try SUCCESS || Success_Count: 4
+2023-11-14 14:06:47,285 - INFO - 151.101.129.197 host ICMP try SUCCESS || Success_Count: 5
+2023-11-14 14:06:47,285 - INFO - 151.101.129.197 is reachable with ICMP. 
+				 Avg_Succ_Delay: 27.9682 ms 
+				 Succ_Rate: 100.00%
+2023-11-14 14:06:47,287 - INFO - 130.211.9.172 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:47,287 - INFO - 130.211.9.172 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:47,287 - INFO - 130.211.9.172 host ICMP try SUCCESS || Success_Count: 3
+2023-11-14 14:06:47,288 - INFO - 130.211.9.172 host ICMP try SUCCESS || Success_Count: 4
+2023-11-14 14:06:47,288 - INFO - 130.211.9.172 host ICMP try SUCCESS || Success_Count: 5
+2023-11-14 14:06:47,289 - INFO - 130.211.9.172 is reachable with ICMP. 
+				 Avg_Succ_Delay: 30.4221 ms 
+				 Succ_Rate: 100.00%
+2023-11-14 14:06:48,259 - ERROR - 151.101.194.217 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:48,261 - INFO - 151.101.194.217 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:48,261 - ERROR - 151.101.194.217 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:48,262 - ERROR - 151.101.194.217 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:48,262 - ERROR - 151.101.194.217 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:48,263 - INFO - 151.101.194.217 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+2023-11-14 14:06:48,263 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 151.101.194.217
+2023-11-14 14:06:48,263 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68', '172.66.43.151', '172.66.43.151', '151.101.129.197', '130.211.9.172'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196', '87.229.73.154', '104.26.0.82', '152.66.115.203', '104.26.14.101', '151.101.130.187', '151.101.194.209', '162.254.190.59', '156.40.212.210', '46.174.146.26', '2.20.73.241', '185.43.204.197', '46.174.146.18', '151.101.129.164', '104.18.229.43', '66.211.162.136', '151.101.194.114', '46.174.146.26']
+2023-11-14 14:06:48,264 - ERROR - 104.26.5.205 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:48,265 - ERROR - 104.26.5.205 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:48,269 - ERROR - 104.26.5.205 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:48,270 - ERROR - 104.26.5.205 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:48,270 - ERROR - 104.26.5.205 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:48,270 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 104.26.5.205
+2023-11-14 14:06:48,270 - INFO - 104.26.5.205 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:48,270 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68', '172.66.43.151', '172.66.43.151', '151.101.129.197', '130.211.9.172'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196', '87.229.73.154', '104.26.0.82', '152.66.115.203', '104.26.14.101', '151.101.130.187', '151.101.194.209', '162.254.190.59', '156.40.212.210', '46.174.146.26', '2.20.73.241', '185.43.204.197', '46.174.146.18', '151.101.129.164', '104.18.229.43', '66.211.162.136', '151.101.194.114', '46.174.146.26']
+2023-11-14 14:06:48,274 - INFO - 138.201.57.231 is reachable on 80 TCP
+2023-11-14 14:06:48,274 - INFO - 156.40.212.210 is reachable on 80 TCP
+2023-11-14 14:06:50,796 - INFO - 18.66.26.68 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:50,798 - INFO - 18.66.26.68 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:50,798 - INFO - 18.66.26.68 host ICMP try SUCCESS || Success_Count: 3
+2023-11-14 14:06:50,798 - INFO - 18.66.26.68 host ICMP try SUCCESS || Success_Count: 4
+2023-11-14 14:06:50,798 - INFO - 18.66.26.68 host ICMP try SUCCESS || Success_Count: 5
+2023-11-14 14:06:50,798 - INFO - 18.66.26.68 is reachable with ICMP. 
+				 Avg_Succ_Delay: 12.5782 ms 
+				 Succ_Rate: 100.00%
+2023-11-14 14:06:50,798 - INFO - 18.66.26.49 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:50,798 - INFO - 18.66.26.49 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:50,798 - INFO - 18.66.26.49 host ICMP try SUCCESS || Success_Count: 3
+2023-11-14 14:06:50,798 - INFO - 18.66.26.49 host ICMP try SUCCESS || Success_Count: 4
+2023-11-14 14:06:50,798 - INFO - 18.66.26.49 host ICMP try SUCCESS || Success_Count: 5
+2023-11-14 14:06:50,798 - INFO - 18.66.26.49 is reachable with ICMP. 
+				 Avg_Succ_Delay: 12.7849 ms 
+				 Succ_Rate: 100.00%
+2023-11-14 14:06:50,820 - INFO - 93.185.98.100 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:50,820 - INFO - 93.185.98.100 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:50,820 - INFO - 93.185.98.100 host ICMP try SUCCESS || Success_Count: 3
+2023-11-14 14:06:50,820 - INFO - 93.185.98.100 host ICMP try SUCCESS || Success_Count: 4
+2023-11-14 14:06:50,820 - INFO - 93.185.98.100 host ICMP try SUCCESS || Success_Count: 5
+2023-11-14 14:06:50,820 - INFO - 93.185.98.100 is reachable with ICMP. 
+				 Avg_Succ_Delay: 33.6075 ms 
+				 Succ_Rate: 100.00%
+2023-11-14 14:06:51,788 - ERROR - 193.31.16.40 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:51,788 - ERROR - 193.31.16.40 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:51,788 - ERROR - 193.31.16.40 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:51,789 - ERROR - 193.31.16.40 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:51,789 - ERROR - 193.31.16.40 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:51,789 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 193.31.16.40
+2023-11-14 14:06:51,789 - INFO - 193.31.16.40 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:51,790 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68', '172.66.43.151', '172.66.43.151', '151.101.129.197', '130.211.9.172', '18.66.26.68', '18.66.26.49', '93.185.98.100'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196', '87.229.73.154', '104.26.0.82', '152.66.115.203', '104.26.14.101', '151.101.130.187', '151.101.194.209', '162.254.190.59', '156.40.212.210', '46.174.146.26', '2.20.73.241', '185.43.204.197', '46.174.146.18', '151.101.129.164', '104.18.229.43', '66.211.162.136', '151.101.194.114', '46.174.146.26', '138.201.57.231', '156.40.212.210']
+2023-11-14 14:06:51,790 - ERROR - 104.26.5.205 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:51,791 - ERROR - 104.26.5.205 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:51,791 - ERROR - 104.26.5.205 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:51,791 - ERROR - 104.26.5.205 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:51,791 - ERROR - 104.26.5.205 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:51,791 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 104.26.5.205
+2023-11-14 14:06:51,791 - INFO - 104.26.5.205 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:51,792 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68', '172.66.43.151', '172.66.43.151', '151.101.129.197', '130.211.9.172', '18.66.26.68', '18.66.26.49', '93.185.98.100'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196', '87.229.73.154', '104.26.0.82', '152.66.115.203', '104.26.14.101', '151.101.130.187', '151.101.194.209', '162.254.190.59', '156.40.212.210', '46.174.146.26', '2.20.73.241', '185.43.204.197', '46.174.146.18', '151.101.129.164', '104.18.229.43', '66.211.162.136', '151.101.194.114', '46.174.146.26', '138.201.57.231', '156.40.212.210']
+2023-11-14 14:06:51,792 - ERROR - 193.224.129.143 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:51,793 - ERROR - 193.224.129.143 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:51,793 - ERROR - 193.224.129.143 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:51,793 - ERROR - 193.224.129.143 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:51,794 - ERROR - 193.224.129.143 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:51,794 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 193.224.129.143
+2023-11-14 14:06:51,794 - INFO - 193.224.129.143 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:51,794 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68', '172.66.43.151', '172.66.43.151', '151.101.129.197', '130.211.9.172', '18.66.26.68', '18.66.26.49', '93.185.98.100'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196', '87.229.73.154', '104.26.0.82', '152.66.115.203', '104.26.14.101', '151.101.130.187', '151.101.194.209', '162.254.190.59', '156.40.212.210', '46.174.146.26', '2.20.73.241', '185.43.204.197', '46.174.146.18', '151.101.129.164', '104.18.229.43', '66.211.162.136', '151.101.194.114', '46.174.146.26', '138.201.57.231', '156.40.212.210']
+2023-11-14 14:06:51,795 - ERROR - 76.223.18.1 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:51,795 - ERROR - 76.223.18.1 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:51,795 - ERROR - 76.223.18.1 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:51,796 - ERROR - 76.223.18.1 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:51,796 - ERROR - 76.223.18.1 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:51,796 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 76.223.18.1
+2023-11-14 14:06:51,796 - INFO - 76.223.18.1 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:51,797 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68', '172.66.43.151', '172.66.43.151', '151.101.129.197', '130.211.9.172', '18.66.26.68', '18.66.26.49', '93.185.98.100'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196', '87.229.73.154', '104.26.0.82', '152.66.115.203', '104.26.14.101', '151.101.130.187', '151.101.194.209', '162.254.190.59', '156.40.212.210', '46.174.146.26', '2.20.73.241', '185.43.204.197', '46.174.146.18', '151.101.129.164', '104.18.229.43', '66.211.162.136', '151.101.194.114', '46.174.146.26', '138.201.57.231', '156.40.212.210']
+2023-11-14 14:06:51,797 - ERROR - 46.174.146.27 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:51,797 - ERROR - 46.174.146.27 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:51,797 - ERROR - 46.174.146.27 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:51,797 - ERROR - 46.174.146.27 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:51,798 - ERROR - 46.174.146.27 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:51,798 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 46.174.146.27
+2023-11-14 14:06:51,798 - INFO - 46.174.146.27 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:51,798 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68', '172.66.43.151', '172.66.43.151', '151.101.129.197', '130.211.9.172', '18.66.26.68', '18.66.26.49', '93.185.98.100'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196', '87.229.73.154', '104.26.0.82', '152.66.115.203', '104.26.14.101', '151.101.130.187', '151.101.194.209', '162.254.190.59', '156.40.212.210', '46.174.146.26', '2.20.73.241', '185.43.204.197', '46.174.146.18', '151.101.129.164', '104.18.229.43', '66.211.162.136', '151.101.194.114', '46.174.146.26', '138.201.57.231', '156.40.212.210']
+2023-11-14 14:06:51,809 - INFO - 151.101.193.111 is reachable on 80 TCP
+2023-11-14 14:06:51,809 - INFO - 46.174.146.20 is reachable on 80 TCP
+2023-11-14 14:06:51,809 - INFO - 212.52.164.111 is reachable on 80 TCP
+2023-11-14 14:06:51,810 - INFO - 62.112.193.224 is reachable on 80 TCP
+2023-11-14 14:06:54,345 - INFO - 151.101.194.217 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:54,347 - INFO - 151.101.194.217 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:54,347 - INFO - 151.101.194.217 host ICMP try SUCCESS || Success_Count: 3
+2023-11-14 14:06:54,347 - INFO - 151.101.194.217 host ICMP try SUCCESS || Success_Count: 4
+2023-11-14 14:06:54,347 - INFO - 151.101.194.217 host ICMP try SUCCESS || Success_Count: 5
+2023-11-14 14:06:54,348 - INFO - 151.101.194.217 is reachable with ICMP. 
+				 Avg_Succ_Delay: 23.2162 ms 
+				 Succ_Rate: 100.00%
+2023-11-14 14:06:54,353 - INFO - 2.22.89.7 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:54,355 - INFO - 2.22.89.7 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:54,358 - INFO - 2.22.89.7 host ICMP try SUCCESS || Success_Count: 3
+2023-11-14 14:06:54,358 - INFO - 2.22.89.7 host ICMP try SUCCESS || Success_Count: 4
+2023-11-14 14:06:54,358 - INFO - 2.22.89.7 host ICMP try SUCCESS || Success_Count: 5
+2023-11-14 14:06:54,358 - INFO - 2.22.89.7 is reachable with ICMP. 
+				 Avg_Succ_Delay: 37.3784 ms 
+				 Succ_Rate: 100.00%
+2023-11-14 14:06:55,328 - INFO - 3.161.119.104 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:55,329 - ERROR - 3.161.119.104 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:55,330 - ERROR - 3.161.119.104 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:55,331 - ERROR - 3.161.119.104 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:55,332 - INFO - 3.161.119.104 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:55,333 - INFO - 3.161.119.104 is not reachable with ICMP.
+				 Succ_Rate: 40.00%
+2023-11-14 14:06:55,333 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 3.161.119.104
+2023-11-14 14:06:55,334 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68', '172.66.43.151', '172.66.43.151', '151.101.129.197', '130.211.9.172', '18.66.26.68', '18.66.26.49', '93.185.98.100', '151.101.194.217', '2.22.89.7'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196', '87.229.73.154', '104.26.0.82', '152.66.115.203', '104.26.14.101', '151.101.130.187', '151.101.194.209', '162.254.190.59', '156.40.212.210', '46.174.146.26', '2.20.73.241', '185.43.204.197', '46.174.146.18', '151.101.129.164', '104.18.229.43', '66.211.162.136', '151.101.194.114', '46.174.146.26', '138.201.57.231', '156.40.212.210', '151.101.193.111', '46.174.146.20', '212.52.164.111', '62.112.193.224']
+2023-11-14 14:06:55,347 - ERROR - 142.132.194.189 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:55,348 - INFO - 142.132.194.189 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:55,348 - ERROR - 142.132.194.189 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:55,355 - ERROR - 142.132.194.189 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:55,356 - ERROR - 142.132.194.189 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:55,356 - INFO - 142.132.194.189 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+2023-11-14 14:06:55,357 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 142.132.194.189
+2023-11-14 14:06:55,368 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68', '172.66.43.151', '172.66.43.151', '151.101.129.197', '130.211.9.172', '18.66.26.68', '18.66.26.49', '93.185.98.100', '151.101.194.217', '2.22.89.7'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196', '87.229.73.154', '104.26.0.82', '152.66.115.203', '104.26.14.101', '151.101.130.187', '151.101.194.209', '162.254.190.59', '156.40.212.210', '46.174.146.26', '2.20.73.241', '185.43.204.197', '46.174.146.18', '151.101.129.164', '104.18.229.43', '66.211.162.136', '151.101.194.114', '46.174.146.26', '138.201.57.231', '156.40.212.210', '151.101.193.111', '46.174.146.20', '212.52.164.111', '62.112.193.224']
+2023-11-14 14:06:55,374 - ERROR - 46.174.146.30 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:55,375 - ERROR - 46.174.146.30 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:55,375 - ERROR - 46.174.146.30 host FAILED ICMP try || Fail_Count: 3
+2023-11-14 14:06:55,375 - ERROR - 46.174.146.30 host FAILED ICMP try || Fail_Count: 4
+2023-11-14 14:06:55,375 - ERROR - 46.174.146.30 host FAILED ICMP try || Fail_Count: 5
+2023-11-14 14:06:55,376 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 46.174.146.30
+2023-11-14 14:06:55,376 - INFO - 46.174.146.30 is not reachable with ICMP.
+				 Succ_Rate: 0%
+2023-11-14 14:06:55,376 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68', '172.66.43.151', '172.66.43.151', '151.101.129.197', '130.211.9.172', '18.66.26.68', '18.66.26.49', '93.185.98.100', '151.101.194.217', '2.22.89.7'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196', '87.229.73.154', '104.26.0.82', '152.66.115.203', '104.26.14.101', '151.101.130.187', '151.101.194.209', '162.254.190.59', '156.40.212.210', '46.174.146.26', '2.20.73.241', '185.43.204.197', '46.174.146.18', '151.101.129.164', '104.18.229.43', '66.211.162.136', '151.101.194.114', '46.174.146.26', '138.201.57.231', '156.40.212.210', '151.101.193.111', '46.174.146.20', '212.52.164.111', '62.112.193.224']
+2023-11-14 14:06:55,377 - ERROR - 46.107.16.50 host FAILED ICMP try || Fail_Count: 1
+2023-11-14 14:06:55,378 - ERROR - 46.107.16.50 host FAILED ICMP try || Fail_Count: 2
+2023-11-14 14:06:55,378 - INFO - 46.107.16.50 host ICMP try SUCCESS || Success_Count: 1
+2023-11-14 14:06:55,380 - INFO - 46.107.16.50 host ICMP try SUCCESS || Success_Count: 2
+2023-11-14 14:06:55,381 - INFO - 46.107.16.50 host ICMP try SUCCESS || Success_Count: 3
+2023-11-14 14:06:55,381 - INFO - 46.107.16.50 is not reachable with ICMP.
+				 Succ_Rate: 60.00%
+2023-11-14 14:06:55,382 - INFO - ICMP unreachable reached max capacity first element will be put back into reachable, ip: 46.107.16.50
+2023-11-14 14:06:55,382 - INFO - Unreachable ICMP: ['46.174.146.17', '88.151.100.226', '18.66.26.70', '18.66.26.68', '185.43.205.97', '18.66.26.61', '104.21.84.251', '130.211.9.172', '193.201.190.87'] |||| Unreachable TCP: []
+				Reachable_ICMP: ['104.21.72.173', '18.66.26.68', '130.211.9.172', '104.21.72.173', '18.66.26.61', '93.185.98.100', '75.2.20.139', '192.0.78.9', '18.66.26.68', '172.66.43.151', '172.66.43.151', '151.101.129.197', '130.211.9.172', '18.66.26.68', '18.66.26.49', '93.185.98.100', '151.101.194.217', '2.22.89.7'] |||| Reachable_TCP: ['185.161.204.65', '18.66.26.65', '18.66.26.65', '151.101.130.187', '151.101.64.200', '77.111.91.168', '185.51.66.98', '213.239.227.38', '151.101.129.188', '185.92.118.12', '20.70.246.20', '185.51.66.98', '46.174.146.22', '151.101.66.209', '151.101.1.29', '94.199.52.240', '13.215.216.142', '18.66.26.77', '77.111.91.168', '162.159.130.67', '104.21.80.146', '20.70.246.20', '62.112.193.224', '18.66.26.69', '138.201.57.234', '54.194.135.101', '34.201.177.150', '104.18.228.43', '51.178.194.156', '104.21.76.140', '46.174.146.28', '147.67.34.45', '87.229.73.154', '46.174.146.20', '80.77.123.115', '46.174.146.25', '104.26.14.101', '151.101.193.111', '104.26.6.208', '151.101.193.224', '195.228.86.37', '62.112.193.224', '104.17.33.105', '46.174.146.19', '104.26.6.208', '185.129.138.202', '185.43.204.196', '84.206.102.196', '87.229.73.154', '104.26.0.82', '152.66.115.203', '104.26.14.101', '151.101.130.187', '151.101.194.209', '162.254.190.59', '156.40.212.210', '46.174.146.26', '2.20.73.241', '185.43.204.197', '46.174.146.18', '151.101.129.164', '104.18.229.43', '66.211.162.136', '151.101.194.114', '46.174.146.26', '138.201.57.231', '156.40.212.210', '151.101.193.111', '46.174.146.20', '212.52.164.111', '62.112.193.224']
+2023-11-14 14:06:55,397 - INFO - 185.43.204.197 is reachable on 80 TCP
+2023-11-14 14:06:55,398 - INFO - 151.101.129.188 is reachable on 80 TCP
+2023-11-14 14:06:55,399 - INFO - 62.77.211.26 is reachable on 80 TCP
+2023-11-14 14:06:55,399 - INFO - 151.101.1.29 is reachable on 80 TCP
+2023-11-14 14:06:55,400 - INFO - 34.201.177.150 is reachable on 80 TCP
