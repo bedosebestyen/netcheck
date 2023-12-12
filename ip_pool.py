@@ -26,17 +26,17 @@ class IP_Pool:
 
         return self.ICMP_hosts, self.TCP_hosts
     
-    def ip_pool_generator(script_path="./ip_pool.sh", sudo_script_path = "./ipv4_pool.sh"):
+    # def ip_pool_generator(script_path="./ip_pool.sh", sudo_script_path = "./ipv4_pool.sh"):
         
-        try:
-            subprocess.run(["sudo", script_path], check=True, shell=True)
-        except subprocess.CalledProcessError as e:
-            print(f"Error running '{script_path}': {e}")
+    #     try:
+    #         subprocess.run(["sudo", script_path], check=True, shell=True)
+    #     except subprocess.CalledProcessError as e:
+    #         print(f"Error running '{script_path}': {e}")
         
-        try:
-            subprocess.run(["sudo",sudo_script_path], check=True, shell=True)
-        except subprocess.CalledProcessError as e:
-            print(f"Error running 'sudo {script_path}': {e}")
+    #     try:
+    #         subprocess.run(["sudo",sudo_script_path], check=True, shell=True)
+    #     except subprocess.CalledProcessError as e:
+    #         print(f"Error running 'sudo {script_path}': {e}")
 
 
 

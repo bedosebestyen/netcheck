@@ -1,0 +1,14 @@
+{
+  "tcp_packet": {
+    "mark": 10,
+    "timeout_tcp": 1,
+    "port": 80
+  },
+  "icmp_packet": {
+    "mark": 7,
+    "timeout_waiting_for_response": 1,
+    "timeout_between_pings": 0.5,
+    "count": 5,
+    "success": 0.8
+  }
+}
