@@ -3,7 +3,7 @@ import socket
 from random import randrange
 from aioping_SO_MARK import aioping
 from packets import ICMP_packet, TCP_packet
-import logging
+from logging_config import Logger_Templates
 
 
 #Creates a task from the packets.
@@ -36,14 +36,17 @@ async def check_tcp(packet, ip_manager):
 
     try:
           await asyncio.wait_for(loop.sock_connect(sock, (packet.ip, packet.port)), timeout=5)
-          logging.info(f"{packet.ip} is reachable on {packet.port} TCP")
+          Logger_Templates.tcp_reachable_log(packet.ip, packet.port)
           ip_manager.add_reachable_packet(packet)
           return True
     except Exception as e:
           ip_manager.unreachable_ip_add(packet)
-          logging.error(f"Connection failed to {packet.ip}:{packet.port} TCP: {e}")
+          Logger_Templates.tcp_unreachable_log(packet.ip, packet.port, e)
           
-          logging.info(f'Unreachable ICMP: {ip_manager.unreachable_ICMP} |||| Unreachable TCP: {ip_manager.unreachable_TCP}\n\t\t\t\tReachable_ICMP: {ip_manager.reachable_ICMP} |||| Reachable_TCP: {ip_manager.reachable_TCP}') 
+          Logger_Templates.summary_log(ip_manager.unreachable_ICMP, 
+                                       ip_manager.unreachable_TCP, 
+                                       ip_manager.reachable_ICMP, 
+                                       ip_manager.reachable_TCP)
           return False
     finally:
           sock.close()
@@ -66,34 +69,41 @@ async def check_icmp(packet, ip_manager):
       for result in results:
             if isinstance(result, Exception):
                   fail_counter += 1
-                  logging.error(f"{packet.ip} host FAILED ICMP try || Fail_Count: {fail_counter}")
+                  Logger_Templates.icmp_packet_failure_log(packet.ip, fail_counter)
                   if fail_counter == packet.count:
                         ip_manager.unreachable_ip_add(packet)
-                        logging.info(f'{packet.ip} is not reachable with ICMP.\n\t\t\t\t Succ_Rate: 0%')
-                        logging.info(f'Unreachable ICMP: {ip_manager.unreachable_ICMP} |||| Unreachable TCP: {ip_manager.unreachable_TCP}\n\t\t\t\tReachable_ICMP: {ip_manager.reachable_ICMP} |||| Reachable_TCP: {ip_manager.reachable_TCP}')                       
+                        Logger_Templates.icmp_unreachable_log(packet.ip, 0)
+                        Logger_Templates.summary_log(ip_manager.unreachable_ICMP, 
+                                       ip_manager.unreachable_TCP, 
+                                       ip_manager.reachable_ICMP, 
+                                       ip_manager.reachable_TCP)                  
                         return False
             else:
                   result *= 1000
                   successful_delays += result
                   success_counter += 1
-                  logging.info(f"{packet.ip} host ICMP try SUCCESS || Success_Count: {success_counter}")
+                  Logger_Templates.icmp_packet_success_log(packet.ip)
 
       avg_delay = successful_delays / success_counter
       success_rate = success_counter / packet.count
       
-      try:
-            if int(min_succ_rate) <= success_counter:
-                  ip_manager.add_reachable_packet(packet)
-                  logging.info(f'{packet.ip} is reachable with ICMP. \n\t\t\t\t Avg_Succ_Delay: {avg_delay:.4f} ms \n\t\t\t\t Succ_Rate: {success_rate:.2%}')
-                  logging.info(f'Unreachable ICMP: {ip_manager.unreachable_ICMP} |||| Unreachable TCP: {ip_manager.unreachable_TCP}\n\t\t\t\tReachable_ICMP: {ip_manager.reachable_ICMP} |||| Reachable_TCP: {ip_manager.reachable_TCP}')
-                  return True
-            else:
-                  ip_manager.unreachable_ip_add(packet)
-                  logging.info(f'{packet.ip} is not reachable with ICMP.\n\t\t\t\t Succ_Rate: {success_rate:.2%}')
-                  logging.info(f'Unreachable ICMP: {ip_manager.unreachable_ICMP} |||| Unreachable TCP: {ip_manager.unreachable_TCP}\n\t\t\t\tReachable_ICMP: {ip_manager.reachable_ICMP} |||| Reachable_TCP: {ip_manager.reachable_TCP}')
-                  return False
-      except Exception as e:
-                  logging.info(f'Error: {e}')
+      if int(min_succ_rate) <= success_counter:
+            ip_manager.add_reachable_packet(packet)
+            Logger_Templates.icmp_reachable_log(packet.ip, success_rate, avg_delay)
+            Logger_Templates.summary_log(ip_manager.unreachable_ICMP, 
+                                    ip_manager.unreachable_TCP, 
+                                    ip_manager.reachable_ICMP, 
+                                    ip_manager.reachable_TCP)
+            return True
+      else:
+            ip_manager.unreachable_ip_add(packet)
+            Logger_Templates.icmp_unreachable_log(packet.ip, success_rate)
+            Logger_Templates.summary_log(ip_manager.unreachable_ICMP, 
+                                    ip_manager.unreachable_TCP, 
+                                    ip_manager.reachable_ICMP, 
+                                    ip_manager.reachable_TCP)
+            return False
+                  
 
 
 

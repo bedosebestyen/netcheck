@@ -1,5 +1,6 @@
 from packets import ICMP_packet, TCP_packet, SingletonMeta
 import logging
+from logging_config import Logger_Templates
 class  Packet_logic(metaclass=SingletonMeta):
     
     def __init__(self, ICMP_base, TCP_base) -> None:
@@ -42,7 +43,8 @@ class  Packet_logic(metaclass=SingletonMeta):
                 self.remove_unreachable_ip(oldest_ip)
                 self.ICMP_base.append(oldest_ip)
                 self.unreachable_ICMP_count -= 1
-                logging.info(f'ICMP unreachable reached max capacity first element will be put back into reachable, ip: {oldest_ip}')
+                Logger_Templates.icmp_unreachable_full(oldest_ip)
+                
 
         elif isinstance(packet, TCP_packet):
             self.unreachable_TCP.append(packet.ip)
@@ -54,4 +56,4 @@ class  Packet_logic(metaclass=SingletonMeta):
                 oldest_ip = self.unreachable_TCP[0]
                 self.TCP_base.append(oldest_ip)
                 self.unreachable_TCP_count -= 1
-                logging.info(f'TCP unreachable reached max capacity first element will be but back into reachable, ip: {oldest_ip}')
+                Logger_Templates.tcp_unreachable_full(oldest_ip)
