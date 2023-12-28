@@ -8,8 +8,11 @@ class PacketFactory():
         self.config = config.load_config()
         self.ICMP_base = ICMP_base
         self.TCP_base = TCP_base
-     def create_packet(self, tcp_chance=50, icmp_chance=50):
+     def create_packet(self):
             chance = random.randint(1, 100)
+            
+            tcp_chance=config.tcp_chance
+            icmp_chance=config.icmp_chance
             
             if chance <= tcp_chance:
                 ip = random.sample(self.TCP_base, 1)[0]

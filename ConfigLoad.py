@@ -21,3 +21,8 @@ class Configuration:
         self.icmp_timeout_between_pings = icmp_packet_values['timeout_between_pings']
         self.icmp_count = icmp_packet_values['count']
         self.icmp_success = icmp_packet_values['success']
+
+        #Chances
+        chances_values = config_data['chances']
+        self.tcp_chance = chances_values['tcp_chance']
+        self.icmp_chance = chances_values['icmp_chance'] 

@@ -1,14 +1,20 @@
 {
   "tcp_packet": {
+    "tcp_chance": 50,
     "mark": 10,
     "timeout_tcp": 1,
     "port": 80
   },
   "icmp_packet": {
+    "icmp_chance": 50,
     "mark": 7,
     "timeout_waiting_for_response": 1,
     "timeout_between_pings": 0.5,
     "count": 5,
     "success": 0.8
+  },
+  "chances": {
+    "tcp_chance" : 50,
+    "icmp_chance" : 50
   }
 }
