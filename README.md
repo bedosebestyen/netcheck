@@ -1,7 +1,7 @@
 # netcheck
 
 IpPool.py:
-COntains IpPool class, that is used to get the IPs from the source and put 100 in ICMP_hosts, and TCP_hosts. These hosts will be checked by the functions in Checker.py.
+Contains IpPool class, that is used to get the IPs from the source and put 100 in ICMP_hosts, and TCP_hosts. These hosts will be checked by the functions in Checker.py.
 
 ConfigLoad.py:
 Contains a Configuration class. The values are loaded from the config.json. These values are later used in PacketFacktory to create the packets.
