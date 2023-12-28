@@ -5,7 +5,7 @@ class Configuration:
         self.config_file_path = config_file_path
         self.load_config()
 
-    def load_config(self):
+    def load_config(self) -> None:
         with open(self.config_file_path) as f:
             config_data = json.load(f)
         #TCP_packet

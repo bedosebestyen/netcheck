@@ -5,7 +5,7 @@ def setup_runtime_logger():
     runtime_logger = logging.getLogger('runtime_logger')
     runtime_log_handler = logging.FileHandler("runtime_log.log", mode="w")
     
-    # Add a formatter with a timestamp to the log handler
+    
     formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
     runtime_log_handler.setFormatter(formatter)
     
@@ -19,7 +19,7 @@ def setup_summary_logger():
     summary_logger = logging.getLogger('summary_logger')
     summary_log_handler = logging.FileHandler("summary.log", mode="w")
     
-    # Add a formatter with a timestamp to the log handler
+    
     formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
     summary_log_handler.setFormatter(formatter)
     
@@ -33,7 +33,7 @@ def setup_summary_logger():
 runtime_logger = setup_runtime_logger()
 summary_logger = setup_summary_logger()
 
-class Logger_Templates():
+class LoggerTemplates():
     #staticmethod is useful here because they are not bound to a class instance, so they can be called directly without creating a class instance
     @staticmethod
     def tcp_reachable_log(ip, port):
@@ -55,6 +55,7 @@ class Logger_Templates():
         runtime_logger.error(f"{ip} host FAILED ICMP try || Fail_Count: {fail_count}")
     @staticmethod
     def summary_log(unreachable_icmp, unreachable_tcp, reachable_icmp, reachable_tcp):
+        runtime_logger.info(f'Unreachable ICMP: {unreachable_icmp}\n\t\t\t\tUnreachable TCP: {unreachable_tcp}\n\t\t\t\tReachable_ICMP: {reachable_icmp}\n\t\t\t\tReachable_TCP: {reachable_tcp}')
         summary_logger.info(f'Unreachable ICMP: {unreachable_icmp}\n\t\t\t\tUnreachable TCP: {unreachable_tcp}\n\t\t\t\tReachable_ICMP: {reachable_icmp}\n\t\t\t\tReachable_TCP: {reachable_tcp}')
     @staticmethod
     def icmp_unreachable_full(oldest_ip):

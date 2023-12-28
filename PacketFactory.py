@@ -1,6 +1,6 @@
 import random
-from packets import TCP_packet, ICMP_packet
-from configuration import Configuration
+from PacketsBase import TCP_packet, ICMP_packet
+from ConfigLoad import Configuration
 
 config = Configuration()
 class PacketFactory():

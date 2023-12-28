@@ -19,6 +19,8 @@ class TCP_packet(Packet):
         super().__init__(ip, mark, timeout)
         self.port = port
 
+#I implemented a singleton pattern for PacketLogic so only one instance will be initiated
+#Might be an overkill, but it causes no harm
 class SingletonMeta(type):
     instances = {}
 
@@ -26,8 +28,3 @@ class SingletonMeta(type):
         if cls not in cls.instances:
             cls.instances[cls] = super(SingletonMeta, cls).__call__(*args, **kwargs)
         return cls.instances[cls]
-    
-
-    
-    
-    
