@@ -20,7 +20,7 @@ class IpPool:
             i = 1 - i  # Toggle between 0 and 1 to alternate between ICMP and TCP
 
             # Stop once both lists contain 100 IPs
-            if len(self.ICMP_hosts) == 200 and len(self.TCP_hosts) == 200:
+            if len(self.ICMP_hosts) == 500 and len(self.TCP_hosts) == 500:
                 break
 
         return self.ICMP_hosts, self.TCP_hosts

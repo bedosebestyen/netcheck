@@ -11,11 +11,12 @@ TODO:
 """
 
 async def main(packet_manager, packet_create) -> None:
+
+    
     #Creates 10 async tasks
     tasks = task_creator(packet_manager, packet_create, 10)
     #Gathers the tasks
     await asyncio.gather(*tasks, return_exceptions=True)
-    
     
 if __name__ == '__main__':
     try:
@@ -36,3 +37,26 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         #Stop when ctrl + c or ctrl + z is pressed
         sys.exit()
+
+
+"""
+o add the all_checks_succ function as a task and keep the tasks list filling up again and again, you can modify the task_creator function like this:
+
+def task_creator(ip_manager, packet_create, max_concurrent_tasks, obj): 
+    tasks = [] 
+    for _ in range(max_concurrent_tasks): 
+        # Create a new packet 
+        packet = packet_create.create_packet() 
+        if isinstance(packet, ICMP_packet): 
+            task = asyncio.create_task(check_icmp(packet, ip_manager)) 
+        elif isinstance(packet, TCP_packet): 
+            task = asyncio.create_task(check_tcp(packet, ip_manager)) 
+        # Tasks added to tasks[] 
+        tasks.append(task) 
+
+    # Add the all_checks_succ function as a task
+    tasks.append(asyncio.create_task(obj.all_checks_succ()))
+
+    return tasks
+In this modification, obj is the instance of the class that all_checks_succ belongs to. You need to pass this instance when you call task_creator. The all_checks_succ function will now run asynchronously with the other tasks.
+"""

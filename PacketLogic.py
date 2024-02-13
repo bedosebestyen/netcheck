@@ -1,5 +1,7 @@
 from PacketsBase import ICMP_packet, TCP_packet, SingletonMeta
 from LogHelper import LoggerTemplates
+from WriteToFile import write_to_file
+import asyncio
 class  PacketLogic(metaclass=SingletonMeta):
     
     def __init__(self, ICMP_base, TCP_base) -> None:
@@ -7,11 +9,14 @@ class  PacketLogic(metaclass=SingletonMeta):
         self.reachable_TCP = []
         self.unreachable_ICMP = []
         self.unreachable_TCP = []
-        self.unreachable_limit = 10
+        self.unreachable_limit = 50
         self.unreachable_TCP_count = 0
         self.unreachable_ICMP_count = 0
         self.ICMP_base = ICMP_base
         self.TCP_base = TCP_base
+        #these 2 are used to determine the success percentage of all the checks
+        self.success_count = 0
+        self.all_checks_count = 0
     def add_reachable_packet(self, packet) -> None:
         if isinstance(packet, ICMP_packet):
                 self.reachable_ICMP.append(packet.ip)
@@ -59,3 +64,16 @@ class  PacketLogic(metaclass=SingletonMeta):
                 self.TCP_base.append(oldest_ip)
                 self.unreachable_TCP_count -= 1
                 LoggerTemplates.tcp_unreachable_full(oldest_ip)
+    #where should i place it?M???
+    async def all_checks_succ(self):
+        #this will keep it in a loop, sleeping 10 seconds after each check
+        while True:
+            await asyncio.sleep(10)
+            new_number = (self.success_count / self.all_checks_count) * 10
+            prev_number = 0
+            #to determine if there was change in the percentage bigger than 10%
+            if (prev_number + 10) > (new_number + 10) or (prev_number - 10) < (new_number - 10):
+                write_to_file(new_number)
+
+                prev_number = new_number
+            

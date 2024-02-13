@@ -13,7 +13,6 @@ class PacketFactory():
             
             tcp_chance=config.tcp_chance
             icmp_chance=config.icmp_chance
-            
             if chance <= tcp_chance:
                 ip = random.sample(self.TCP_base, 1)[0]
                 #ip, mark, timeout, port
