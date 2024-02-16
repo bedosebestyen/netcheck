@@ -2,26 +2,26 @@ import asyncio
 import socket
 from random import randrange
 from aioping_SO_MARK import aioping
-from PacketsBase import ICMP_packet, TCP_packet
+from PacketsBase import ICMP_packet, TCP_packet, DNS_packet
 from LogHelper import LoggerTemplates
 import aiodns
-
 #I guess the result checker should get a task too. But I think for it to run all the time it should be put into a different task group
 #research still needed
+
 def task_creator(ip_manager, packet_create, max_concurrent_tasks):
-            tasks = []
-            for _ in range(max_concurrent_tasks):
-                # Create a new packet
-                packet = packet_create.create_packet()
-
-                if isinstance(packet, ICMP_packet):
-                    task = asyncio.create_task(check_icmp(packet, ip_manager))
-                elif isinstance(packet, TCP_packet):
-                    task = asyncio.create_task(check_tcp(packet, ip_manager))
-
-                # Tasks added to tasks[]
-                tasks.append(task)
-            return tasks
+      tasks = []
+      for _ in range(max_concurrent_tasks - 1): 
+            # Create a new packet 
+            packet = packet_create.create_packet() 
+            if isinstance(packet, ICMP_packet): 
+                  task = asyncio.create_task(check_icmp(packet, ip_manager)) 
+            elif isinstance(packet, TCP_packet): 
+                  task = asyncio.create_task(check_tcp(packet, ip_manager))
+            elif isinstance(packet, DNS_packet):
+                  task = asyncio.create_task(check_dns(packet, ip_manager))
+            # Tasks added to tasks[] 
+            tasks.append(task) 
+      return tasks
 
 async def check_tcp(packet, ip_manager):
     #Get the current event loop
@@ -114,10 +114,13 @@ async def check_icmp(packet, ip_manager):
             return False
                   
 
-async def check_dns(ip):
-      resolver = aiodns.DNSResolver()
-      try:
-            response = await resolver.query(ip, 'A')
-            LoggerTemplates.dns_reachable(ip)
-      except aiodns.error.DNSError as e:
-            LoggerTemplates.dns_unreachable(ip)
+async def check_dns(packet, ip_manager):
+    loop = asyncio.get_event_loop()
+    resolver = aiodns.DNSResolver()
+    
+    try:
+        resolver.nameservers = ['10.85.147.65']
+        result = await resolver.query('google.com', 'A')
+        LoggerTemplates.dns_reachable(packet.ip, result)
+    except Exception as e:
+        LoggerTemplates.dns_unreachable(packet.ip, e)

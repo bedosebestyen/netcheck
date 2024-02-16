@@ -22,7 +22,12 @@ class Configuration:
         self.icmp_count = icmp_packet_values['count']
         self.icmp_success = icmp_packet_values['success']
 
+        #DNS packet
+        dns_packet_values = config_data['dns_packet']
+        self.dns_mark = dns_packet_values['mark']
         #Chances
         chances_values = config_data['chances']
         self.tcp_chance = chances_values['tcp_chance']
-        self.icmp_chance = chances_values['icmp_chance'] 
+        self.icmp_chance = chances_values['icmp_chance']
+        self.dns_chance = chances_values['dns_chance']
+        

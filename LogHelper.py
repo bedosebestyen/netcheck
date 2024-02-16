@@ -69,10 +69,8 @@ class LoggerTemplates():
     def write_unsucc(exception):
         runtime_logger.info(f"Write out failed: {exception}")
     @staticmethod
-    def dns_reachable(ip):
-        runtime_logger.info(f'reachable: {ip}')
+    def dns_reachable(ip, result):
+        runtime_logger.info(f'DNS reachable: {ip}\n\t\t\t\t Query: {result}')
     @staticmethod
     def dns_unreachable(ip, e):
-        runtime_logger.info(f'unreachable: {ip}, Exception: {e}')
-    
-        
+        runtime_logger.info(f'DNS unreachable: {ip}, Exception: {str(e)}')
