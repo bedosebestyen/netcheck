@@ -2,26 +2,25 @@ import asyncio
 import socket
 from random import randrange
 from aioping_SO_MARK import aioping
-from PacketsBase import ICMP_packet, TCP_packet
+from PacketsBase import ICMP_packet, TCP_packet, DNS_packet
 from LogHelper import LoggerTemplates
+#I guess the result checker should get a task too. But I think for it to run all the time it should be put into a different task group
+#research still needed
 
-
-#Creates a task from the packets.
 def task_creator(ip_manager, packet_create, max_concurrent_tasks):
-            tasks = []
-            for _ in range(max_concurrent_tasks):
-                # Create a new packet
-                packet = packet_create.create_packet()
-
-                if isinstance(packet, ICMP_packet):
-                    task = asyncio.create_task(check_icmp(packet, ip_manager))
-                elif isinstance(packet, TCP_packet):
-                    task = asyncio.create_task(check_tcp(packet, ip_manager))
-
-                # Tasks added to tasks[]
-                tasks.append(task)
-            return tasks
-
+      tasks = []
+      for _ in range(max_concurrent_tasks - 1): 
+            # Create a new packet 
+            packet = packet_create.create_packet() 
+            if isinstance(packet, ICMP_packet): 
+                  task = asyncio.create_task(check_icmp(packet, ip_manager)) 
+            elif isinstance(packet, TCP_packet): 
+                  task = asyncio.create_task(check_tcp(packet, ip_manager))
+            elif isinstance(packet, DNS_packet):
+                  task = asyncio.create_task(check_dns(packet.ip, ip_manager))
+            # Tasks added to tasks[]
+            tasks.append(task) 
+      return tasks
 
 async def check_tcp(packet, ip_manager):
     #Get the current event loop
@@ -37,7 +36,9 @@ async def check_tcp(packet, ip_manager):
           await asyncio.wait_for(loop.sock_connect(sock, (packet.ip, packet.port)), timeout=5)
           LoggerTemplates.tcp_reachable_log(packet.ip, packet.port)
           ip_manager.add_reachable_packet(packet)
-          return True
+          ip_manager.success_count += 1
+          ip_manager.all_checks_count += 1
+          #return True
     except Exception as e:
           ip_manager.unreachable_ip_add(packet)
           LoggerTemplates.tcp_unreachable_log(packet.ip, packet.port, e)
@@ -45,7 +46,8 @@ async def check_tcp(packet, ip_manager):
                                        ip_manager.unreachable_TCP, 
                                        ip_manager.reachable_ICMP, 
                                        ip_manager.reachable_TCP)
-          return False
+          ip_manager.all_checks_count += 1
+          #return False
     finally:
           sock.close()
 
@@ -71,13 +73,15 @@ async def check_icmp(packet, ip_manager):
             if isinstance(result, Exception):
                   fail_counter += 1
                   LoggerTemplates.icmp_packet_failure_log(packet.ip, fail_counter)
+                  #in this case all the pings failed
                   if fail_counter == packet.count:
                         ip_manager.unreachable_ip_add(packet)
                         LoggerTemplates.icmp_unreachable_log(packet.ip, 0)
                         LoggerTemplates.summary_log(ip_manager.unreachable_ICMP, 
                                        ip_manager.unreachable_TCP, 
                                        ip_manager.reachable_ICMP, 
-                                       ip_manager.reachable_TCP)                  
+                                       ip_manager.reachable_TCP)     
+                        ip_manager.all_checks_count += 1             
                         return False
             else:
                   result *= 1000
@@ -95,6 +99,8 @@ async def check_icmp(packet, ip_manager):
                                     ip_manager.unreachable_TCP, 
                                     ip_manager.reachable_ICMP, 
                                     ip_manager.reachable_TCP)
+            ip_manager.success_count += 1
+            ip_manager.all_checks_count += 1
             return True
       else:
             ip_manager.unreachable_ip_add(packet)
@@ -103,12 +109,38 @@ async def check_icmp(packet, ip_manager):
                                     ip_manager.unreachable_TCP, 
                                     ip_manager.reachable_ICMP, 
                                     ip_manager.reachable_TCP)
+            ip_manager.all_checks_count += 1
             return False
                   
 
+async def check_dns(server, ip_manager,port=53, timeout=5, mark=None):
+    query_packet = b'\x00\x01\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x03www\x06google\x03com\x00\x00\x01\x00\x01'
+    try:
+        # Create a UDP socket
+        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        
+        # Set SO_MARK option if specified
+        if mark is not None:
+            sock.setsockopt(socket.SOL_SOCKET, socket.SO_MARK, mark)
+        
+        sock.setblocking(False)
+        
+        loop = asyncio.get_running_loop()
 
-
-            
-      
-      
-                        
+        # Send the DNS query packet to the server
+        await loop.sock_sendto(sock, query_packet, (server, port))
+        
+        # Receive response (if any) with individual timeout
+        try:
+            response, _ = await asyncio.wait_for(loop.sock_recvfrom(sock, 1024), timeout)
+            LoggerTemplates.dns_reachable(server, response)
+            ip_manager.success_count += 1
+            ip_manager.all_checks_count += 1
+        except asyncio.TimeoutError as e:
+            LoggerTemplates.dns_unreachable(server, e)
+            ip_manager.all_checks_count += 1
+    except Exception as e:
+        LoggerTemplates.dns_unreachable(server, e)
+        ip_manager.all_checks_count += 1
+    finally:
+        sock.close()

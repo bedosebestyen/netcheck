@@ -6,7 +6,7 @@ def setup_runtime_logger():
     runtime_log_handler = logging.FileHandler("runtime_log.log", mode="w")
     
     
-    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+    formatter = logging.Formatter('%(levelname)s - %(message)s')
     runtime_log_handler.setFormatter(formatter)
     
     runtime_logger.setLevel(logging.INFO)
@@ -20,7 +20,7 @@ def setup_summary_logger():
     summary_log_handler = logging.FileHandler("summary.log", mode="w")
     
     
-    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+    formatter = logging.Formatter('%(levelname)s - %(message)s')
     summary_log_handler.setFormatter(formatter)
     
     summary_logger.setLevel(logging.INFO)
@@ -55,7 +55,7 @@ class LoggerTemplates():
         runtime_logger.error(f"{ip} host FAILED ICMP try || Fail_Count: {fail_count}")
     @staticmethod
     def summary_log(unreachable_icmp, unreachable_tcp, reachable_icmp, reachable_tcp):
-        runtime_logger.info(f'Unreachable ICMP: {unreachable_icmp}\n\t\t\t\tUnreachable TCP: {unreachable_tcp}\n\t\t\t\tReachable_ICMP: {reachable_icmp}\n\t\t\t\tReachable_TCP: {reachable_tcp}')
+        #runtime_logger.info(f'Unreachable ICMP: {unreachable_icmp}\n\t\t\t\tUnreachable TCP: {unreachable_tcp}\n\t\t\t\tReachable_ICMP: {reachable_icmp}\n\t\t\t\tReachable_TCP: {reachable_tcp}')
         summary_logger.info(f'Unreachable ICMP: {unreachable_icmp}\n\t\t\t\tUnreachable TCP: {unreachable_tcp}\n\t\t\t\tReachable_ICMP: {reachable_icmp}\n\t\t\t\tReachable_TCP: {reachable_tcp}')
     @staticmethod
     def icmp_unreachable_full(oldest_ip):
@@ -65,6 +65,12 @@ class LoggerTemplates():
     def tcp_unreachable_full(oldest_ip):
         runtime_logger.info(f'TCP unreachable reached max capacity first element will be put back into reachable, ip: {oldest_ip}')
         summary_logger.info(f'TCP unreachable reached max capacity first element will be put back into reachable, ip: {oldest_ip}')
-    
-    
-        
+    @staticmethod
+    def write_unsucc(exception):
+        runtime_logger.info(f"Write out failed: {exception}")
+    @staticmethod
+    def dns_reachable(ip, result):
+        runtime_logger.info(f'DNS reachable: {ip}\n\t\t\t\t Query: {result}')
+    @staticmethod
+    def dns_unreachable(ip, e):
+        runtime_logger.info(f'DNS unreachable: {ip}, Exception: {str(e)}')

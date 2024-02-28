@@ -6,25 +6,24 @@ class IpPool:
     def __init__(self) -> None:
         self.ICMP_hosts = []
         self.TCP_hosts = []
-
+        self.DNS_hosts = []
     def hosts_from_file(self, source="/run/known-webservers-for-connectivity-test/latest"):
         files = os.listdir(source)
 
-        i = 0
         for file in files:
-            
-            if i == 0:
+            if len(self.ICMP_hosts) < 500:
                 self.ICMP_hosts.append(file)
-            else:
+            elif len(self.TCP_hosts) < 500:
                 self.TCP_hosts.append(file)
-            i = 1 - i  # Toggle between 0 and 1 to alternate between ICMP and TCP
+            elif len(self.DNS_hosts) < 500:
+                self.DNS_hosts.append(file)
 
-            # Stop once both lists contain 100 IPs
-            if len(self.ICMP_hosts) == 200 and len(self.TCP_hosts) == 200:
+            # Stop once all lists contain 500 IPs
+            if len(self.ICMP_hosts) == 500 and len(self.TCP_hosts) == 500 and len(self.DNS_hosts) == 500:
                 break
 
-        return self.ICMP_hosts, self.TCP_hosts
-    
+        return self.ICMP_hosts, self.TCP_hosts, self.DNS_hosts
+        
 
 
     
