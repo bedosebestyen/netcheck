@@ -4,6 +4,7 @@ from LogHelper import LoggerTemplates
 filename = "/tmp/netcheck_result"
 
 
+        
 def write_to_file(number):
     if not os.path.exists(filename):
         os.mkfifo(filename)

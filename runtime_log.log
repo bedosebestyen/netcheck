@@ -1,58 +1,1030 @@
-INFO - DNS reachable: 91.102.12.217
-				 Query: [<ares_query_a_result> host=142.251.208.174, ttl=113]
-INFO - DNS reachable: 185.75.193.170
-				 Query: [<ares_query_a_result> host=142.251.208.174, ttl=113]
-INFO - DNS reachable: 18.239.255.111
-				 Query: [<ares_query_a_result> host=142.251.208.174, ttl=113]
-INFO - DNS reachable: 104.26.10.234
-				 Query: [<ares_query_a_result> host=142.251.208.174, ttl=113]
-INFO - DNS reachable: 104.26.3.85
-				 Query: [<ares_query_a_result> host=142.251.208.174, ttl=113]
-INFO - DNS reachable: 80.249.166.53
-				 Query: [<ares_query_a_result> host=142.251.208.174, ttl=113]
-INFO - 172.67.159.195 is reachable on 80 TCP
-ERROR - 54.194.135.101 host FAILED ICMP try || Fail_Count: 1
-ERROR - 54.194.135.101 host FAILED ICMP try || Fail_Count: 2
-ERROR - 54.194.135.101 host FAILED ICMP try || Fail_Count: 3
-ERROR - 54.194.135.101 host FAILED ICMP try || Fail_Count: 4
-ERROR - 54.194.135.101 host FAILED ICMP try || Fail_Count: 5
-INFO - 54.194.135.101 is not reachable with ICMP.
+INFO - 18.239.255.5 is reachable on 80 TCP
+INFO - 151.101.2.187 is reachable on 80 TCP
+INFO - 75.2.119.185 is reachable on 80 TCP
+INFO - 172.67.135.80 host ICMP try SUCCESS
+INFO - 172.67.135.80 host ICMP try SUCCESS
+INFO - 172.67.135.80 host ICMP try SUCCESS
+INFO - 172.67.135.80 host ICMP try SUCCESS
+INFO - 172.67.135.80 host ICMP try SUCCESS
+INFO - 172.67.135.80 is reachable with ICMP.
+				 Avg_Succ_Delay: 9.5899 ms 
+				 Succ_Rate: 100.00%
+ERROR - 151.101.130.217 host FAILED ICMP try || Fail_Count: 1
+INFO - 151.101.130.217 host ICMP try SUCCESS
+ERROR - 151.101.130.217 host FAILED ICMP try || Fail_Count: 2
+ERROR - 151.101.130.217 host FAILED ICMP try || Fail_Count: 3
+ERROR - 151.101.130.217 host FAILED ICMP try || Fail_Count: 4
+INFO - 151.101.130.217 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+ERROR - 37.221.212.115 host FAILED ICMP try || Fail_Count: 1
+ERROR - 37.221.212.115 host FAILED ICMP try || Fail_Count: 2
+ERROR - 37.221.212.115 host FAILED ICMP try || Fail_Count: 3
+ERROR - 37.221.212.115 host FAILED ICMP try || Fail_Count: 4
+ERROR - 37.221.212.115 host FAILED ICMP try || Fail_Count: 5
+INFO - 37.221.212.115 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - DNS unreachable: 193.225.14.25, Exception: 
+INFO - DNS unreachable: 104.26.15.166, Exception: 
+INFO - DNS unreachable: 104.26.1.176, Exception: 
+INFO - 172.67.190.27 is reachable on 80 TCP
+INFO - 104.26.13.100 host ICMP try SUCCESS
+ERROR - 104.26.13.100 host FAILED ICMP try || Fail_Count: 1
+ERROR - 104.26.13.100 host FAILED ICMP try || Fail_Count: 2
+INFO - 104.26.13.100 host ICMP try SUCCESS
+INFO - 104.26.13.100 host ICMP try SUCCESS
+INFO - 104.26.13.100 is not reachable with ICMP.
+				 Succ_Rate: 60.00%
+ERROR - 37.9.175.165 host FAILED ICMP try || Fail_Count: 1
+ERROR - 37.9.175.165 host FAILED ICMP try || Fail_Count: 2
+ERROR - 37.9.175.165 host FAILED ICMP try || Fail_Count: 3
+ERROR - 37.9.175.165 host FAILED ICMP try || Fail_Count: 4
+ERROR - 37.9.175.165 host FAILED ICMP try || Fail_Count: 5
+INFO - 37.9.175.165 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 185.161.205.202 host FAILED ICMP try || Fail_Count: 1
+ERROR - 185.161.205.202 host FAILED ICMP try || Fail_Count: 2
+ERROR - 185.161.205.202 host FAILED ICMP try || Fail_Count: 3
+ERROR - 185.161.205.202 host FAILED ICMP try || Fail_Count: 4
+ERROR - 185.161.205.202 host FAILED ICMP try || Fail_Count: 5
+INFO - 185.161.205.202 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 104.18.40.147 host FAILED ICMP try || Fail_Count: 1
+ERROR - 104.18.40.147 host FAILED ICMP try || Fail_Count: 2
+ERROR - 104.18.40.147 host FAILED ICMP try || Fail_Count: 3
+ERROR - 104.18.40.147 host FAILED ICMP try || Fail_Count: 4
+ERROR - 104.18.40.147 host FAILED ICMP try || Fail_Count: 5
+INFO - 104.18.40.147 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 52.37.236.218 host FAILED ICMP try || Fail_Count: 1
+ERROR - 52.37.236.218 host FAILED ICMP try || Fail_Count: 2
+ERROR - 52.37.236.218 host FAILED ICMP try || Fail_Count: 3
+ERROR - 52.37.236.218 host FAILED ICMP try || Fail_Count: 4
+ERROR - 52.37.236.218 host FAILED ICMP try || Fail_Count: 5
+INFO - 52.37.236.218 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - DNS unreachable: 104.26.13.24, Exception: 
+INFO - DNS unreachable: 18.239.255.111, Exception: 
+INFO - DNS unreachable: 162.159.137.70, Exception: 
+INFO - 185.43.207.111 is reachable on 80 TCP
+INFO - 104.21.48.102 is reachable on 80 TCP
+INFO - 104.18.28.220 is reachable on 80 TCP
+INFO - 3.9.136.31 is reachable on 80 TCP
+INFO - 172.67.135.80 host ICMP try SUCCESS
+INFO - 172.67.135.80 host ICMP try SUCCESS
+INFO - 172.67.135.80 host ICMP try SUCCESS
+INFO - 172.67.135.80 host ICMP try SUCCESS
+INFO - 172.67.135.80 host ICMP try SUCCESS
+INFO - 172.67.135.80 is reachable with ICMP.
+				 Avg_Succ_Delay: 13.1479 ms 
+				 Succ_Rate: 100.00%
+INFO - 172.67.196.60 host ICMP try SUCCESS
+INFO - 172.67.196.60 host ICMP try SUCCESS
+INFO - 172.67.196.60 host ICMP try SUCCESS
+INFO - 172.67.196.60 host ICMP try SUCCESS
+INFO - 172.67.196.60 host ICMP try SUCCESS
+INFO - 172.67.196.60 is reachable with ICMP.
+				 Avg_Succ_Delay: 14.7219 ms 
+				 Succ_Rate: 100.00%
+INFO - DNS unreachable: 151.101.1.111, Exception: 
+INFO - DNS unreachable: 162.159.128.61, Exception: 
+INFO - DNS unreachable: 172.67.145.8, Exception: 
+INFO - 185.80.50.8 is reachable on 80 TCP
+INFO - 5.56.37.3 is reachable on 80 TCP
+INFO - 151.101.195.5 is reachable on 80 TCP
+INFO - 213.181.220.73 is reachable on 80 TCP
+INFO - 145.236.99.32 host ICMP try SUCCESS
+ERROR - 145.236.99.32 host FAILED ICMP try || Fail_Count: 1
+INFO - 145.236.99.32 host ICMP try SUCCESS
+INFO - 145.236.99.32 host ICMP try SUCCESS
+INFO - 145.236.99.32 host ICMP try SUCCESS
+INFO - 145.236.99.32 is reachable with ICMP.
+				 Avg_Succ_Delay: 44.2015 ms 
+				 Succ_Rate: 80.00%
+ERROR - 104.21.88.252 host FAILED ICMP try || Fail_Count: 1
+ERROR - 104.21.88.252 host FAILED ICMP try || Fail_Count: 2
+ERROR - 104.21.88.252 host FAILED ICMP try || Fail_Count: 3
+ERROR - 104.21.88.252 host FAILED ICMP try || Fail_Count: 4
+ERROR - 104.21.88.252 host FAILED ICMP try || Fail_Count: 5
+INFO - 104.21.88.252 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - 34.149.196.126 host ICMP try SUCCESS
+ERROR - 34.149.196.126 host FAILED ICMP try || Fail_Count: 1
+INFO - 34.149.196.126 host ICMP try SUCCESS
+INFO - 34.149.196.126 host ICMP try SUCCESS
+ERROR - 34.149.196.126 host FAILED ICMP try || Fail_Count: 2
+INFO - 34.149.196.126 is not reachable with ICMP.
+				 Succ_Rate: 60.00%
+INFO - DNS unreachable: 91.250.86.152, Exception: 
+INFO - DNS unreachable: 104.96.154.65, Exception: 
+INFO - 92.43.203.155 is reachable on 80 TCP
+INFO - 95.140.33.141 is reachable on 80 TCP
+INFO - 104.22.28.64 is reachable on 80 TCP
+INFO - 92.123.37.35 host ICMP try SUCCESS
+ERROR - 92.123.37.35 host FAILED ICMP try || Fail_Count: 1
+ERROR - 92.123.37.35 host FAILED ICMP try || Fail_Count: 2
+ERROR - 92.123.37.35 host FAILED ICMP try || Fail_Count: 3
+INFO - 92.123.37.35 host ICMP try SUCCESS
+INFO - 92.123.37.35 is not reachable with ICMP.
+				 Succ_Rate: 40.00%
+ERROR - 162.159.130.67 host FAILED ICMP try || Fail_Count: 1
+INFO - 162.159.130.67 host ICMP try SUCCESS
+ERROR - 162.159.130.67 host FAILED ICMP try || Fail_Count: 2
+ERROR - 162.159.130.67 host FAILED ICMP try || Fail_Count: 3
+ERROR - 162.159.130.67 host FAILED ICMP try || Fail_Count: 4
+INFO - 162.159.130.67 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+ERROR - 89.216.58.28 host FAILED ICMP try || Fail_Count: 1
+ERROR - 89.216.58.28 host FAILED ICMP try || Fail_Count: 2
+ERROR - 89.216.58.28 host FAILED ICMP try || Fail_Count: 3
+ERROR - 89.216.58.28 host FAILED ICMP try || Fail_Count: 4
+ERROR - 89.216.58.28 host FAILED ICMP try || Fail_Count: 5
+INFO - 89.216.58.28 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 46.174.146.28 host FAILED ICMP try || Fail_Count: 1
+ERROR - 46.174.146.28 host FAILED ICMP try || Fail_Count: 2
+ERROR - 46.174.146.28 host FAILED ICMP try || Fail_Count: 3
+ERROR - 46.174.146.28 host FAILED ICMP try || Fail_Count: 4
+ERROR - 46.174.146.28 host FAILED ICMP try || Fail_Count: 5
+INFO - 46.174.146.28 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 18.172.242.6 host FAILED ICMP try || Fail_Count: 1
+ERROR - 18.172.242.6 host FAILED ICMP try || Fail_Count: 2
+ERROR - 18.172.242.6 host FAILED ICMP try || Fail_Count: 3
+ERROR - 18.172.242.6 host FAILED ICMP try || Fail_Count: 4
+ERROR - 18.172.242.6 host FAILED ICMP try || Fail_Count: 5
+INFO - 18.172.242.6 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 142.132.194.189 host FAILED ICMP try || Fail_Count: 1
+ERROR - 142.132.194.189 host FAILED ICMP try || Fail_Count: 2
+ERROR - 142.132.194.189 host FAILED ICMP try || Fail_Count: 3
+ERROR - 142.132.194.189 host FAILED ICMP try || Fail_Count: 4
+ERROR - 142.132.194.189 host FAILED ICMP try || Fail_Count: 5
+INFO - 142.132.194.189 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - 104.18.41.118 is reachable on 80 TCP
+INFO - 52.94.225.248 is reachable on 80 TCP
+INFO - 213.181.199.14 is reachable on 80 TCP
+INFO - 172.67.72.142 is reachable on 80 TCP
+INFO - 92.43.203.160 host ICMP try SUCCESS
+ERROR - 92.43.203.160 host FAILED ICMP try || Fail_Count: 1
+ERROR - 92.43.203.160 host FAILED ICMP try || Fail_Count: 2
+ERROR - 92.43.203.160 host FAILED ICMP try || Fail_Count: 3
+ERROR - 92.43.203.160 host FAILED ICMP try || Fail_Count: 4
+INFO - 92.43.203.160 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+ERROR - 172.67.177.43 host FAILED ICMP try || Fail_Count: 1
+INFO - 172.67.177.43 host ICMP try SUCCESS
+INFO - 172.67.177.43 host ICMP try SUCCESS
+INFO - 172.67.177.43 host ICMP try SUCCESS
+INFO - 172.67.177.43 host ICMP try SUCCESS
+INFO - 172.67.177.43 is reachable with ICMP.
+				 Avg_Succ_Delay: 9.9029 ms 
+				 Succ_Rate: 80.00%
+INFO - DNS unreachable: 165.22.69.238, Exception: 
+INFO - DNS unreachable: 142.250.180.206, Exception: 
+INFO - DNS unreachable: 151.101.130.49, Exception: 
+INFO - 172.64.155.249 is reachable on 80 TCP
+INFO - 172.67.75.223 is reachable on 80 TCP
+INFO - 104.22.77.142 is reachable on 80 TCP
+INFO - 104.18.32.7 host ICMP try SUCCESS
+ERROR - 104.18.32.7 host FAILED ICMP try || Fail_Count: 1
+ERROR - 104.18.32.7 host FAILED ICMP try || Fail_Count: 2
+ERROR - 104.18.32.7 host FAILED ICMP try || Fail_Count: 3
+INFO - 104.18.32.7 host ICMP try SUCCESS
+INFO - 104.18.32.7 is not reachable with ICMP.
+				 Succ_Rate: 40.00%
+ERROR - 213.181.199.37 host FAILED ICMP try || Fail_Count: 1
+INFO - 213.181.199.37 host ICMP try SUCCESS
+ERROR - 213.181.199.37 host FAILED ICMP try || Fail_Count: 2
+ERROR - 213.181.199.37 host FAILED ICMP try || Fail_Count: 3
+ERROR - 213.181.199.37 host FAILED ICMP try || Fail_Count: 4
+INFO - 213.181.199.37 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+ERROR - 20.15.0.12 host FAILED ICMP try || Fail_Count: 1
+ERROR - 20.15.0.12 host FAILED ICMP try || Fail_Count: 2
+ERROR - 20.15.0.12 host FAILED ICMP try || Fail_Count: 3
+ERROR - 20.15.0.12 host FAILED ICMP try || Fail_Count: 4
+ERROR - 20.15.0.12 host FAILED ICMP try || Fail_Count: 5
+INFO - 20.15.0.12 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 104.18.30.189 host FAILED ICMP try || Fail_Count: 1
+ERROR - 104.18.30.189 host FAILED ICMP try || Fail_Count: 2
+ERROR - 104.18.30.189 host FAILED ICMP try || Fail_Count: 3
+ERROR - 104.18.30.189 host FAILED ICMP try || Fail_Count: 4
+ERROR - 104.18.30.189 host FAILED ICMP try || Fail_Count: 5
+INFO - 104.18.30.189 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 77.111.91.98 host FAILED ICMP try || Fail_Count: 1
+ERROR - 77.111.91.98 host FAILED ICMP try || Fail_Count: 2
+ERROR - 77.111.91.98 host FAILED ICMP try || Fail_Count: 3
+ERROR - 77.111.91.98 host FAILED ICMP try || Fail_Count: 4
+ERROR - 77.111.91.98 host FAILED ICMP try || Fail_Count: 5
+INFO - 77.111.91.98 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - DNS unreachable: 104.26.3.189, Exception: 
+INFO - 79.120.192.230 is reachable on 80 TCP
+INFO - 172.67.71.160 is reachable on 80 TCP
+INFO - 104.16.45.71 is reachable on 80 TCP
+INFO - 104.16.225.91 is reachable on 80 TCP
+INFO - 18.245.31.85 is reachable on 80 TCP
+INFO - 92.118.26.105 is reachable on 80 TCP
+INFO - 34.149.196.126 host ICMP try SUCCESS
+INFO - 34.149.196.126 host ICMP try SUCCESS
+INFO - 34.149.196.126 host ICMP try SUCCESS
+INFO - 34.149.196.126 host ICMP try SUCCESS
+INFO - 34.149.196.126 host ICMP try SUCCESS
+INFO - 34.149.196.126 is reachable with ICMP.
+				 Avg_Succ_Delay: 4.5395 ms 
+				 Succ_Rate: 100.00%
+INFO - 18.239.255.97 host ICMP try SUCCESS
+ERROR - 18.239.255.97 host FAILED ICMP try || Fail_Count: 1
+INFO - 18.239.255.97 host ICMP try SUCCESS
+INFO - 18.239.255.97 host ICMP try SUCCESS
+INFO - 18.239.255.97 host ICMP try SUCCESS
+INFO - 18.239.255.97 is reachable with ICMP.
+				 Avg_Succ_Delay: 4.9843 ms 
+				 Succ_Rate: 80.00%
+INFO - DNS unreachable: 151.101.193.29, Exception: 
+INFO - 185.51.188.143 is reachable on 80 TCP
+INFO - 104.25.119.19 is reachable on 80 TCP
+INFO - 89.216.58.28 host ICMP try SUCCESS
+INFO - 89.216.58.28 host ICMP try SUCCESS
+INFO - 89.216.58.28 host ICMP try SUCCESS
+INFO - 89.216.58.28 host ICMP try SUCCESS
+INFO - 89.216.58.28 host ICMP try SUCCESS
+INFO - 89.216.58.28 is reachable with ICMP.
+				 Avg_Succ_Delay: 18.7439 ms 
+				 Succ_Rate: 100.00%
+ERROR - 75.2.58.105 host FAILED ICMP try || Fail_Count: 1
+INFO - 75.2.58.105 host ICMP try SUCCESS
+ERROR - 75.2.58.105 host FAILED ICMP try || Fail_Count: 2
+ERROR - 75.2.58.105 host FAILED ICMP try || Fail_Count: 3
+ERROR - 75.2.58.105 host FAILED ICMP try || Fail_Count: 4
+INFO - 75.2.58.105 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+INFO - 185.129.138.202 host ICMP try SUCCESS
+ERROR - 185.129.138.202 host FAILED ICMP try || Fail_Count: 1
+ERROR - 185.129.138.202 host FAILED ICMP try || Fail_Count: 2
+ERROR - 185.129.138.202 host FAILED ICMP try || Fail_Count: 3
+ERROR - 185.129.138.202 host FAILED ICMP try || Fail_Count: 4
+INFO - 185.129.138.202 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+ERROR - 168.119.3.44 host FAILED ICMP try || Fail_Count: 1
+ERROR - 168.119.3.44 host FAILED ICMP try || Fail_Count: 2
+ERROR - 168.119.3.44 host FAILED ICMP try || Fail_Count: 3
+ERROR - 168.119.3.44 host FAILED ICMP try || Fail_Count: 4
+ERROR - 168.119.3.44 host FAILED ICMP try || Fail_Count: 5
+INFO - 168.119.3.44 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - DNS unreachable: 34.120.205.124, Exception: 
+INFO - DNS unreachable: 151.101.66.217, Exception: 
+INFO - DNS unreachable: 188.92.40.122, Exception: 
+INFO - 87.229.26.88 is reachable on 80 TCP
+INFO - 3.160.150.16 is reachable on 80 TCP
+INFO - 104.18.229.43 host ICMP try SUCCESS
+INFO - 104.18.229.43 host ICMP try SUCCESS
+INFO - 104.18.229.43 host ICMP try SUCCESS
+INFO - 104.18.229.43 host ICMP try SUCCESS
+INFO - 104.18.229.43 host ICMP try SUCCESS
+INFO - 104.18.229.43 is reachable with ICMP.
+				 Avg_Succ_Delay: 15.5696 ms 
+				 Succ_Rate: 100.00%
+INFO - 2.22.89.7 host ICMP try SUCCESS
+ERROR - 2.22.89.7 host FAILED ICMP try || Fail_Count: 1
+INFO - 2.22.89.7 host ICMP try SUCCESS
+INFO - 2.22.89.7 host ICMP try SUCCESS
+INFO - 2.22.89.7 host ICMP try SUCCESS
+INFO - 2.22.89.7 is reachable with ICMP.
+				 Avg_Succ_Delay: 28.5985 ms 
+				 Succ_Rate: 80.00%
+ERROR - 104.21.26.131 host FAILED ICMP try || Fail_Count: 1
+ERROR - 104.21.26.131 host FAILED ICMP try || Fail_Count: 2
+ERROR - 104.21.26.131 host FAILED ICMP try || Fail_Count: 3
+ERROR - 104.21.26.131 host FAILED ICMP try || Fail_Count: 4
+ERROR - 104.21.26.131 host FAILED ICMP try || Fail_Count: 5
+INFO - 104.21.26.131 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 185.187.72.89 host FAILED ICMP try || Fail_Count: 1
+ERROR - 185.187.72.89 host FAILED ICMP try || Fail_Count: 2
+ERROR - 185.187.72.89 host FAILED ICMP try || Fail_Count: 3
+ERROR - 185.187.72.89 host FAILED ICMP try || Fail_Count: 4
+ERROR - 185.187.72.89 host FAILED ICMP try || Fail_Count: 5
+INFO - 185.187.72.89 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - 52.84.106.118 host ICMP try SUCCESS
+ERROR - 52.84.106.118 host FAILED ICMP try || Fail_Count: 1
+ERROR - 52.84.106.118 host FAILED ICMP try || Fail_Count: 2
+ERROR - 52.84.106.118 host FAILED ICMP try || Fail_Count: 3
+ERROR - 52.84.106.118 host FAILED ICMP try || Fail_Count: 4
+INFO - 52.84.106.118 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+INFO - DNS unreachable: 18.239.255.126, Exception: 
+INFO - DNS unreachable: 104.18.30.67, Exception: 
+INFO - 18.239.255.59 is reachable on 80 TCP
+INFO - 104.18.211.19 is reachable on 80 TCP
+INFO - 193.32.233.69 is reachable on 80 TCP
+INFO - 193.6.10.2 is reachable on 80 TCP
+INFO - 104.21.11.131 is reachable on 80 TCP
+INFO - 104.18.32.7 host ICMP try SUCCESS
+INFO - 104.18.32.7 host ICMP try SUCCESS
+INFO - 104.18.32.7 host ICMP try SUCCESS
+INFO - 104.18.32.7 host ICMP try SUCCESS
+INFO - 104.18.32.7 host ICMP try SUCCESS
+INFO - 104.18.32.7 is reachable with ICMP.
+				 Avg_Succ_Delay: 27.3515 ms 
+				 Succ_Rate: 100.00%
+INFO - 104.96.94.14 host ICMP try SUCCESS
+INFO - 104.96.94.14 host ICMP try SUCCESS
+INFO - 104.96.94.14 host ICMP try SUCCESS
+INFO - 104.96.94.14 host ICMP try SUCCESS
+ERROR - 104.96.94.14 host FAILED ICMP try || Fail_Count: 1
+INFO - 104.96.94.14 is reachable with ICMP.
+				 Avg_Succ_Delay: 12.1539 ms 
+				 Succ_Rate: 80.00%
+INFO - 193.225.4.123 host ICMP try SUCCESS
+ERROR - 193.225.4.123 host FAILED ICMP try || Fail_Count: 1
+INFO - 193.225.4.123 host ICMP try SUCCESS
+INFO - 193.225.4.123 host ICMP try SUCCESS
+INFO - 193.225.4.123 host ICMP try SUCCESS
+INFO - 193.225.4.123 is reachable with ICMP.
+				 Avg_Succ_Delay: 25.1768 ms 
+				 Succ_Rate: 80.00%
+INFO - DNS unreachable: 47.246.173.30, Exception: 
+INFO - 52.94.228.167 is reachable on 80 TCP
+INFO - 84.206.128.18 is reachable on 80 TCP
+INFO - 84.206.11.161 is reachable on 80 TCP
+INFO - 18.172.242.60 host ICMP try SUCCESS
+ERROR - 18.172.242.60 host FAILED ICMP try || Fail_Count: 1
+ERROR - 18.172.242.60 host FAILED ICMP try || Fail_Count: 2
+INFO - 18.172.242.60 host ICMP try SUCCESS
+INFO - 18.172.242.60 host ICMP try SUCCESS
+INFO - 18.172.242.60 is not reachable with ICMP.
+				 Succ_Rate: 60.00%
+ERROR - 52.84.106.50 host FAILED ICMP try || Fail_Count: 1
+ERROR - 52.84.106.50 host FAILED ICMP try || Fail_Count: 2
+ERROR - 52.84.106.50 host FAILED ICMP try || Fail_Count: 3
+ERROR - 52.84.106.50 host FAILED ICMP try || Fail_Count: 4
+ERROR - 52.84.106.50 host FAILED ICMP try || Fail_Count: 5
+INFO - 52.84.106.50 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 217.113.62.201 host FAILED ICMP try || Fail_Count: 1
+ERROR - 217.113.62.201 host FAILED ICMP try || Fail_Count: 2
+ERROR - 217.113.62.201 host FAILED ICMP try || Fail_Count: 3
+ERROR - 217.113.62.201 host FAILED ICMP try || Fail_Count: 4
+ERROR - 217.113.62.201 host FAILED ICMP try || Fail_Count: 5
+INFO - 217.113.62.201 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 46.107.16.53 host FAILED ICMP try || Fail_Count: 1
+ERROR - 46.107.16.53 host FAILED ICMP try || Fail_Count: 2
+ERROR - 46.107.16.53 host FAILED ICMP try || Fail_Count: 3
+ERROR - 46.107.16.53 host FAILED ICMP try || Fail_Count: 4
+ERROR - 46.107.16.53 host FAILED ICMP try || Fail_Count: 5
+INFO - 46.107.16.53 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - DNS unreachable: 3.125.5.102, Exception: 
+INFO - DNS unreachable: 44.236.72.93, Exception: 
+INFO - 193.39.12.85 is reachable on 80 TCP
+INFO - 54.239.28.85 is reachable on 80 TCP
+INFO - 109.61.65.30 is reachable on 80 TCP
+INFO - 104.21.66.183 host ICMP try SUCCESS
+INFO - 104.21.66.183 host ICMP try SUCCESS
+INFO - 104.21.66.183 host ICMP try SUCCESS
+INFO - 104.21.66.183 host ICMP try SUCCESS
+INFO - 104.21.66.183 host ICMP try SUCCESS
+INFO - 104.21.66.183 is reachable with ICMP.
+				 Avg_Succ_Delay: 10.2539 ms 
+				 Succ_Rate: 100.00%
+ERROR - 87.229.65.116 host FAILED ICMP try || Fail_Count: 1
+ERROR - 87.229.65.116 host FAILED ICMP try || Fail_Count: 2
+INFO - 87.229.65.116 host ICMP try SUCCESS
+ERROR - 87.229.65.116 host FAILED ICMP try || Fail_Count: 3
+ERROR - 87.229.65.116 host FAILED ICMP try || Fail_Count: 4
+INFO - 87.229.65.116 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+ERROR - 104.21.90.137 host FAILED ICMP try || Fail_Count: 1
+ERROR - 104.21.90.137 host FAILED ICMP try || Fail_Count: 2
+ERROR - 104.21.90.137 host FAILED ICMP try || Fail_Count: 3
+ERROR - 104.21.90.137 host FAILED ICMP try || Fail_Count: 4
+ERROR - 104.21.90.137 host FAILED ICMP try || Fail_Count: 5
+INFO - 104.21.90.137 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 151.101.194.110 host FAILED ICMP try || Fail_Count: 1
+ERROR - 151.101.194.110 host FAILED ICMP try || Fail_Count: 2
+ERROR - 151.101.194.110 host FAILED ICMP try || Fail_Count: 3
+ERROR - 151.101.194.110 host FAILED ICMP try || Fail_Count: 4
+ERROR - 151.101.194.110 host FAILED ICMP try || Fail_Count: 5
+INFO - 151.101.194.110 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - DNS unreachable: 31.13.84.174, Exception: 
+INFO - DNS unreachable: 193.225.14.25, Exception: 
+INFO - 18.66.112.75 is reachable on 80 TCP
+INFO - 84.206.42.125 is reachable on 80 TCP
+INFO - 104.21.65.83 is reachable on 80 TCP
+ERROR - 20.70.246.20 host FAILED ICMP try || Fail_Count: 1
+ERROR - 20.70.246.20 host FAILED ICMP try || Fail_Count: 2
+ERROR - 20.70.246.20 host FAILED ICMP try || Fail_Count: 3
+ERROR - 20.70.246.20 host FAILED ICMP try || Fail_Count: 4
+ERROR - 20.70.246.20 host FAILED ICMP try || Fail_Count: 5
+INFO - 20.70.246.20 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - DNS unreachable: 162.159.138.60, Exception: 
+INFO - DNS unreachable: 104.26.14.211, Exception: 
+INFO - DNS unreachable: 83.169.6.156, Exception: 
+INFO - DNS unreachable: 185.180.72.237, Exception: 
+INFO - DNS unreachable: 104.26.10.240, Exception: 
+INFO - 185.80.50.8 is reachable on 80 TCP
+INFO - 151.101.65.68 is reachable on 80 TCP
+INFO - 194.7.35.240 is reachable on 80 TCP
+INFO - DNS reachable: 185.43.206.90
+				 Query: b'\x00\x01\x81\x05\x00\x01\x00\x00\x00\x00\x00\x00\x03www\x06google\x03com\x00\x00\x01\x00\x01'
+ERROR - 3.69.213.60 host FAILED ICMP try || Fail_Count: 1
+ERROR - 3.69.213.60 host FAILED ICMP try || Fail_Count: 2
+ERROR - 3.69.213.60 host FAILED ICMP try || Fail_Count: 3
+ERROR - 3.69.213.60 host FAILED ICMP try || Fail_Count: 4
+ERROR - 3.69.213.60 host FAILED ICMP try || Fail_Count: 5
+INFO - 3.69.213.60 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 104.26.3.55 host FAILED ICMP try || Fail_Count: 1
+INFO - 104.26.3.55 host ICMP try SUCCESS
+ERROR - 104.26.3.55 host FAILED ICMP try || Fail_Count: 2
+ERROR - 104.26.3.55 host FAILED ICMP try || Fail_Count: 3
+ERROR - 104.26.3.55 host FAILED ICMP try || Fail_Count: 4
+INFO - 104.26.3.55 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+ERROR - 148.251.196.8 host FAILED ICMP try || Fail_Count: 1
+ERROR - 148.251.196.8 host FAILED ICMP try || Fail_Count: 2
+ERROR - 148.251.196.8 host FAILED ICMP try || Fail_Count: 3
+ERROR - 148.251.196.8 host FAILED ICMP try || Fail_Count: 4
+ERROR - 148.251.196.8 host FAILED ICMP try || Fail_Count: 5
+INFO - 148.251.196.8 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 18.172.242.2 host FAILED ICMP try || Fail_Count: 1
+ERROR - 18.172.242.2 host FAILED ICMP try || Fail_Count: 2
+ERROR - 18.172.242.2 host FAILED ICMP try || Fail_Count: 3
+ERROR - 18.172.242.2 host FAILED ICMP try || Fail_Count: 4
+ERROR - 18.172.242.2 host FAILED ICMP try || Fail_Count: 5
+INFO - 18.172.242.2 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - DNS unreachable: 52.206.133.146, Exception: 
+INFO - 79.139.62.42 is reachable on 80 TCP
+INFO - 92.43.203.150 is reachable on 80 TCP
+INFO - 52.137.58.128 is reachable on 80 TCP
+INFO - 104.18.28.220 is reachable on 80 TCP
+INFO - 185.80.50.216 is reachable on 80 TCP
+INFO - 18.172.242.2 host ICMP try SUCCESS
+INFO - 18.172.242.2 host ICMP try SUCCESS
+INFO - 18.172.242.2 host ICMP try SUCCESS
+INFO - 18.172.242.2 host ICMP try SUCCESS
+INFO - 18.172.242.2 host ICMP try SUCCESS
+INFO - 18.172.242.2 is reachable with ICMP.
+				 Avg_Succ_Delay: 28.4668 ms 
+				 Succ_Rate: 100.00%
+INFO - 172.67.177.43 host ICMP try SUCCESS
+ERROR - 172.67.177.43 host FAILED ICMP try || Fail_Count: 1
+INFO - 172.67.177.43 host ICMP try SUCCESS
+INFO - 172.67.177.43 host ICMP try SUCCESS
+INFO - 172.67.177.43 host ICMP try SUCCESS
+INFO - 172.67.177.43 is reachable with ICMP.
+				 Avg_Succ_Delay: 28.8884 ms 
+				 Succ_Rate: 80.00%
+INFO - 92.119.122.160 host ICMP try SUCCESS
+ERROR - 92.119.122.160 host FAILED ICMP try || Fail_Count: 1
+ERROR - 92.119.122.160 host FAILED ICMP try || Fail_Count: 2
+ERROR - 92.119.122.160 host FAILED ICMP try || Fail_Count: 3
+ERROR - 92.119.122.160 host FAILED ICMP try || Fail_Count: 4
+INFO - 92.119.122.160 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+ERROR - 52.84.106.57 host FAILED ICMP try || Fail_Count: 1
+ERROR - 52.84.106.57 host FAILED ICMP try || Fail_Count: 2
+ERROR - 52.84.106.57 host FAILED ICMP try || Fail_Count: 3
+ERROR - 52.84.106.57 host FAILED ICMP try || Fail_Count: 4
+ERROR - 52.84.106.57 host FAILED ICMP try || Fail_Count: 5
+INFO - 52.84.106.57 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - 104.25.119.19 is reachable on 80 TCP
+INFO - 63.35.119.40 is reachable on 80 TCP
+INFO - 172.64.146.199 is reachable on 80 TCP
+INFO - 194.38.96.9 host ICMP try SUCCESS
+ERROR - 194.38.96.9 host FAILED ICMP try || Fail_Count: 1
+INFO - 194.38.96.9 host ICMP try SUCCESS
+INFO - 194.38.96.9 host ICMP try SUCCESS
+INFO - 194.38.96.9 host ICMP try SUCCESS
+INFO - 194.38.96.9 is reachable with ICMP.
+				 Avg_Succ_Delay: 9.8798 ms 
+				 Succ_Rate: 80.00%
+ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 1
+ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 2
+ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 3
+ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 4
+ERROR - 46.174.146.17 host FAILED ICMP try || Fail_Count: 5
+INFO - 46.174.146.17 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 104.18.28.193 host FAILED ICMP try || Fail_Count: 1
+ERROR - 104.18.28.193 host FAILED ICMP try || Fail_Count: 2
+ERROR - 104.18.28.193 host FAILED ICMP try || Fail_Count: 3
+ERROR - 104.18.28.193 host FAILED ICMP try || Fail_Count: 4
+ERROR - 104.18.28.193 host FAILED ICMP try || Fail_Count: 5
+INFO - 104.18.28.193 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 172.67.147.77 host FAILED ICMP try || Fail_Count: 1
+ERROR - 172.67.147.77 host FAILED ICMP try || Fail_Count: 2
+ERROR - 172.67.147.77 host FAILED ICMP try || Fail_Count: 3
+ERROR - 172.67.147.77 host FAILED ICMP try || Fail_Count: 4
+ERROR - 172.67.147.77 host FAILED ICMP try || Fail_Count: 5
+INFO - 172.67.147.77 is not reachable with ICMP.
 				 Succ_Rate: 0.00%
 ERROR - 77.111.91.71 host FAILED ICMP try || Fail_Count: 1
-INFO - 77.111.91.71 host ICMP try SUCCESS
 ERROR - 77.111.91.71 host FAILED ICMP try || Fail_Count: 2
 ERROR - 77.111.91.71 host FAILED ICMP try || Fail_Count: 3
-INFO - 77.111.91.71 host ICMP try SUCCESS
+ERROR - 77.111.91.71 host FAILED ICMP try || Fail_Count: 4
+ERROR - 77.111.91.71 host FAILED ICMP try || Fail_Count: 5
 INFO - 77.111.91.71 is not reachable with ICMP.
-				 Succ_Rate: 40.00%
-INFO - DNS reachable: 128.65.211.64
-				 Query: [<ares_query_a_result> host=142.251.208.174, ttl=110]
-INFO - DNS reachable: 13.248.155.102
-				 Query: [<ares_query_a_result> host=142.251.208.174, ttl=110]
-INFO - DNS reachable: 34.96.123.111
-				 Query: [<ares_query_a_result> host=142.251.208.174, ttl=110]
-INFO - 79.172.212.249 is reachable on 80 TCP
-INFO - 194.180.12.161 is reachable on 80 TCP
-ERROR - 20.112.250.133 host FAILED ICMP try || Fail_Count: 1
-ERROR - 20.112.250.133 host FAILED ICMP try || Fail_Count: 2
-ERROR - 20.112.250.133 host FAILED ICMP try || Fail_Count: 3
-ERROR - 20.112.250.133 host FAILED ICMP try || Fail_Count: 4
-ERROR - 20.112.250.133 host FAILED ICMP try || Fail_Count: 5
-INFO - 20.112.250.133 is not reachable with ICMP.
 				 Succ_Rate: 0.00%
-ERROR - 172.67.70.189 host FAILED ICMP try || Fail_Count: 1
-INFO - 172.67.70.189 host ICMP try SUCCESS
-ERROR - 172.67.70.189 host FAILED ICMP try || Fail_Count: 2
-ERROR - 172.67.70.189 host FAILED ICMP try || Fail_Count: 3
-ERROR - 172.67.70.189 host FAILED ICMP try || Fail_Count: 4
-INFO - 172.67.70.189 is not reachable with ICMP.
+INFO - DNS unreachable: 18.202.117.218, Exception: 
+INFO - 18.239.255.42 is reachable on 80 TCP
+INFO - 52.42.195.111 is reachable on 80 TCP
+INFO - 172.64.147.37 is reachable on 80 TCP
+INFO - 52.84.106.129 host ICMP try SUCCESS
+ERROR - 52.84.106.129 host FAILED ICMP try || Fail_Count: 1
+ERROR - 52.84.106.129 host FAILED ICMP try || Fail_Count: 2
+INFO - 52.84.106.129 host ICMP try SUCCESS
+INFO - 52.84.106.129 host ICMP try SUCCESS
+INFO - 52.84.106.129 is not reachable with ICMP.
+				 Succ_Rate: 60.00%
+ERROR - 173.249.53.124 host FAILED ICMP try || Fail_Count: 1
+ERROR - 173.249.53.124 host FAILED ICMP try || Fail_Count: 2
+ERROR - 173.249.53.124 host FAILED ICMP try || Fail_Count: 3
+ERROR - 173.249.53.124 host FAILED ICMP try || Fail_Count: 4
+ERROR - 173.249.53.124 host FAILED ICMP try || Fail_Count: 5
+INFO - 173.249.53.124 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - DNS unreachable: 104.21.83.195, Exception: 
+INFO - DNS unreachable: 172.67.70.25, Exception: 
+INFO - DNS unreachable: 128.65.211.64, Exception: 
+INFO - DNS unreachable: 44.236.72.93, Exception: 
+INFO - DNS reachable: 212.52.167.40
+				 Query: b'\x00\x01\x81\x05\x00\x01\x00\x00\x00\x00\x00\x00\x03www\x06google\x03com\x00\x00\x01\x00\x01'
+INFO - DNS reachable: 95.217.73.254
+				 Query: b'\x00\x01\x81\x05\x00\x01\x00\x00\x00\x00\x00\x00\x03www\x06google\x03com\x00\x00\x01\x00\x01'
+ERROR - 50.17.73.221 host FAILED ICMP try || Fail_Count: 1
+ERROR - 50.17.73.221 host FAILED ICMP try || Fail_Count: 2
+ERROR - 50.17.73.221 host FAILED ICMP try || Fail_Count: 3
+ERROR - 50.17.73.221 host FAILED ICMP try || Fail_Count: 4
+ERROR - 50.17.73.221 host FAILED ICMP try || Fail_Count: 5
+INFO - 50.17.73.221 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - 95.217.36.248 host ICMP try SUCCESS
+ERROR - 95.217.36.248 host FAILED ICMP try || Fail_Count: 1
+INFO - 95.217.36.248 host ICMP try SUCCESS
+INFO - 95.217.36.248 host ICMP try SUCCESS
+INFO - 95.217.36.248 host ICMP try SUCCESS
+INFO - 95.217.36.248 is reachable with ICMP.
+				 Avg_Succ_Delay: 38.4576 ms 
+				 Succ_Rate: 80.00%
+INFO - DNS unreachable: 151.101.2.49, Exception: 
+INFO - DNS unreachable: 178.248.201.249, Exception: 
+INFO - DNS unreachable: 151.101.66.133, Exception: 
+INFO - DNS unreachable: 76.76.21.21, Exception: 
+INFO - DNS unreachable: 172.67.195.204, Exception: 
+INFO - 172.67.69.80 is reachable on 80 TCP
+INFO - 98.137.11.164 is reachable on 80 TCP
+ERROR - 20.15.0.25 host FAILED ICMP try || Fail_Count: 1
+ERROR - 20.15.0.25 host FAILED ICMP try || Fail_Count: 2
+ERROR - 20.15.0.25 host FAILED ICMP try || Fail_Count: 3
+ERROR - 20.15.0.25 host FAILED ICMP try || Fail_Count: 4
+ERROR - 20.15.0.25 host FAILED ICMP try || Fail_Count: 5
+INFO - 20.15.0.25 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 162.254.190.58 host FAILED ICMP try || Fail_Count: 1
+INFO - 162.254.190.58 host ICMP try SUCCESS
+ERROR - 162.254.190.58 host FAILED ICMP try || Fail_Count: 2
+ERROR - 162.254.190.58 host FAILED ICMP try || Fail_Count: 3
+ERROR - 162.254.190.58 host FAILED ICMP try || Fail_Count: 4
+INFO - 162.254.190.58 is not reachable with ICMP.
 				 Succ_Rate: 20.00%
-ERROR - 84.206.126.111 host FAILED ICMP try || Fail_Count: 1
-ERROR - 84.206.126.111 host FAILED ICMP try || Fail_Count: 2
-ERROR - 84.206.126.111 host FAILED ICMP try || Fail_Count: 3
-ERROR - 84.206.126.111 host FAILED ICMP try || Fail_Count: 4
-ERROR - 84.206.126.111 host FAILED ICMP try || Fail_Count: 5
-INFO - 84.206.126.111 is not reachable with ICMP.
+INFO - DNS unreachable: 74.6.231.20, Exception: 
+INFO - DNS unreachable: 104.21.7.209, Exception: 
+INFO - DNS unreachable: 172.67.223.181, Exception: 
+INFO - DNS unreachable: 79.139.58.125, Exception: 
+INFO - DNS unreachable: 172.67.14.32, Exception: 
+INFO - 172.67.72.132 is reachable on 80 TCP
+INFO - 20.234.179.95 is reachable on 80 TCP
+INFO - 62.77.211.26 host ICMP try SUCCESS
+INFO - 62.77.211.26 host ICMP try SUCCESS
+INFO - 62.77.211.26 host ICMP try SUCCESS
+INFO - 62.77.211.26 host ICMP try SUCCESS
+INFO - 62.77.211.26 host ICMP try SUCCESS
+INFO - 62.77.211.26 is reachable with ICMP.
+				 Avg_Succ_Delay: 17.2767 ms 
+				 Succ_Rate: 100.00%
+INFO - 87.229.45.225 host ICMP try SUCCESS
+INFO - 87.229.45.225 host ICMP try SUCCESS
+ERROR - 87.229.45.225 host FAILED ICMP try || Fail_Count: 1
+INFO - 87.229.45.225 host ICMP try SUCCESS
+INFO - 87.229.45.225 host ICMP try SUCCESS
+INFO - 87.229.45.225 is reachable with ICMP.
+				 Avg_Succ_Delay: 31.4605 ms 
+				 Succ_Rate: 80.00%
+INFO - 104.198.14.52 host ICMP try SUCCESS
+ERROR - 104.198.14.52 host FAILED ICMP try || Fail_Count: 1
+ERROR - 104.198.14.52 host FAILED ICMP try || Fail_Count: 2
+ERROR - 104.198.14.52 host FAILED ICMP try || Fail_Count: 3
+ERROR - 104.198.14.52 host FAILED ICMP try || Fail_Count: 4
+INFO - 104.198.14.52 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+ERROR - 88.221.92.195 host FAILED ICMP try || Fail_Count: 1
+ERROR - 88.221.92.195 host FAILED ICMP try || Fail_Count: 2
+ERROR - 88.221.92.195 host FAILED ICMP try || Fail_Count: 3
+ERROR - 88.221.92.195 host FAILED ICMP try || Fail_Count: 4
+ERROR - 88.221.92.195 host FAILED ICMP try || Fail_Count: 5
+INFO - 88.221.92.195 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - DNS unreachable: 46.101.115.0, Exception: 
+INFO - DNS unreachable: 80.249.166.51, Exception: 
+INFO - DNS unreachable: 50.234.250.31, Exception: 
+INFO - 172.64.147.160 is reachable on 80 TCP
+INFO - 104.18.43.226 is reachable on 80 TCP
+ERROR - 212.51.65.65 host FAILED ICMP try || Fail_Count: 1
+ERROR - 212.51.65.65 host FAILED ICMP try || Fail_Count: 2
+ERROR - 212.51.65.65 host FAILED ICMP try || Fail_Count: 3
+ERROR - 212.51.65.65 host FAILED ICMP try || Fail_Count: 4
+ERROR - 212.51.65.65 host FAILED ICMP try || Fail_Count: 5
+INFO - 212.51.65.65 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 192.0.78.17 host FAILED ICMP try || Fail_Count: 1
+INFO - 192.0.78.17 host ICMP try SUCCESS
+ERROR - 192.0.78.17 host FAILED ICMP try || Fail_Count: 2
+ERROR - 192.0.78.17 host FAILED ICMP try || Fail_Count: 3
+ERROR - 192.0.78.17 host FAILED ICMP try || Fail_Count: 4
+INFO - 192.0.78.17 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+INFO - DNS unreachable: 80.77.124.67, Exception: 
+INFO - DNS unreachable: 92.52.223.9, Exception: 
+INFO - DNS unreachable: 18.139.187.35, Exception: 
+INFO - DNS unreachable: 151.101.66.167, Exception: 
+INFO - DNS unreachable: 18.244.3.105, Exception: 
+INFO - 49.12.234.54 is reachable on 80 TCP
+INFO - 104.21.66.42 is reachable on 80 TCP
+INFO - 104.22.62.94 is reachable on 80 TCP
+INFO - 92.43.203.195 host ICMP try SUCCESS
+ERROR - 92.43.203.195 host FAILED ICMP try || Fail_Count: 1
+INFO - 92.43.203.195 host ICMP try SUCCESS
+INFO - 92.43.203.195 host ICMP try SUCCESS
+INFO - 92.43.203.195 host ICMP try SUCCESS
+INFO - 92.43.203.195 is reachable with ICMP.
+				 Avg_Succ_Delay: 5.5231 ms 
+				 Succ_Rate: 80.00%
+ERROR - 18.239.255.82 host FAILED ICMP try || Fail_Count: 1
+ERROR - 18.239.255.82 host FAILED ICMP try || Fail_Count: 2
+ERROR - 18.239.255.82 host FAILED ICMP try || Fail_Count: 3
+ERROR - 18.239.255.82 host FAILED ICMP try || Fail_Count: 4
+ERROR - 18.239.255.82 host FAILED ICMP try || Fail_Count: 5
+INFO - 18.239.255.82 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - DNS unreachable: 172.67.195.204, Exception: 
+INFO - DNS unreachable: 151.101.192.81, Exception: 
+INFO - DNS unreachable: 5.75.239.157, Exception: 
+INFO - DNS unreachable: 66.96.133.17, Exception: 
+INFO - 172.64.155.249 is reachable on 80 TCP
+INFO - 172.64.153.144 is reachable on 80 TCP
+INFO - DNS reachable: 80.249.171.198
+				 Query: b'\x00\x01\x81\x05\x00\x01\x00\x00\x00\x00\x00\x00\x03www\x06google\x03com\x00\x00\x01\x00\x01'
+ERROR - 213.174.157.200 host FAILED ICMP try || Fail_Count: 1
+INFO - 213.174.157.200 host ICMP try SUCCESS
+ERROR - 213.174.157.200 host FAILED ICMP try || Fail_Count: 2
+ERROR - 213.174.157.200 host FAILED ICMP try || Fail_Count: 3
+ERROR - 213.174.157.200 host FAILED ICMP try || Fail_Count: 4
+INFO - 213.174.157.200 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+ERROR - 52.54.185.130 host FAILED ICMP try || Fail_Count: 1
+ERROR - 52.54.185.130 host FAILED ICMP try || Fail_Count: 2
+ERROR - 52.54.185.130 host FAILED ICMP try || Fail_Count: 3
+ERROR - 52.54.185.130 host FAILED ICMP try || Fail_Count: 4
+ERROR - 52.54.185.130 host FAILED ICMP try || Fail_Count: 5
+INFO - 52.54.185.130 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 104.21.52.195 host FAILED ICMP try || Fail_Count: 1
+ERROR - 104.21.52.195 host FAILED ICMP try || Fail_Count: 2
+ERROR - 104.21.52.195 host FAILED ICMP try || Fail_Count: 3
+ERROR - 104.21.52.195 host FAILED ICMP try || Fail_Count: 4
+ERROR - 104.21.52.195 host FAILED ICMP try || Fail_Count: 5
+INFO - 104.21.52.195 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - DNS unreachable: 151.101.194.167, Exception: 
+INFO - DNS unreachable: 91.250.86.152, Exception: 
+INFO - DNS unreachable: 151.101.194.187, Exception: 
+INFO - 18.239.255.59 is reachable on 80 TCP
+INFO - 178.32.103.237 is reachable on 80 TCP
+INFO - 87.229.65.116 host ICMP try SUCCESS
+INFO - 87.229.65.116 host ICMP try SUCCESS
+INFO - 87.229.65.116 host ICMP try SUCCESS
+INFO - 87.229.65.116 host ICMP try SUCCESS
+INFO - 87.229.65.116 host ICMP try SUCCESS
+INFO - 87.229.65.116 is reachable with ICMP.
+				 Avg_Succ_Delay: 6.2468 ms 
+				 Succ_Rate: 100.00%
+INFO - DNS unreachable: 18.172.242.93, Exception: 
+INFO - DNS unreachable: 78.138.112.40, Exception: 
+INFO - DNS unreachable: 199.232.198.114, Exception: 
+INFO - DNS unreachable: 81.0.120.158, Exception: 
+INFO - DNS unreachable: 88.99.95.134, Exception: 
+INFO - DNS unreachable: 104.21.72.193, Exception: 
+INFO - 92.43.203.118 is reachable on 80 TCP
+INFO - 185.51.191.205 is reachable on 80 TCP
+INFO - DNS reachable: 178.238.223.46
+				 Query: b'\x00\x01\x81\x05\x00\x01\x00\x00\x00\x00\x00\x00\x03www\x06google\x03com\x00\x00\x01\x00\x01'
+INFO - 104.21.58.195 host ICMP try SUCCESS
+INFO - 104.21.58.195 host ICMP try SUCCESS
+INFO - 104.21.58.195 host ICMP try SUCCESS
+INFO - 104.21.58.195 host ICMP try SUCCESS
+INFO - 104.21.58.195 host ICMP try SUCCESS
+INFO - 104.21.58.195 is reachable with ICMP.
+				 Avg_Succ_Delay: 9.8830 ms 
+				 Succ_Rate: 100.00%
+ERROR - 77.111.91.168 host FAILED ICMP try || Fail_Count: 1
+INFO - 77.111.91.168 host ICMP try SUCCESS
+ERROR - 77.111.91.168 host FAILED ICMP try || Fail_Count: 2
+ERROR - 77.111.91.168 host FAILED ICMP try || Fail_Count: 3
+ERROR - 77.111.91.168 host FAILED ICMP try || Fail_Count: 4
+INFO - 77.111.91.168 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+ERROR - 54.76.222.46 host FAILED ICMP try || Fail_Count: 1
+ERROR - 54.76.222.46 host FAILED ICMP try || Fail_Count: 2
+ERROR - 54.76.222.46 host FAILED ICMP try || Fail_Count: 3
+ERROR - 54.76.222.46 host FAILED ICMP try || Fail_Count: 4
+ERROR - 54.76.222.46 host FAILED ICMP try || Fail_Count: 5
+INFO - 54.76.222.46 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 145.236.99.2 host FAILED ICMP try || Fail_Count: 1
+ERROR - 145.236.99.2 host FAILED ICMP try || Fail_Count: 2
+ERROR - 145.236.99.2 host FAILED ICMP try || Fail_Count: 3
+ERROR - 145.236.99.2 host FAILED ICMP try || Fail_Count: 4
+ERROR - 145.236.99.2 host FAILED ICMP try || Fail_Count: 5
+INFO - 145.236.99.2 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 92.52.223.30 host FAILED ICMP try || Fail_Count: 1
+ERROR - 92.52.223.30 host FAILED ICMP try || Fail_Count: 2
+ERROR - 92.52.223.30 host FAILED ICMP try || Fail_Count: 3
+ERROR - 92.52.223.30 host FAILED ICMP try || Fail_Count: 4
+ERROR - 92.52.223.30 host FAILED ICMP try || Fail_Count: 5
+INFO - 92.52.223.30 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 151.101.129.135 host FAILED ICMP try || Fail_Count: 1
+ERROR - 151.101.129.135 host FAILED ICMP try || Fail_Count: 2
+ERROR - 151.101.129.135 host FAILED ICMP try || Fail_Count: 3
+ERROR - 151.101.129.135 host FAILED ICMP try || Fail_Count: 4
+ERROR - 151.101.129.135 host FAILED ICMP try || Fail_Count: 5
+INFO - 151.101.129.135 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - 193.6.241.223 is reachable on 80 TCP
+INFO - 52.94.225.248 is reachable on 80 TCP
+INFO - 79.172.212.110 is reachable on 80 TCP
+INFO - 194.233.193.29 is reachable on 80 TCP
+INFO - 79.172.212.110 is reachable on 80 TCP
+ERROR - 35.157.147.86 host FAILED ICMP try || Fail_Count: 1
+ERROR - 35.157.147.86 host FAILED ICMP try || Fail_Count: 2
+ERROR - 35.157.147.86 host FAILED ICMP try || Fail_Count: 3
+ERROR - 35.157.147.86 host FAILED ICMP try || Fail_Count: 4
+ERROR - 35.157.147.86 host FAILED ICMP try || Fail_Count: 5
+INFO - 35.157.147.86 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 151.101.64.200 host FAILED ICMP try || Fail_Count: 1
+INFO - 151.101.64.200 host ICMP try SUCCESS
+ERROR - 151.101.64.200 host FAILED ICMP try || Fail_Count: 2
+ERROR - 151.101.64.200 host FAILED ICMP try || Fail_Count: 3
+ERROR - 151.101.64.200 host FAILED ICMP try || Fail_Count: 4
+INFO - 151.101.64.200 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+ERROR - 3.160.119.60 host FAILED ICMP try || Fail_Count: 1
+ERROR - 3.160.119.60 host FAILED ICMP try || Fail_Count: 2
+ERROR - 3.160.119.60 host FAILED ICMP try || Fail_Count: 3
+ERROR - 3.160.119.60 host FAILED ICMP try || Fail_Count: 4
+ERROR - 3.160.119.60 host FAILED ICMP try || Fail_Count: 5
+INFO - 3.160.119.60 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - DNS unreachable: 172.67.217.246, Exception: 
+INFO - 172.67.153.59 is reachable on 80 TCP
+INFO - 18.239.255.31 is reachable on 80 TCP
+INFO - 88.221.92.136 is reachable on 80 TCP
+ERROR - 54.84.213.102 host FAILED ICMP try || Fail_Count: 1
+ERROR - 54.84.213.102 host FAILED ICMP try || Fail_Count: 2
+ERROR - 54.84.213.102 host FAILED ICMP try || Fail_Count: 3
+ERROR - 54.84.213.102 host FAILED ICMP try || Fail_Count: 4
+ERROR - 54.84.213.102 host FAILED ICMP try || Fail_Count: 5
+INFO - 54.84.213.102 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 142.132.194.189 host FAILED ICMP try || Fail_Count: 1
+ERROR - 142.132.194.189 host FAILED ICMP try || Fail_Count: 2
+ERROR - 142.132.194.189 host FAILED ICMP try || Fail_Count: 3
+ERROR - 142.132.194.189 host FAILED ICMP try || Fail_Count: 4
+ERROR - 142.132.194.189 host FAILED ICMP try || Fail_Count: 5
+INFO - 142.132.194.189 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 5.56.38.50 host FAILED ICMP try || Fail_Count: 1
+ERROR - 5.56.38.50 host FAILED ICMP try || Fail_Count: 2
+ERROR - 5.56.38.50 host FAILED ICMP try || Fail_Count: 3
+ERROR - 5.56.38.50 host FAILED ICMP try || Fail_Count: 4
+ERROR - 5.56.38.50 host FAILED ICMP try || Fail_Count: 5
+INFO - 5.56.38.50 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - DNS unreachable: 151.101.65.171, Exception: 
+INFO - DNS unreachable: 104.26.13.24, Exception: 
+INFO - DNS unreachable: 151.101.193.188, Exception: 
+INFO - 13.248.150.189 is reachable on 80 TCP
+INFO - 18.239.255.23 is reachable on 80 TCP
+INFO - 85.25.177.9 host ICMP try SUCCESS
+INFO - 85.25.177.9 host ICMP try SUCCESS
+INFO - 85.25.177.9 host ICMP try SUCCESS
+INFO - 85.25.177.9 host ICMP try SUCCESS
+INFO - 85.25.177.9 host ICMP try SUCCESS
+INFO - 85.25.177.9 is reachable with ICMP.
+				 Avg_Succ_Delay: 22.4297 ms 
+				 Succ_Rate: 100.00%
+ERROR - 213.181.199.78 host FAILED ICMP try || Fail_Count: 1
+INFO - 213.181.199.78 host ICMP try SUCCESS
+ERROR - 213.181.199.78 host FAILED ICMP try || Fail_Count: 2
+ERROR - 213.181.199.78 host FAILED ICMP try || Fail_Count: 3
+ERROR - 213.181.199.78 host FAILED ICMP try || Fail_Count: 4
+INFO - 213.181.199.78 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+INFO - DNS unreachable: 104.20.190.42, Exception: 
+INFO - DNS unreachable: 193.224.76.68, Exception: 
+INFO - DNS unreachable: 185.80.49.12, Exception: 
+INFO - DNS unreachable: 77.221.39.244, Exception: 
+INFO - DNS unreachable: 37.220.194.241, Exception: 
+INFO - 92.119.122.99 is reachable on 80 TCP
+INFO - 104.26.3.12 host ICMP try SUCCESS
+INFO - 104.26.3.12 host ICMP try SUCCESS
+INFO - 104.26.3.12 host ICMP try SUCCESS
+INFO - 104.26.3.12 host ICMP try SUCCESS
+INFO - 104.26.3.12 host ICMP try SUCCESS
+INFO - 104.26.3.12 is reachable with ICMP.
+				 Avg_Succ_Delay: 9.5377 ms 
+				 Succ_Rate: 100.00%
+ERROR - 164.92.195.95 host FAILED ICMP try || Fail_Count: 1
+INFO - 164.92.195.95 host ICMP try SUCCESS
+ERROR - 164.92.195.95 host FAILED ICMP try || Fail_Count: 2
+ERROR - 164.92.195.95 host FAILED ICMP try || Fail_Count: 3
+ERROR - 164.92.195.95 host FAILED ICMP try || Fail_Count: 4
+INFO - 164.92.195.95 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+ERROR - 77.111.91.228 host FAILED ICMP try || Fail_Count: 1
+ERROR - 77.111.91.228 host FAILED ICMP try || Fail_Count: 2
+ERROR - 77.111.91.228 host FAILED ICMP try || Fail_Count: 3
+ERROR - 77.111.91.228 host FAILED ICMP try || Fail_Count: 4
+ERROR - 77.111.91.228 host FAILED ICMP try || Fail_Count: 5
+INFO - 77.111.91.228 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 96.16.54.171 host FAILED ICMP try || Fail_Count: 1
+ERROR - 96.16.54.171 host FAILED ICMP try || Fail_Count: 2
+ERROR - 96.16.54.171 host FAILED ICMP try || Fail_Count: 3
+ERROR - 96.16.54.171 host FAILED ICMP try || Fail_Count: 4
+ERROR - 96.16.54.171 host FAILED ICMP try || Fail_Count: 5
+INFO - 96.16.54.171 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - DNS unreachable: 104.18.5.242, Exception: 
+INFO - DNS unreachable: 18.202.141.145, Exception: 
+INFO - DNS unreachable: 172.67.71.22, Exception: 
+INFO - DNS unreachable: 34.120.205.124, Exception: 
+INFO - 52.95.116.115 is reachable on 80 TCP
+INFO - 98.137.11.164 is reachable on 80 TCP
+INFO - 34.89.191.193 host ICMP try SUCCESS
+INFO - 34.89.191.193 host ICMP try SUCCESS
+INFO - 34.89.191.193 host ICMP try SUCCESS
+INFO - 34.89.191.193 host ICMP try SUCCESS
+INFO - 34.89.191.193 host ICMP try SUCCESS
+INFO - 34.89.191.193 is reachable with ICMP.
+				 Avg_Succ_Delay: 23.1852 ms 
+				 Succ_Rate: 100.00%
+ERROR - 185.51.66.98 host FAILED ICMP try || Fail_Count: 1
+INFO - 185.51.66.98 host ICMP try SUCCESS
+ERROR - 185.51.66.98 host FAILED ICMP try || Fail_Count: 2
+ERROR - 185.51.66.98 host FAILED ICMP try || Fail_Count: 3
+ERROR - 185.51.66.98 host FAILED ICMP try || Fail_Count: 4
+INFO - 185.51.66.98 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+ERROR - 87.229.99.133 host FAILED ICMP try || Fail_Count: 1
+ERROR - 87.229.99.133 host FAILED ICMP try || Fail_Count: 2
+ERROR - 87.229.99.133 host FAILED ICMP try || Fail_Count: 3
+ERROR - 87.229.99.133 host FAILED ICMP try || Fail_Count: 4
+ERROR - 87.229.99.133 host FAILED ICMP try || Fail_Count: 5
+INFO - 87.229.99.133 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - DNS unreachable: 18.239.255.117, Exception: 
+INFO - DNS unreachable: 151.101.1.224, Exception: 
+INFO - DNS unreachable: 172.67.138.144, Exception: 
+INFO - DNS unreachable: 151.101.1.111, Exception: 
+INFO - 94.199.181.203 is reachable on 80 TCP
+INFO - 18.66.112.75 is reachable on 80 TCP
+INFO - 104.21.58.57 is reachable on 80 TCP
+INFO - 142.250.201.206 host ICMP try SUCCESS
+ERROR - 142.250.201.206 host FAILED ICMP try || Fail_Count: 1
+INFO - 142.250.201.206 host ICMP try SUCCESS
+INFO - 142.250.201.206 host ICMP try SUCCESS
+INFO - 142.250.201.206 host ICMP try SUCCESS
+INFO - 142.250.201.206 is reachable with ICMP.
+				 Avg_Succ_Delay: 7.7369 ms 
+				 Succ_Rate: 80.00%
+ERROR - 3.65.84.19 host FAILED ICMP try || Fail_Count: 1
+ERROR - 3.65.84.19 host FAILED ICMP try || Fail_Count: 2
+ERROR - 3.65.84.19 host FAILED ICMP try || Fail_Count: 3
+ERROR - 3.65.84.19 host FAILED ICMP try || Fail_Count: 4
+ERROR - 3.65.84.19 host FAILED ICMP try || Fail_Count: 5
+INFO - 3.65.84.19 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 151.101.193.111 host FAILED ICMP try || Fail_Count: 1
+ERROR - 151.101.193.111 host FAILED ICMP try || Fail_Count: 2
+ERROR - 151.101.193.111 host FAILED ICMP try || Fail_Count: 3
+ERROR - 151.101.193.111 host FAILED ICMP try || Fail_Count: 4
+ERROR - 151.101.193.111 host FAILED ICMP try || Fail_Count: 5
+INFO - 151.101.193.111 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 104.21.80.100 host FAILED ICMP try || Fail_Count: 1
+ERROR - 104.21.80.100 host FAILED ICMP try || Fail_Count: 2
+INFO - 104.21.80.100 host ICMP try SUCCESS
+ERROR - 104.21.80.100 host FAILED ICMP try || Fail_Count: 3
+ERROR - 104.21.80.100 host FAILED ICMP try || Fail_Count: 4
+INFO - 104.21.80.100 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+INFO - DNS unreachable: 195.181.208.71, Exception: 
+INFO - DNS unreachable: 104.26.14.31, Exception: 
+INFO - 172.67.159.195 is reachable on 80 TCP
+INFO - 185.140.108.53 is reachable on 80 TCP
+INFO - 151.101.3.5 is reachable on 80 TCP
+INFO - 151.101.65.91 is reachable on 80 TCP
+INFO - DNS unreachable: 185.15.59.224, Exception: 
+INFO - DNS unreachable: 31.13.84.174, Exception: 
+INFO - DNS unreachable: 172.64.148.140, Exception: 
+INFO - DNS unreachable: 172.67.14.13, Exception: 
+INFO - DNS unreachable: 92.52.223.236, Exception: 
+INFO - 195.199.244.235 is reachable on 80 TCP
+INFO - 193.6.241.224 is reachable on 80 TCP
+INFO - 192.0.66.192 host ICMP try SUCCESS
+INFO - 192.0.66.192 host ICMP try SUCCESS
+INFO - 192.0.66.192 host ICMP try SUCCESS
+INFO - 192.0.66.192 host ICMP try SUCCESS
+INFO - 192.0.66.192 host ICMP try SUCCESS
+INFO - 192.0.66.192 is reachable with ICMP.
+				 Avg_Succ_Delay: 10.4309 ms 
+				 Succ_Rate: 100.00%
+ERROR - 77.111.91.98 host FAILED ICMP try || Fail_Count: 1
+INFO - 77.111.91.98 host ICMP try SUCCESS
+ERROR - 77.111.91.98 host FAILED ICMP try || Fail_Count: 2
+ERROR - 77.111.91.98 host FAILED ICMP try || Fail_Count: 3
+ERROR - 77.111.91.98 host FAILED ICMP try || Fail_Count: 4
+INFO - 77.111.91.98 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+INFO - DNS unreachable: 172.67.71.16, Exception: 
+INFO - DNS unreachable: 52.5.247.47, Exception: 
+INFO - DNS unreachable: 52.204.22.152, Exception: 
+INFO - DNS unreachable: 104.83.4.10, Exception: 
+INFO - DNS unreachable: 195.228.130.13, Exception: 
+INFO - 172.67.72.108 is reachable on 80 TCP
+INFO - 172.67.23.96 is reachable on 80 TCP
+INFO - 54.246.79.9 is reachable on 80 TCP
+ERROR - 84.21.18.140 host FAILED ICMP try || Fail_Count: 1
+ERROR - 84.21.18.140 host FAILED ICMP try || Fail_Count: 2
+ERROR - 84.21.18.140 host FAILED ICMP try || Fail_Count: 3
+ERROR - 84.21.18.140 host FAILED ICMP try || Fail_Count: 4
+ERROR - 84.21.18.140 host FAILED ICMP try || Fail_Count: 5
+INFO - 84.21.18.140 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 52.84.106.98 host FAILED ICMP try || Fail_Count: 1
+INFO - 52.84.106.98 host ICMP try SUCCESS
+ERROR - 52.84.106.98 host FAILED ICMP try || Fail_Count: 2
+ERROR - 52.84.106.98 host FAILED ICMP try || Fail_Count: 3
+ERROR - 52.84.106.98 host FAILED ICMP try || Fail_Count: 4
+INFO - 52.84.106.98 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+ERROR - 104.26.11.4 host FAILED ICMP try || Fail_Count: 1
+ERROR - 104.26.11.4 host FAILED ICMP try || Fail_Count: 2
+ERROR - 104.26.11.4 host FAILED ICMP try || Fail_Count: 3
+ERROR - 104.26.11.4 host FAILED ICMP try || Fail_Count: 4
+ERROR - 104.26.11.4 host FAILED ICMP try || Fail_Count: 5
+INFO - 104.26.11.4 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - DNS unreachable: 172.67.217.246, Exception: 
+INFO - DNS unreachable: 172.67.191.211, Exception: 
+INFO - DNS unreachable: 52.95.120.67, Exception: 
+INFO - 104.21.66.42 is reachable on 80 TCP
+INFO - 172.67.71.125 is reachable on 80 TCP
+INFO - 104.83.4.42 is reachable on 80 TCP
+INFO - 54.84.83.241 is reachable on 80 TCP
+INFO - 212.52.180.4 is reachable on 80 TCP
+INFO - 104.21.70.247 host ICMP try SUCCESS
+ERROR - 104.21.70.247 host FAILED ICMP try || Fail_Count: 1
+INFO - 104.21.70.247 host ICMP try SUCCESS
+INFO - 104.21.70.247 host ICMP try SUCCESS
+INFO - 104.21.70.247 host ICMP try SUCCESS
+INFO - 104.21.70.247 is reachable with ICMP.
+				 Avg_Succ_Delay: 11.3590 ms 
+				 Succ_Rate: 80.00%
+ERROR - 54.177.203.184 host FAILED ICMP try || Fail_Count: 1
+ERROR - 54.177.203.184 host FAILED ICMP try || Fail_Count: 2
+ERROR - 54.177.203.184 host FAILED ICMP try || Fail_Count: 3
+ERROR - 54.177.203.184 host FAILED ICMP try || Fail_Count: 4
+ERROR - 54.177.203.184 host FAILED ICMP try || Fail_Count: 5
+INFO - 54.177.203.184 is not reachable with ICMP.
 				 Succ_Rate: 0.00%
 ERROR - 193.68.61.240 host FAILED ICMP try || Fail_Count: 1
 ERROR - 193.68.61.240 host FAILED ICMP try || Fail_Count: 2
@@ -61,69 +1033,307 @@ ERROR - 193.68.61.240 host FAILED ICMP try || Fail_Count: 4
 ERROR - 193.68.61.240 host FAILED ICMP try || Fail_Count: 5
 INFO - 193.68.61.240 is not reachable with ICMP.
 				 Succ_Rate: 0.00%
+ERROR - 212.52.164.109 host FAILED ICMP try || Fail_Count: 1
+ERROR - 212.52.164.109 host FAILED ICMP try || Fail_Count: 2
+ERROR - 212.52.164.109 host FAILED ICMP try || Fail_Count: 3
+ERROR - 212.52.164.109 host FAILED ICMP try || Fail_Count: 4
+ERROR - 212.52.164.109 host FAILED ICMP try || Fail_Count: 5
+INFO - 212.52.164.109 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - 151.101.65.91 is reachable on 80 TCP
 INFO - 104.22.54.97 is reachable on 80 TCP
-INFO - 69.163.154.149 is reachable on 80 TCP
-INFO - 168.119.3.31 is reachable on 80 TCP
-INFO - 104.21.8.171 is reachable on 80 TCP
-INFO - 18.172.242.57 host ICMP try SUCCESS
-INFO - 18.172.242.57 host ICMP try SUCCESS
-INFO - 18.172.242.57 host ICMP try SUCCESS
-INFO - 18.172.242.57 host ICMP try SUCCESS
-INFO - 18.172.242.57 host ICMP try SUCCESS
-INFO - 18.172.242.57 is reachable with ICMP.
-				 Avg_Succ_Delay: 8.5464 ms 
+INFO - 172.67.159.195 is reachable on 80 TCP
+INFO - 172.67.142.92 host ICMP try SUCCESS
+INFO - 172.67.142.92 host ICMP try SUCCESS
+INFO - 172.67.142.92 host ICMP try SUCCESS
+INFO - 172.67.142.92 host ICMP try SUCCESS
+INFO - 172.67.142.92 host ICMP try SUCCESS
+INFO - 172.67.142.92 is reachable with ICMP.
+				 Avg_Succ_Delay: 30.5268 ms 
 				 Succ_Rate: 100.00%
-ERROR - 84.225.255.4 host FAILED ICMP try || Fail_Count: 1
-ERROR - 84.225.255.4 host FAILED ICMP try || Fail_Count: 2
-ERROR - 84.225.255.4 host FAILED ICMP try || Fail_Count: 3
-ERROR - 84.225.255.4 host FAILED ICMP try || Fail_Count: 4
-ERROR - 84.225.255.4 host FAILED ICMP try || Fail_Count: 5
-INFO - 84.225.255.4 is not reachable with ICMP.
+ERROR - 185.92.118.12 host FAILED ICMP try || Fail_Count: 1
+ERROR - 185.92.118.12 host FAILED ICMP try || Fail_Count: 2
+ERROR - 185.92.118.12 host FAILED ICMP try || Fail_Count: 3
+ERROR - 185.92.118.12 host FAILED ICMP try || Fail_Count: 4
+ERROR - 185.92.118.12 host FAILED ICMP try || Fail_Count: 5
+INFO - 185.92.118.12 is not reachable with ICMP.
 				 Succ_Rate: 0.00%
-ERROR - 192.0.77.40 host FAILED ICMP try || Fail_Count: 1
-ERROR - 192.0.77.40 host FAILED ICMP try || Fail_Count: 2
-ERROR - 192.0.77.40 host FAILED ICMP try || Fail_Count: 3
-ERROR - 192.0.77.40 host FAILED ICMP try || Fail_Count: 4
-ERROR - 192.0.77.40 host FAILED ICMP try || Fail_Count: 5
-INFO - 192.0.77.40 is not reachable with ICMP.
+ERROR - 104.21.65.124 host FAILED ICMP try || Fail_Count: 1
+ERROR - 104.21.65.124 host FAILED ICMP try || Fail_Count: 2
+ERROR - 104.21.65.124 host FAILED ICMP try || Fail_Count: 3
+ERROR - 104.21.65.124 host FAILED ICMP try || Fail_Count: 4
+ERROR - 104.21.65.124 host FAILED ICMP try || Fail_Count: 5
+INFO - 104.21.65.124 is not reachable with ICMP.
 				 Succ_Rate: 0.00%
-ERROR - 92.43.203.195 host FAILED ICMP try || Fail_Count: 1
-ERROR - 92.43.203.195 host FAILED ICMP try || Fail_Count: 2
-ERROR - 92.43.203.195 host FAILED ICMP try || Fail_Count: 3
-ERROR - 92.43.203.195 host FAILED ICMP try || Fail_Count: 4
-ERROR - 92.43.203.195 host FAILED ICMP try || Fail_Count: 5
-INFO - 92.43.203.195 is not reachable with ICMP.
+ERROR - 104.21.80.226 host FAILED ICMP try || Fail_Count: 1
+ERROR - 104.21.80.226 host FAILED ICMP try || Fail_Count: 2
+ERROR - 104.21.80.226 host FAILED ICMP try || Fail_Count: 3
+ERROR - 104.21.80.226 host FAILED ICMP try || Fail_Count: 4
+ERROR - 104.21.80.226 host FAILED ICMP try || Fail_Count: 5
+INFO - 104.21.80.226 is not reachable with ICMP.
 				 Succ_Rate: 0.00%
-ERROR - 52.84.106.91 host FAILED ICMP try || Fail_Count: 1
-ERROR - 52.84.106.91 host FAILED ICMP try || Fail_Count: 2
-ERROR - 52.84.106.91 host FAILED ICMP try || Fail_Count: 3
-ERROR - 52.84.106.91 host FAILED ICMP try || Fail_Count: 4
-ERROR - 52.84.106.91 host FAILED ICMP try || Fail_Count: 5
-INFO - 52.84.106.91 is not reachable with ICMP.
+INFO - 185.161.205.202 host ICMP try SUCCESS
+ERROR - 185.161.205.202 host FAILED ICMP try || Fail_Count: 1
+ERROR - 185.161.205.202 host FAILED ICMP try || Fail_Count: 2
+ERROR - 185.161.205.202 host FAILED ICMP try || Fail_Count: 3
+ERROR - 185.161.205.202 host FAILED ICMP try || Fail_Count: 4
+INFO - 185.161.205.202 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+ERROR - 104.96.94.14 host FAILED ICMP try || Fail_Count: 1
+ERROR - 104.96.94.14 host FAILED ICMP try || Fail_Count: 2
+ERROR - 104.96.94.14 host FAILED ICMP try || Fail_Count: 3
+ERROR - 104.96.94.14 host FAILED ICMP try || Fail_Count: 4
+ERROR - 104.96.94.14 host FAILED ICMP try || Fail_Count: 5
+INFO - 104.96.94.14 is not reachable with ICMP.
 				 Succ_Rate: 0.00%
-INFO - DNS reachable: 172.67.223.181
-				 Query: [<ares_query_a_result> host=142.251.208.174, ttl=103]
-INFO - DNS reachable: 151.101.65.185
-				 Query: [<ares_query_a_result> host=142.251.208.174, ttl=103]
-INFO - DNS reachable: 193.224.22.98
-				 Query: [<ares_query_a_result> host=142.251.208.174, ttl=103]
-INFO - DNS reachable: 151.101.2.133
-				 Query: [<ares_query_a_result> host=142.251.208.174, ttl=103]
-INFO - 213.181.220.94 is reachable on 80 TCP
-INFO - 20.234.179.95 is reachable on 80 TCP
-INFO - 87.229.73.131 host ICMP try SUCCESS
-INFO - 87.229.73.131 host ICMP try SUCCESS
-INFO - 87.229.73.131 host ICMP try SUCCESS
-INFO - 87.229.73.131 host ICMP try SUCCESS
-INFO - 87.229.73.131 host ICMP try SUCCESS
-INFO - 87.229.73.131 is reachable with ICMP.
-				 Avg_Succ_Delay: 43.5661 ms 
+INFO - 151.101.1.197 is reachable on 80 TCP
+INFO - 185.80.49.249 is reachable on 80 TCP
+INFO - 172.67.157.185 is reachable on 80 TCP
+INFO - 18.239.255.70 host ICMP try SUCCESS
+INFO - 18.239.255.70 host ICMP try SUCCESS
+INFO - 18.239.255.70 host ICMP try SUCCESS
+INFO - 18.239.255.70 host ICMP try SUCCESS
+INFO - 18.239.255.70 host ICMP try SUCCESS
+INFO - 18.239.255.70 is reachable with ICMP.
+				 Avg_Succ_Delay: 5.6203 ms 
 				 Succ_Rate: 100.00%
-INFO - 104.26.3.55 host ICMP try SUCCESS
-INFO - 104.26.3.55 host ICMP try SUCCESS
-INFO - 104.26.3.55 host ICMP try SUCCESS
-INFO - 104.26.3.55 host ICMP try SUCCESS
-INFO - 104.26.3.55 host ICMP try SUCCESS
-INFO - 104.26.3.55 is reachable with ICMP.
-				 Avg_Succ_Delay: 57.5899 ms 
+INFO - 104.21.70.247 host ICMP try SUCCESS
+INFO - 104.21.70.247 host ICMP try SUCCESS
+INFO - 104.21.70.247 host ICMP try SUCCESS
+INFO - 104.21.70.247 host ICMP try SUCCESS
+INFO - 104.21.70.247 host ICMP try SUCCESS
+INFO - 104.21.70.247 is reachable with ICMP.
+				 Avg_Succ_Delay: 8.9585 ms 
 				 Succ_Rate: 100.00%
+INFO - DNS unreachable: 217.13.97.63, Exception: 
+INFO - DNS unreachable: 3.160.150.120, Exception: 
+INFO - DNS unreachable: 104.17.188.102, Exception: 
+INFO - DNS unreachable: 76.223.77.166, Exception: 
+INFO - 195.228.75.235 is reachable on 80 TCP
+INFO - 172.64.147.25 is reachable on 80 TCP
+INFO - 91.120.20.144 host ICMP try SUCCESS
+ERROR - 91.120.20.144 host FAILED ICMP try || Fail_Count: 1
+INFO - 91.120.20.144 host ICMP try SUCCESS
+INFO - 91.120.20.144 host ICMP try SUCCESS
+INFO - 91.120.20.144 host ICMP try SUCCESS
+INFO - 91.120.20.144 is reachable with ICMP.
+				 Avg_Succ_Delay: 5.8430 ms 
+				 Succ_Rate: 80.00%
+ERROR - 84.206.126.111 host FAILED ICMP try || Fail_Count: 1
+ERROR - 84.206.126.111 host FAILED ICMP try || Fail_Count: 2
+ERROR - 84.206.126.111 host FAILED ICMP try || Fail_Count: 3
+ERROR - 84.206.126.111 host FAILED ICMP try || Fail_Count: 4
+ERROR - 84.206.126.111 host FAILED ICMP try || Fail_Count: 5
+INFO - 84.206.126.111 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - DNS unreachable: 62.77.232.70, Exception: 
+INFO - DNS unreachable: 172.67.72.33, Exception: 
+INFO - DNS unreachable: 103.243.32.90, Exception: 
+INFO - DNS unreachable: 104.26.3.178, Exception: 
+INFO - DNS unreachable: 62.109.141.196, Exception: 
+INFO - 193.6.241.140 is reachable on 80 TCP
+INFO - 104.21.83.59 is reachable on 80 TCP
+ERROR - 185.92.118.12 host FAILED ICMP try || Fail_Count: 1
+ERROR - 185.92.118.12 host FAILED ICMP try || Fail_Count: 2
+ERROR - 185.92.118.12 host FAILED ICMP try || Fail_Count: 3
+ERROR - 185.92.118.12 host FAILED ICMP try || Fail_Count: 4
+ERROR - 185.92.118.12 host FAILED ICMP try || Fail_Count: 5
+INFO - 185.92.118.12 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 18.195.46.128 host FAILED ICMP try || Fail_Count: 1
+ERROR - 18.195.46.128 host FAILED ICMP try || Fail_Count: 2
+ERROR - 18.195.46.128 host FAILED ICMP try || Fail_Count: 3
+ERROR - 18.195.46.128 host FAILED ICMP try || Fail_Count: 4
+ERROR - 18.195.46.128 host FAILED ICMP try || Fail_Count: 5
+INFO - 18.195.46.128 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 142.132.194.189 host FAILED ICMP try || Fail_Count: 1
+ERROR - 142.132.194.189 host FAILED ICMP try || Fail_Count: 2
+ERROR - 142.132.194.189 host FAILED ICMP try || Fail_Count: 3
+ERROR - 142.132.194.189 host FAILED ICMP try || Fail_Count: 4
+ERROR - 142.132.194.189 host FAILED ICMP try || Fail_Count: 5
+INFO - 142.132.194.189 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 77.111.91.168 host FAILED ICMP try || Fail_Count: 1
+ERROR - 77.111.91.168 host FAILED ICMP try || Fail_Count: 2
+ERROR - 77.111.91.168 host FAILED ICMP try || Fail_Count: 3
+ERROR - 77.111.91.168 host FAILED ICMP try || Fail_Count: 4
+ERROR - 77.111.91.168 host FAILED ICMP try || Fail_Count: 5
+INFO - 77.111.91.168 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - DNS unreachable: 195.184.9.147, Exception: 
+INFO - DNS unreachable: 151.101.66.167, Exception: 
+INFO - DNS unreachable: 104.21.72.193, Exception: 
+INFO - 52.45.106.38 is reachable on 80 TCP
+INFO - 160.114.8.5 is reachable on 80 TCP
+INFO - 91.120.238.204 is reachable on 80 TCP
+INFO - 162.254.190.58 host ICMP try SUCCESS
+ERROR - 162.254.190.58 host FAILED ICMP try || Fail_Count: 1
+INFO - 162.254.190.58 host ICMP try SUCCESS
+INFO - 162.254.190.58 host ICMP try SUCCESS
+INFO - 162.254.190.58 host ICMP try SUCCESS
+INFO - 162.254.190.58 is reachable with ICMP.
+				 Avg_Succ_Delay: 151.7992 ms 
+				 Succ_Rate: 80.00%
+ERROR - 84.206.26.91 host FAILED ICMP try || Fail_Count: 1
+ERROR - 84.206.26.91 host FAILED ICMP try || Fail_Count: 2
+ERROR - 84.206.26.91 host FAILED ICMP try || Fail_Count: 3
+ERROR - 84.206.26.91 host FAILED ICMP try || Fail_Count: 4
+ERROR - 84.206.26.91 host FAILED ICMP try || Fail_Count: 5
+INFO - 84.206.26.91 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 151.101.2.28 host FAILED ICMP try || Fail_Count: 1
+ERROR - 151.101.2.28 host FAILED ICMP try || Fail_Count: 2
+ERROR - 151.101.2.28 host FAILED ICMP try || Fail_Count: 3
+ERROR - 151.101.2.28 host FAILED ICMP try || Fail_Count: 4
+ERROR - 151.101.2.28 host FAILED ICMP try || Fail_Count: 5
+INFO - 151.101.2.28 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - DNS unreachable: 47.246.173.237, Exception: 
+INFO - DNS unreachable: 62.109.141.196, Exception: 
+INFO - DNS unreachable: 34.197.161.173, Exception: 
+INFO - 18.239.255.47 is reachable on 80 TCP
+INFO - 151.101.130.137 host ICMP try SUCCESS
+INFO - 151.101.130.137 host ICMP try SUCCESS
+INFO - 151.101.130.137 host ICMP try SUCCESS
+INFO - 151.101.130.137 host ICMP try SUCCESS
+INFO - 151.101.130.137 host ICMP try SUCCESS
+INFO - 151.101.130.137 is reachable with ICMP.
+				 Avg_Succ_Delay: 24.8163 ms 
+				 Succ_Rate: 100.00%
+ERROR - 18.172.242.57 host FAILED ICMP try || Fail_Count: 1
+INFO - 18.172.242.57 host ICMP try SUCCESS
+ERROR - 18.172.242.57 host FAILED ICMP try || Fail_Count: 2
+ERROR - 18.172.242.57 host FAILED ICMP try || Fail_Count: 3
+ERROR - 18.172.242.57 host FAILED ICMP try || Fail_Count: 4
+INFO - 18.172.242.57 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+ERROR - 52.84.106.57 host FAILED ICMP try || Fail_Count: 1
+ERROR - 52.84.106.57 host FAILED ICMP try || Fail_Count: 2
+ERROR - 52.84.106.57 host FAILED ICMP try || Fail_Count: 3
+ERROR - 52.84.106.57 host FAILED ICMP try || Fail_Count: 4
+ERROR - 52.84.106.57 host FAILED ICMP try || Fail_Count: 5
+INFO - 52.84.106.57 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 104.96.94.14 host FAILED ICMP try || Fail_Count: 1
+ERROR - 104.96.94.14 host FAILED ICMP try || Fail_Count: 2
+ERROR - 104.96.94.14 host FAILED ICMP try || Fail_Count: 3
+ERROR - 104.96.94.14 host FAILED ICMP try || Fail_Count: 4
+ERROR - 104.96.94.14 host FAILED ICMP try || Fail_Count: 5
+INFO - 104.96.94.14 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - DNS unreachable: 34.96.84.62, Exception: 
+INFO - DNS unreachable: 185.15.59.224, Exception: 
+INFO - DNS unreachable: 185.180.72.237, Exception: 
+INFO - DNS unreachable: 104.244.42.129, Exception: 
+INFO - 104.22.22.250 is reachable on 80 TCP
+INFO - 54.170.196.176 is reachable on 80 TCP
+INFO - 37.9.175.132 host ICMP try SUCCESS
+INFO - 37.9.175.132 host ICMP try SUCCESS
+INFO - 37.9.175.132 host ICMP try SUCCESS
+INFO - 37.9.175.132 host ICMP try SUCCESS
+INFO - 37.9.175.132 host ICMP try SUCCESS
+INFO - 37.9.175.132 is reachable with ICMP.
+				 Avg_Succ_Delay: 39.9825 ms 
+				 Succ_Rate: 100.00%
+ERROR - 104.21.80.100 host FAILED ICMP try || Fail_Count: 1
+ERROR - 104.21.80.100 host FAILED ICMP try || Fail_Count: 2
+ERROR - 104.21.80.100 host FAILED ICMP try || Fail_Count: 3
+ERROR - 104.21.80.100 host FAILED ICMP try || Fail_Count: 4
+ERROR - 104.21.80.100 host FAILED ICMP try || Fail_Count: 5
+INFO - 104.21.80.100 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 52.84.106.104 host FAILED ICMP try || Fail_Count: 1
+ERROR - 52.84.106.104 host FAILED ICMP try || Fail_Count: 2
+ERROR - 52.84.106.104 host FAILED ICMP try || Fail_Count: 3
+ERROR - 52.84.106.104 host FAILED ICMP try || Fail_Count: 4
+ERROR - 52.84.106.104 host FAILED ICMP try || Fail_Count: 5
+INFO - 52.84.106.104 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 142.250.201.206 host FAILED ICMP try || Fail_Count: 1
+ERROR - 142.250.201.206 host FAILED ICMP try || Fail_Count: 2
+ERROR - 142.250.201.206 host FAILED ICMP try || Fail_Count: 3
+ERROR - 142.250.201.206 host FAILED ICMP try || Fail_Count: 4
+ERROR - 142.250.201.206 host FAILED ICMP try || Fail_Count: 5
+INFO - 142.250.201.206 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+INFO - DNS unreachable: 108.128.10.173, Exception: 
+INFO - DNS unreachable: 13.32.110.27, Exception: 
+INFO - DNS unreachable: 104.26.13.53, Exception: 
+INFO - 192.164.161.45 is reachable on 80 TCP
+INFO - 5.189.130.229 is reachable on 80 TCP
+INFO - 92.43.203.118 is reachable on 80 TCP
+INFO - 213.181.220.74 is reachable on 80 TCP
+INFO - 104.26.13.108 host ICMP try SUCCESS
+INFO - 104.26.13.108 host ICMP try SUCCESS
+INFO - 104.26.13.108 host ICMP try SUCCESS
+INFO - 104.26.13.108 host ICMP try SUCCESS
+INFO - 104.26.13.108 host ICMP try SUCCESS
+INFO - 104.26.13.108 is reachable with ICMP.
+				 Avg_Succ_Delay: 11.1047 ms 
+				 Succ_Rate: 100.00%
+INFO - 37.9.175.132 host ICMP try SUCCESS
+INFO - 37.9.175.132 host ICMP try SUCCESS
+INFO - 37.9.175.132 host ICMP try SUCCESS
+INFO - 37.9.175.132 host ICMP try SUCCESS
+INFO - 37.9.175.132 host ICMP try SUCCESS
+INFO - 37.9.175.132 is reachable with ICMP.
+				 Avg_Succ_Delay: 40.1987 ms 
+				 Succ_Rate: 100.00%
+ERROR - 151.101.130.167 host FAILED ICMP try || Fail_Count: 1
+INFO - 151.101.130.167 host ICMP try SUCCESS
+ERROR - 151.101.130.167 host FAILED ICMP try || Fail_Count: 2
+ERROR - 151.101.130.167 host FAILED ICMP try || Fail_Count: 3
+ERROR - 151.101.130.167 host FAILED ICMP try || Fail_Count: 4
+INFO - 151.101.130.167 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+INFO - DNS unreachable: 104.20.190.42, Exception: 
+INFO - DNS unreachable: 104.17.110.190, Exception: 
+INFO - 172.67.187.38 is reachable on 80 TCP
+INFO - 194.33.69.72 is reachable on 80 TCP
+INFO - 18.239.255.42 is reachable on 80 TCP
+INFO - 51.210.210.107 is reachable on 80 TCP
+INFO - 172.67.181.175 is reachable on 80 TCP
+INFO - 151.101.129.185 host ICMP try SUCCESS
+INFO - 151.101.129.185 host ICMP try SUCCESS
+INFO - 151.101.129.185 host ICMP try SUCCESS
+INFO - 151.101.129.185 host ICMP try SUCCESS
+INFO - 151.101.129.185 host ICMP try SUCCESS
+INFO - 151.101.129.185 is reachable with ICMP.
+				 Avg_Succ_Delay: 31.0380 ms 
+				 Succ_Rate: 100.00%
+ERROR - 217.113.62.201 host FAILED ICMP try || Fail_Count: 1
+INFO - 217.113.62.201 host ICMP try SUCCESS
+ERROR - 217.113.62.201 host FAILED ICMP try || Fail_Count: 2
+ERROR - 217.113.62.201 host FAILED ICMP try || Fail_Count: 3
+ERROR - 217.113.62.201 host FAILED ICMP try || Fail_Count: 4
+INFO - 217.113.62.201 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+INFO - DNS unreachable: 104.26.11.251, Exception: 
+INFO - DNS unreachable: 104.17.187.102, Exception: 
+INFO - 104.18.34.112 is reachable on 80 TCP
+INFO - 34.218.62.116 is reachable on 80 TCP
+INFO - 49.12.127.210 is reachable on 80 TCP
+INFO - 104.18.23.208 is reachable on 80 TCP
+ERROR - 80.244.96.4 host FAILED ICMP try || Fail_Count: 1
+ERROR - 80.244.96.4 host FAILED ICMP try || Fail_Count: 2
+ERROR - 80.244.96.4 host FAILED ICMP try || Fail_Count: 3
+ERROR - 80.244.96.4 host FAILED ICMP try || Fail_Count: 4
+ERROR - 80.244.96.4 host FAILED ICMP try || Fail_Count: 5
+INFO - 80.244.96.4 is not reachable with ICMP.
+				 Succ_Rate: 0.00%
+ERROR - 193.68.61.240 host FAILED ICMP try || Fail_Count: 1
+INFO - 193.68.61.240 host ICMP try SUCCESS
+ERROR - 193.68.61.240 host FAILED ICMP try || Fail_Count: 2
+ERROR - 193.68.61.240 host FAILED ICMP try || Fail_Count: 3
+ERROR - 193.68.61.240 host FAILED ICMP try || Fail_Count: 4
+INFO - 193.68.61.240 is not reachable with ICMP.
+				 Succ_Rate: 20.00%
+INFO - DNS unreachable: 104.18.41.57, Exception: 
+INFO - DNS unreachable: 185.80.49.12, Exception: 
+INFO - DNS unreachable: 151.101.192.152, Exception: 
+INFO - 104.18.41.118 is reachable on 80 TCP
+INFO - 104.22.73.165 is reachable on 80 TCP
+INFO - 194.33.69.84 is reachable on 80 TCP
+INFO - 52.26.195.38 is reachable on 80 TCP
+INFO - 104.18.11.239 is reachable on 80 TCP

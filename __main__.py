@@ -19,9 +19,7 @@ async def main() -> None:
     packet_create = PacketFactory(ICMP_base, TCP_base, DNS_base)
 
     await packet_manager.all_checks_succ(packet_manager, packet_create)
-    
-    
-    
+        
 if __name__ == '__main__':
     try:
         

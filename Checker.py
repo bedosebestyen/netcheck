@@ -4,7 +4,6 @@ from random import randrange
 from aioping_SO_MARK import aioping
 from PacketsBase import ICMP_packet, TCP_packet, DNS_packet
 from LogHelper import LoggerTemplates
-import aiodns
 #I guess the result checker should get a task too. But I think for it to run all the time it should be put into a different task group
 #research still needed
 
@@ -18,8 +17,8 @@ def task_creator(ip_manager, packet_create, max_concurrent_tasks):
             elif isinstance(packet, TCP_packet): 
                   task = asyncio.create_task(check_tcp(packet, ip_manager))
             elif isinstance(packet, DNS_packet):
-                  task = asyncio.create_task(check_dns(packet, ip_manager))
-            # Tasks added to tasks[] 
+                  task = asyncio.create_task(check_dns(packet.ip, ip_manager))
+            # Tasks added to tasks[]
             tasks.append(task) 
       return tasks
 
@@ -39,7 +38,7 @@ async def check_tcp(packet, ip_manager):
           ip_manager.add_reachable_packet(packet)
           ip_manager.success_count += 1
           ip_manager.all_checks_count += 1
-          return True
+          #return True
     except Exception as e:
           ip_manager.unreachable_ip_add(packet)
           LoggerTemplates.tcp_unreachable_log(packet.ip, packet.port, e)
@@ -48,7 +47,7 @@ async def check_tcp(packet, ip_manager):
                                        ip_manager.reachable_ICMP, 
                                        ip_manager.reachable_TCP)
           ip_manager.all_checks_count += 1
-          return False
+          #return False
     finally:
           sock.close()
 
@@ -114,13 +113,34 @@ async def check_icmp(packet, ip_manager):
             return False
                   
 
-async def check_dns(packet, ip_manager):
-    loop = asyncio.get_event_loop()
-    resolver = aiodns.DNSResolver()
-    
+async def check_dns(server, ip_manager,port=53, timeout=5, mark=None):
+    query_packet = b'\x00\x01\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x03www\x06google\x03com\x00\x00\x01\x00\x01'
     try:
-        resolver.nameservers = ['10.85.147.65']
-        result = await resolver.query('google.com', 'A')
-        LoggerTemplates.dns_reachable(packet.ip, result)
+        # Create a UDP socket
+        sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        
+        # Set SO_MARK option if specified
+        if mark is not None:
+            sock.setsockopt(socket.SOL_SOCKET, socket.SO_MARK, mark)
+        
+        sock.setblocking(False)
+        
+        loop = asyncio.get_running_loop()
+
+        # Send the DNS query packet to the server
+        await loop.sock_sendto(sock, query_packet, (server, port))
+        
+        # Receive response (if any) with individual timeout
+        try:
+            response, _ = await asyncio.wait_for(loop.sock_recvfrom(sock, 1024), timeout)
+            LoggerTemplates.dns_reachable(server, response)
+            ip_manager.success_count += 1
+            ip_manager.all_checks_count += 1
+        except asyncio.TimeoutError as e:
+            LoggerTemplates.dns_unreachable(server, e)
+            ip_manager.all_checks_count += 1
     except Exception as e:
-        LoggerTemplates.dns_unreachable(packet.ip, e)
+        LoggerTemplates.dns_unreachable(server, e)
+        ip_manager.all_checks_count += 1
+    finally:
+        sock.close()

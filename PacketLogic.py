@@ -87,17 +87,17 @@ class  PacketLogic(metaclass=SingletonMeta):
     #where should i place it?M???
     async def all_checks_succ(self, packet_manager, packet_create):
         #this will keep it in a loop, sleeping 10 seconds after each check
+        prev_number = 0
         while True:
             try:
                 tasks = task_creator(packet_manager, packet_create, 10)
                 #Gathers the tasks
-                #await asyncio.sleep(10)
                 await asyncio.gather(*tasks, return_exceptions=True)
-                new_number = round((self.success_count / self.all_checks_count) * 100, 1)
-                prev_number = 0
+                new_number = round((self.success_count / self.all_checks_count) * 100, 0)
+                
                 #to determine if there was change in the percentage bigger than 10%
-                if (prev_number + 10) < (new_number + 10) or (prev_number - 10) > (new_number - 10):
-                    write_to_file(new_number)
+                if abs(new_number - prev_number) >= 10:
+                    write_to_file(f"{int(new_number)}")
 
                     prev_number = new_number
             except Exception as e:
