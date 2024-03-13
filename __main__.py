@@ -1,14 +1,9 @@
 import asyncio
-
 import sys
 from PacketLogic import PacketLogic
 from IpPool import IpPool
 from PacketFactory import PacketFactory
-from LogHelper import setup_runtime_logger, setup_summary_logger
-"""
-TODO: 
-        DNS
-"""
+from LogHelper import setup_runtime_logger
 
 async def main() -> None:
     ip_pool = IpPool()
@@ -27,7 +22,7 @@ if __name__ == '__main__':
             try:
 
                 runtime_logger = setup_runtime_logger()
-                summary_logger = setup_summary_logger()
+                # summary_logger = setup_summary_logger()
                 asyncio.run(main())
             except Exception as e:
                 runtime_logger.exception(f"An error occured during __main__: {e}")
@@ -35,5 +30,3 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         #Stop when ctrl + c or ctrl + z is pressed
         sys.exit()
-
-

@@ -19,9 +19,10 @@ class PacketFactory():
                 #ip, mark, timeout, port
                 return TCP_packet(ip,config.tcp_mark, config.tcp_timeout_tcp, config.tcp_port)
             elif chance <= (tcp_chance + icmp_chance):
-                ip = random.sample(self.ICMP_base, 1)[0]
+                ip = random.choice(list(self.ICMP_base.keys()))
+                dns_name = self.ICMP_base[ip]
                 #ip, mark, timeout(waiting for response),timeout(time between the pings), number of ping sent to one host, success
-                return ICMP_packet(ip, config.icmp_mark, config.icmp_timeout_waiting_for_response , config.icmp_timeout_between_pings, config.icmp_count, config.icmp_success)
+                return ICMP_packet(ip, config.icmp_mark, config.icmp_timeout_waiting_for_response , config.icmp_timeout_between_pings, config.icmp_count, config.icmp_success, dns_name)
             else:
                  ip = random.sample(self.DNS_base, 1)[0]
                  return DNS_packet(ip)

@@ -28,7 +28,8 @@ async def check_tcp(packet, ip_manager):
     #Create a TCP socket object
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     #Set the SO_MARK value
-    sock.setsockopt(socket.SOL_SOCKET, socket.SO_MARK, packet.mark)
+    if packet.mark is not None:
+      sock.setsockopt(socket.SOL_SOCKET, socket.SO_MARK, packet.mark)
     #Make socket non-blocking, so it doesn't block the async process
     sock.setblocking(False)
 
@@ -42,10 +43,6 @@ async def check_tcp(packet, ip_manager):
     except Exception as e:
           ip_manager.unreachable_ip_add(packet)
           LoggerTemplates.tcp_unreachable_log(packet.ip, packet.port, e)
-          LoggerTemplates.summary_log(ip_manager.unreachable_ICMP, 
-                                       ip_manager.unreachable_TCP, 
-                                       ip_manager.reachable_ICMP, 
-                                       ip_manager.reachable_TCP)
           ip_manager.all_checks_count += 1
           #return False
     finally:
@@ -55,7 +52,6 @@ async def check_tcp(packet, ip_manager):
 async def check_icmp(packet, ip_manager):
       fail_counter = 0
       success_counter = 0
-      #The ms after a successful icmp ping
       successful_delays = 0
       ping_tasks = []
       min_succ_rate = packet.count * packet.success
@@ -63,7 +59,6 @@ async def check_icmp(packet, ip_manager):
       for _ in range(packet.count):
             #packet.timeout is the time that it waits for a response
             ping_tasks.append(aioping.ping(packet.ip, packet.mark, packet.timeout))
-            #wait before sending the next ping
             await asyncio.sleep(packet.timeout_between)
       results = await asyncio.gather(*ping_tasks, return_exceptions=True)
       
@@ -76,13 +71,9 @@ async def check_icmp(packet, ip_manager):
                   #in this case all the pings failed
                   if fail_counter == packet.count:
                         ip_manager.unreachable_ip_add(packet)
-                        LoggerTemplates.icmp_unreachable_log(packet.ip, 0)
-                        LoggerTemplates.summary_log(ip_manager.unreachable_ICMP, 
-                                       ip_manager.unreachable_TCP, 
-                                       ip_manager.reachable_ICMP, 
-                                       ip_manager.reachable_TCP)     
+                        LoggerTemplates.icmp_unreachable_log(packet.ip, 0, packet.dns_name)
                         ip_manager.all_checks_count += 1             
-                        return False
+                        #return False
             else:
                   result *= 1000
                   successful_delays += result
@@ -95,31 +86,23 @@ async def check_icmp(packet, ip_manager):
       if int(min_succ_rate) <= success_counter:
             ip_manager.add_reachable_packet(packet)
             LoggerTemplates.icmp_reachable_log(packet.ip, success_rate, avg_delay)
-            LoggerTemplates.summary_log(ip_manager.unreachable_ICMP, 
-                                    ip_manager.unreachable_TCP, 
-                                    ip_manager.reachable_ICMP, 
-                                    ip_manager.reachable_TCP)
             ip_manager.success_count += 1
             ip_manager.all_checks_count += 1
-            return True
+            #return True
       else:
             ip_manager.unreachable_ip_add(packet)
-            LoggerTemplates.icmp_unreachable_log(packet.ip, success_rate)
-            LoggerTemplates.summary_log(ip_manager.unreachable_ICMP, 
-                                    ip_manager.unreachable_TCP, 
-                                    ip_manager.reachable_ICMP, 
-                                    ip_manager.reachable_TCP)
+            LoggerTemplates.icmp_unreachable_log(packet.ip, success_rate, packet.dns_name)
             ip_manager.all_checks_count += 1
-            return False
+            #return False
                   
 
 async def check_dns(server, ip_manager,port=53, timeout=5, mark=None):
+    #query packet asking for the IPv4 address of www.google.com
     query_packet = b'\x00\x01\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x03www\x06google\x03com\x00\x00\x01\x00\x01'
     try:
         # Create a UDP socket
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         
-        # Set SO_MARK option if specified
         if mark is not None:
             sock.setsockopt(socket.SOL_SOCKET, socket.SO_MARK, mark)
         
@@ -137,7 +120,7 @@ async def check_dns(server, ip_manager,port=53, timeout=5, mark=None):
             ip_manager.success_count += 1
             ip_manager.all_checks_count += 1
         except asyncio.TimeoutError as e:
-            LoggerTemplates.dns_unreachable(server, e)
+            LoggerTemplates.dns_unreachable_async(server, e)
             ip_manager.all_checks_count += 1
     except Exception as e:
         LoggerTemplates.dns_unreachable(server, e)

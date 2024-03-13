@@ -8,11 +8,12 @@ class Packet:
         self.timeout = timeout
 
 class ICMP_packet(Packet):
-    def __init__(self, ip, mark, timeout, timeout_between,count, success):
+    def __init__(self, ip, mark, timeout, timeout_between, count, success, dns_name):
         super().__init__(ip, mark, timeout)
         self.count = count
         self.success = success
         self.timeout_between = timeout_between
+        self.dns_name = dns_name
 
 class TCP_packet(Packet):
     def __init__(self, ip, mark, timeout,  port):

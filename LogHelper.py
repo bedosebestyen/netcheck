@@ -15,23 +15,23 @@ def setup_runtime_logger():
     
     return runtime_logger
 
-def setup_summary_logger():
-    summary_logger = logging.getLogger('summary_logger')
-    summary_log_handler = logging.FileHandler("summary.log", mode="w")
+# def setup_summary_logger():
+#     summary_logger = logging.getLogger('summary_logger')
+#     summary_log_handler = logging.FileHandler("summary.log", mode="w")
     
     
-    formatter = logging.Formatter('%(levelname)s - %(message)s')
-    summary_log_handler.setFormatter(formatter)
+#     formatter = logging.Formatter('%(levelname)s - %(message)s')
+#     summary_log_handler.setFormatter(formatter)
     
-    summary_logger.setLevel(logging.INFO)
-    summary_logger.addHandler(logging.StreamHandler(sys.stdout))
-    summary_logger.addHandler(summary_log_handler)
+#     summary_logger.setLevel(logging.INFO)
+#     summary_logger.addHandler(logging.StreamHandler(sys.stdout))
+#     summary_logger.addHandler(summary_log_handler)
     
-    return summary_logger
+#     return summary_logger
 
 
 runtime_logger = setup_runtime_logger()
-summary_logger = setup_summary_logger()
+# summary_logger = setup_summary_logger()
 
 class LoggerTemplates():
     #staticmethod is useful here because they are not bound to a class instance, so they can be called directly without creating a class instance
@@ -45,26 +45,24 @@ class LoggerTemplates():
     def icmp_reachable_log(ip, success_rate, avg_delay):
         runtime_logger.info(f'{ip} is reachable with ICMP.\n\t\t\t\t Avg_Succ_Delay: {avg_delay:.4f} ms \n\t\t\t\t Succ_Rate: {success_rate:.2%}')
     @staticmethod
-    def icmp_unreachable_log(ip, success_rate):
-        runtime_logger.info(f'{ip} is not reachable with ICMP.\n\t\t\t\t Succ_Rate: {success_rate:.2%}')
+    def icmp_unreachable_log(ip, success_rate, dns_name):
+        runtime_logger.info(f'{ip} is not reachable with ICMP.\n\t\t\t\t Succ_Rate: {success_rate:.2%}\n\t\t\t\t DNS name: {dns_name}')
     @staticmethod
     def icmp_packet_success_log(ip):
         runtime_logger.info(f"{ip} host ICMP try SUCCESS")
     @staticmethod
     def icmp_packet_failure_log(ip, fail_count):
         runtime_logger.error(f"{ip} host FAILED ICMP try || Fail_Count: {fail_count}")
-    @staticmethod
-    def summary_log(unreachable_icmp, unreachable_tcp, reachable_icmp, reachable_tcp):
-        #runtime_logger.info(f'Unreachable ICMP: {unreachable_icmp}\n\t\t\t\tUnreachable TCP: {unreachable_tcp}\n\t\t\t\tReachable_ICMP: {reachable_icmp}\n\t\t\t\tReachable_TCP: {reachable_tcp}')
-        summary_logger.info(f'Unreachable ICMP: {unreachable_icmp}\n\t\t\t\tUnreachable TCP: {unreachable_tcp}\n\t\t\t\tReachable_ICMP: {reachable_icmp}\n\t\t\t\tReachable_TCP: {reachable_tcp}')
+    # @staticmethod
+    # def summary_log(unreachable_icmp, unreachable_tcp, reachable_icmp, reachable_tcp):
+    #     #runtime_logger.info(f'Unreachable ICMP: {unreachable_icmp}\n\t\t\t\tUnreachable TCP: {unreachable_tcp}\n\t\t\t\tReachable_ICMP: {reachable_icmp}\n\t\t\t\tReachable_TCP: {reachable_tcp}')
+    #     summary_logger.info(f'Unreachable ICMP: {unreachable_icmp}\n\t\t\t\tUnreachable TCP: {unreachable_tcp}\n\t\t\t\tReachable_ICMP: {reachable_icmp}\n\t\t\t\tReachable_TCP: {reachable_tcp}')
     @staticmethod
     def icmp_unreachable_full(oldest_ip):
-        runtime_logger.info(f'ICMP unreachable reached max capacity first element will be put back into reachable, ip: {oldest_ip}')
-        summary_logger.info(f'ICMP unreachable reached max capacity first element will be put back into reachable, ip: {oldest_ip}')
+        runtime_logger.info(f'ICMP unreachable reached max capacity first element will be put back into reachable list, ip: {oldest_ip}')
     @staticmethod
     def tcp_unreachable_full(oldest_ip):
-        runtime_logger.info(f'TCP unreachable reached max capacity first element will be put back into reachable, ip: {oldest_ip}')
-        summary_logger.info(f'TCP unreachable reached max capacity first element will be put back into reachable, ip: {oldest_ip}')
+        runtime_logger.info(f'TCP unreachable reached max capacity first element will be put back into reachable list, ip: {oldest_ip}')
     @staticmethod
     def write_unsucc(exception):
         runtime_logger.info(f"Write out failed: {exception}")
@@ -74,3 +72,6 @@ class LoggerTemplates():
     @staticmethod
     def dns_unreachable(ip, e):
         runtime_logger.info(f'DNS unreachable: {ip}, Exception: {str(e)}')
+    @staticmethod
+    def dns_unreachable_async(ip, e):
+        runtime_logger.info(f'DNS unreachable async timeout: {ip}, Exception: {str(e)}')
