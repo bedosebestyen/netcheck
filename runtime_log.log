@@ -1,23 +1,23 @@
-INFO - DNS unreachable async timeout: 84.206.102.196, Exception: 
-ERROR - Connection failed to 192.0.66.136:80 TCP: 
-ERROR - Connection failed to 52.59.124.80:80 TCP: 
-INFO - DNS unreachable async timeout: 213.181.199.41, Exception: 
-INFO - 84.206.43.26 is reachable on 80 TCP
-INFO - 104.22.55.97 is reachable on 80 TCP
-INFO - DNS unreachable async timeout: 46.101.251.160, Exception: 
-INFO - 151.101.130.152 host ICMP try SUCCESS
-INFO - 151.101.130.152 host ICMP try SUCCESS
-INFO - 151.101.130.152 host ICMP try SUCCESS
-INFO - 151.101.130.152 host ICMP try SUCCESS
-INFO - 151.101.130.152 host ICMP try SUCCESS
-INFO - 151.101.130.152 is reachable with ICMP.
-				 Avg_Succ_Delay: 35.4494 ms 
-				 Succ_Rate: 100.00%
-ERROR - 18.172.242.12 host FAILED ICMP try || Fail_Count: 1
-ERROR - 18.172.242.12 host FAILED ICMP try || Fail_Count: 2
-ERROR - 18.172.242.12 host FAILED ICMP try || Fail_Count: 3
-ERROR - 18.172.242.12 host FAILED ICMP try || Fail_Count: 4
-ERROR - 18.172.242.12 host FAILED ICMP try || Fail_Count: 5
-INFO - 18.172.242.12 is not reachable with ICMP.
+INFO - 172.67.74.246 is reachable on 80 TCP
+INFO - 104.16.234.10 is reachable on 80 TCP
+INFO - 52.84.106.14 is reachable on 80 TCP
+INFO - 18.172.242.60 host ICMP try SUCCESS
+ERROR - 18.172.242.60 host FAILED ICMP try || Fail_Count: 1
+ERROR - 18.172.242.60 host FAILED ICMP try || Fail_Count: 2
+ERROR - 18.172.242.60 host FAILED ICMP try || Fail_Count: 3
+INFO - 18.172.242.60 host ICMP try SUCCESS
+INFO - 18.172.242.60 is not reachable with ICMP.
+				 Succ_Rate: 40.00%
+				 DNS name: wolt.com
+ERROR - 95.131.50.8 host FAILED ICMP try || Fail_Count: 1
+ERROR - 95.131.50.8 host FAILED ICMP try || Fail_Count: 2
+ERROR - 95.131.50.8 host FAILED ICMP try || Fail_Count: 3
+ERROR - 95.131.50.8 host FAILED ICMP try || Fail_Count: 4
+ERROR - 95.131.50.8 host FAILED ICMP try || Fail_Count: 5
+INFO - 95.131.50.8 is not reachable with ICMP.
 				 Succ_Rate: 0.00%
-				 DNS name: academia.edu, timeout.com
+				 DNS name: csaladinet.hu
+INFO - DNS unreachable async timeout: 54.218.188.255, Exception: 
+INFO - DNS unreachable async timeout: 172.64.144.93, Exception: 
+INFO - DNS unreachable async timeout: 52.84.106.44, Exception: 
+INFO - DNS unreachable async timeout: 104.18.229.43, Exception: 
